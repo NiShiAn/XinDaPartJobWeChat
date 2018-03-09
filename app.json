@@ -1,5 +1,6 @@
 {
   "pages": [ 
+   "page/sub-account-list/index",
     "page/buy-vip/index",
     "page/work-info/index",
     "page/contacts-edit/index",
