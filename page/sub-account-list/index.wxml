@@ -2,7 +2,7 @@
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class='contracts-list'>
-    <view class='contracts-item' wx:for="{{[1, 2, 3]}}" wx:for-item="i">
+    <view class='contracts-item'>
       <image src='../../image/post/head-img.png' class='head-img'>
       </image>
       <view class='info'>
@@ -16,6 +16,32 @@
       </view>
       <view class="op">
         <image src='../../image/post/edit.png'></image>
+      </view>
+    </view>
+    <view class="sub-account-list">
+      <view class="sub-account-item">
+        <span class="index">子账号（一）：</span>
+        <span class="phone">18363974853</span>
+        <view class="imgs">
+          <image src='../../image/post/edit.png'></image>
+          <image src='../../image/post/delete.png'></image>
+        </view>
+      </view>
+      <view class="sub-account-item">
+        <span class="index">子账号（一）：</span>
+        <span class="phone">18363974853</span>
+        <view class="imgs">
+          <image src='../../image/post/edit.png'></image>
+          <image src='../../image/post/delete.png'></image>
+        </view>
+      </view>
+      <view class="sub-account-item">
+        <span class="index">子账号（一）：</span>
+        <span class="phone">18363974853</span>
+        <view class="imgs">
+          <image src='../../image/post/edit.png'></image>
+          <image src='../../image/post/delete.png'></image>
+        </view>
       </view>
     </view>
   </view>

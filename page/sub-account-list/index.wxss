@@ -112,3 +112,43 @@
   margin-left: 2%;
   margin-top: 29rpx;
 }
+
+.sub-account-list{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.sub-account-item{
+  width: 92%;
+  background: white;
+  height: 98rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.index{
+  font-size: 22rpx;
+  color: rgb(136, 136, 136);
+  display: inline-block;
+   height: 98rpx;
+   line-height: 98rpx;
+}
+.phone{
+  font-size: 22rpx;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+   height: 98rpx;
+   line-height: 98rpx;
+}
+.imgs{
+  width: 120rpx;
+  float: right;
+  display: inline-block;
+   height: 98rpx;
+   line-height: 98rpx;
+}
+.imgs image{
+  width: 20rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  margin-left: 20rpx;
+}

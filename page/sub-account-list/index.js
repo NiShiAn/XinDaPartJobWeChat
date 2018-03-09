@@ -20,7 +20,7 @@ P('index', {
         }
       })
       wx.setNavigationBarTitle({
-        title: '联系人列表'
+        title: '子账号列表'
       })
       wx.showShareMenu({
         withShareTicket: true
