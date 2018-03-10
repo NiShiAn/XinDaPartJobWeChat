@@ -1,0 +1,9 @@
+<view class='contain'>
+  <view class='job-list-box'>
+    <view class='job-item'>托管老师</view>
+    <view class='job-item'>托师托管老师</view>
+    <view class='job-item'>老师</view>
+    <view class='job-item'>托管老师</view>
+    <view class='job-item'>托管老师</view>
+  </view>
+</view>

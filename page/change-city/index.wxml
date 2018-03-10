@@ -1,0 +1,31 @@
+<view class='contain'>
+  <view class='search-box'>
+    <view class='{{isShowInput > 1 ? "search-bg-view" : "search-bg-view-start"}}' bindtap='searchClick'>
+      <image src='../../image/person/search.png' class='search-img'></image>
+      <view wx:if="{{isShowInput > 1}}">
+        <view class='search-alert'>搜索</view>
+      </view>
+      <view wx:else>
+        <input placeholder='搜索' class='search-title' bindblur="disappearBlur"></input>
+      </view>
+    </view>
+  </view>
+  <view class='current-city-box'>
+    <view class='city-name'>当前城市：</view>
+    <view class='city-name'>青岛</view>
+  </view>
+  <view class='city-list-box'>
+    <view class='city-list-nav'>
+      <text class='char-number'>A</text>
+      <text class='char-number'>B</text>
+    </view>  
+  </view>
+  <view class='city-item-list'>
+    <view class='city-item'>
+      <view class='city-item-name'>阿尔山</view>
+    </view>
+    <view class='city-item'>
+      <view class='city-item-name'>阿尔山</view>
+    </view>
+  </view>
+</view>

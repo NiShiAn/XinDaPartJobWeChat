@@ -3,7 +3,8 @@ var P = require('../../lib/wxpage')
 P('index', {
   data: {
     dataArr: ['托管老师', '小崔秘书', '小崔暖床','小崔暖阁暖暖暖啊小崔暖阁暖暖暖啊小崔暖阁暖暖暖啊小崔暖阁暖暖暖啊','小崔公司财务总监'],
-    length: 6
+    length: 6,
+    array: ['美国', '中国', '巴西', '日本'],
   },
 
   onLaunch: function () {

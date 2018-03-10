@@ -98,3 +98,139 @@
   border: 1rpx solid #ddd;
   padding: 0 35rpx;
 }
+
+/*编辑列表样式  */
+.resume-title-box {
+  height: 88rpx;
+  background-color: #efeff3;
+  padding: 0 35rpx;
+  border: 1rpx solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.line-shu-big {
+  width: 8rpx;
+  height: 48rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  background-color: rgb(9, 187, 7);
+}
+
+.resume-title-name {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 34rpx;
+  color: rgb(53, 53, 53);
+  margin-right: 20rpx;
+}
+
+.resume-title-des {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 22rpx;
+  color: rgb(136, 136, 136);
+  position: relative;
+  top: 5rpx;
+}
+
+.upload-img-box , .add-base-info , .info-box {
+  background-color: #fff;
+}
+
+.info-box {
+  padding: 30rpx 35rpx;
+  font-size: 28rpx;
+  color: rgb(136, 136, 136);
+ 
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: 28rpx 28rpx;
+  background-position: right center;
+}
+
+.margin-right-20 {
+  margin-right: 20rpx;
+}
+
+.margin-right-20:last-child {
+  margin-right: 0;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10rpx;
+}
+
+.margin-bottom-10:last-child {
+  margin-bottom: 0;
+}
+
+.upload-img-border {
+  margin: 30rpx 35rpx;
+  display: inline-block;
+  width: 116rpx;
+  height: 116rpx;
+  border: 1rpx solid #ddd;
+  text-align: center;
+}
+
+.upload-img {
+  width: 56rpx;
+  height: 56rpx;
+  margin-top: 30rpx;
+}
+
+.add-base-info {
+  padding: 74rpx 0;
+}
+
+.v-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+.add-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 15rpx;
+  position: relative;
+  top: 5rpx;
+}
+
+.add-describe {
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+}
+
+.textarea-box {
+  background-color: #fff;
+  height: 180rpx;
+}
+
+.textarea-input {
+  font-size: 30rpx;
+  color: rgb(178, 178, 178);
+  height: 180rpx;
+  padding: 30rpx 35rpx;
+}
+
+.textarea-box-big {
+  background-color: #fff;
+  height: 360rpx;
+}
+
+.textarea-input-big {
+  font-size: 30rpx;
+  color: rgb(178, 178, 178);
+  height: 360rpx;
+  padding: 30rpx 35rpx;
+}
+
+.mien-img-list {
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}
