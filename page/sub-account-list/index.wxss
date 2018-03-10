@@ -1,0 +1,154 @@
+/**index.wxss**/
+.container {
+  background-color: #efeff3;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.contracts-list{
+  width: 100%;
+  height: auto;
+}
+.contracts-item{
+  width: 92%;
+  height: 164rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+  background: #fff;
+  margin-top: 14rpx;
+  /* border-top:2rpx solid #d6d6d6;
+   border-bottom:2rpx solid #d6d6d6; */
+}
+.head-img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 32rpx;
+  float: left;
+  border-radius: 50rpx;
+}
+.info{
+  width: 368rpx;
+  height: 100rpx;
+  float: left;
+  margin-top: 32rpx;
+  margin-left: 20rpx;
+}
+.name{
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+}
+.name span{
+  display: inline-block;
+  margin-right: 14rpx;
+}
+.tip{
+  font-size: 24rpx;
+  color: rgb(170, 170, 170);
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+}
+.tip image{
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 20rpx
+}
+.tip span{
+  display: inline-block;
+  margin-left: 8rpx;
+}
+.op{
+  width: 120rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  float: left;
+  margin-top: 67rpx;
+  margin-left: 70rpx;
+}
+.op view{
+  width: 2rpx;
+  height: 30rpx;
+   background-color: rgb(217, 217, 217);
+   display: inline-block;
+   margin-left: 30rpx;
+    margin-right: 30rpx;
+}
+.op image{
+  width: 26rpx;
+  height: 30rpx;
+   margin-left: 60rpx;
+}
+.add-contracts{
+  width: 92%;
+  height: 88rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+  background: #fff;
+  margin-top: 14rpx;
+}
+.add-contracts .icon{
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 26rpx;
+   border-radius: 50%;
+  background-color: rgb(9, 187, 7);
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 24rpx;
+  float: left;
+  margin-left: 30%;
+  margin-top: 29rpx;
+}
+.add-contracts .text{
+  height: 30rpx;
+  line-height: 30rpx;
+  display: block;
+   font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  float: left;
+  margin-left: 2%;
+  margin-top: 29rpx;
+}
+
+.sub-account-list{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.sub-account-item{
+  width: 92%;
+  background: white;
+  height: 98rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.index{
+  font-size: 22rpx;
+  color: rgb(136, 136, 136);
+  display: inline-block;
+   height: 98rpx;
+   line-height: 98rpx;
+}
+.phone{
+  font-size: 22rpx;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+   height: 98rpx;
+   line-height: 98rpx;
+}
+.imgs{
+  width: 120rpx;
+  float: right;
+  display: inline-block;
+   height: 98rpx;
+   line-height: 98rpx;
+}
+.imgs image{
+  width: 20rpx;
+  height: 25rpx;
+  line-height: 25rpx;
+  margin-left: 20rpx;
+}

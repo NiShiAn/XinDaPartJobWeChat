@@ -1,0 +1,52 @@
+<!--联系人列表页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class='contracts-list'>
+    <view class='contracts-item'>
+      <image src='../../image/post/head-img.png' class='head-img'>
+      </image>
+      <view class='info'>
+        <span class="name"><span>李经理</span><span>18654223124</span></span>
+        <span class="tip">
+          <image src='../../image/company-center/sub-a-list1.png'></image>
+          <span>年度会员</span>
+           <image src='../../image/company-center/sub-list2.png'></image>
+          <span>可配置4个</span>
+        </span>
+      </view>
+      <view class="op">
+        <image src='../../image/post/edit.png'></image>
+      </view>
+    </view>
+    <view class="sub-account-list">
+      <view class="sub-account-item">
+        <span class="index">子账号（一）：</span>
+        <span class="phone">18363974853</span>
+        <view class="imgs">
+          <image src='../../image/post/edit.png'></image>
+          <image src='../../image/post/delete.png'></image>
+        </view>
+      </view>
+      <view class="sub-account-item">
+        <span class="index">子账号（一）：</span>
+        <span class="phone">18363974853</span>
+        <view class="imgs">
+          <image src='../../image/post/edit.png'></image>
+          <image src='../../image/post/delete.png'></image>
+        </view>
+      </view>
+      <view class="sub-account-item">
+        <span class="index">子账号（一）：</span>
+        <span class="phone">18363974853</span>
+        <view class="imgs">
+          <image src='../../image/post/edit.png'></image>
+          <image src='../../image/post/delete.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="add-contracts">
+    <span class="icon">+</span>
+    <span class="text">新增子账号</span>
+  </view>
+</view>
