@@ -1,0 +1,46 @@
+<!--岗位列表-选择雇主等级-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class="type-container">
+     <scroll-view class="type-navbar" scroll-x="true">
+         <view class="type-box"  data-id="1" bindtap='tabChangeTypeClick'>
+             <view  class="type-navbar-item {{activeTypeId == 1 ? 'type-item-on' : ''}}">
+                 兼职岗位
+             </view>
+         </view>
+         <view class="type-box"  data-id="2" bindtap='tabChangeTypeClick'>
+             <view class="type-navbar-item {{activeTypeId == 2 ? 'type-item-on' : ''}}">
+                全职岗位
+             </view>
+         </view>
+    </scroll-view>
+  </view>
+  <view class="sub-type-container">
+    <view class="sub-type-box sub-type-line " data-id="1" bindtap='tabChangeSubTypeClick'>
+      全部区域
+    </view>
+    <view class="sub-type-box sub-type-line sub-type-active" data-id="2" bindtap='tabChangeSubTypeClick'>
+      雇主等级
+    </view>
+    <view class="sub-type-box sub-type-line" data-id="3" bindtap='tabChangeSubTypeClick'>
+      岗位分类
+    </view>
+    <view class="sub-type-search">
+      <image src='../../image/post/post-search.png' class='sub-type-search-img'></image>
+    </view>
+  </view>
+  <view class="em-list">
+    <span class="em-item em-item-select">全部</span>
+    <span class="em-item">未认证</span>
+    <span class="em-item">普通</span>
+    <span class="em-item">一级</span>
+    <span class="em-item">全部</span>
+    <span class="em-item">未认证</span>
+    <span class="em-item">普通</span>
+    <span class="em-item">一级</span>
+    <span class="em-item">全部</span>
+    <span class="em-item">未认证</span>
+    <span class="em-item">普通</span>
+    <span class="em-item">一级</span>
+  </view>
+</view>

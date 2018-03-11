@@ -19,10 +19,10 @@
     <view class="sub-type-box sub-type-line {{activeSubTypeId == 1 ? 'sub-type-active' : ''}}" data-id="1" bindtap='tabChangeSubTypeClick'>
       全部区域
     </view>
-    <view class="sub-type-box sub-type-line {{activeSubTypeId == 2 ? 'sub-type-active' : ''}}" data-id="2" bindtap='tabChangeSubTypeClick'>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 2 ? 'sub-type-active' : ''}}" data-id="2" bindtap='toEmployerGrade'>
       雇主等级
     </view>
-    <view class="sub-type-box sub-type-line {{activeSubTypeId == 3 ? 'sub-type-active' : ''}}" data-id="3" bindtap='tabChangeSubTypeClick'>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 3 ? 'sub-type-active' : ''}}" data-id="3" bindtap='toPostCategory'>
       岗位分类
     </view>
     <view class="sub-type-search">

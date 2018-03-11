@@ -92,7 +92,30 @@ P('index', {
             })
         }
     },
-    
+
+    /**
+    * 点击跳转选择雇主等级
+    * **/
+    toEmployerGrade: function (e) {
+      wx.navigateTo({
+        url: "/page/post-employer-grade/index?postId=1"
+      })
+      this.setData({
+        activeSubTypeId: e.currentTarget.dataset.id
+      });
+    },
+
+    /**
+    * 点击跳转选择岗位分类
+    * **/
+    toPostCategory: function (e) {
+      wx.navigateTo({
+        url: "/page/post-job-category/index?postId=1"
+      })
+      this.setData({
+        activeSubTypeId: e.currentTarget.dataset.id
+      });
+    },
     /**
      * 点击关闭签到弹窗
      * **/

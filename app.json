@@ -1,6 +1,8 @@
 {
   "pages": [
     "page/post-index/index",
+    "page/post-job-category/index",
+    "page/post-employer-grade/index",
     "page/company-detail/index",
     "page/change-city/index",
     "page/work-info/index",
@@ -16,7 +18,6 @@
     "page/verificate-phone/index",
     "page/buy-vip/index",
     "page/sub-account-list/index"
-
   ],
   "window": {
     "navigationBarTextStyle": "#ffffff",
