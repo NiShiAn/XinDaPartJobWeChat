@@ -167,7 +167,7 @@ swiper-item image {
     top: 0;
     left: 0;
     background: #000;
-    opacity: 0.5;
+    opacity: 0.8;
     overflow: hidden;
     z-index: 9000;
     color: #fff;
@@ -259,9 +259,9 @@ swiper-item image {
   height:50rpx;
   z-index:9999;
 }
-.blur{
+/* .blur{
   -webkit-filter: blur(10rpx);
   -moz-filter: blur(10rpx);
   -o-filter: blur(10rpx);
   filter: blur(10rpx);
-}
+} */

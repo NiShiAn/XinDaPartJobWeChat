@@ -20,7 +20,7 @@ P('index', {
         }
       })
       wx.setNavigationBarTitle({
-        title: '兼职详情'
+        title: '企业详情'
       })
       wx.showShareMenu({
         withShareTicket: true
@@ -41,15 +41,6 @@ P('index', {
     toTipOffTap: function (e) {
       wx.navigateTo({
         url: "/page/tip-off-add/index?postId=1"
-      })
-    },
-
-    /**
-     * 点击跳转到企业详情
-     * **/
-    goCompanyDetail: function (e) {
-      wx.navigateTo({
-        url: "/page/company-detail/index?postId=1"
       })
     },
 })

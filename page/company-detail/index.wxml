@@ -1,0 +1,62 @@
+<!--首页页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class='company-contenter'>
+    <image src='../../image/post/company.png' class='company-img'></image>
+    <view class='company-info'>
+      <span class="company-name">
+        北京天之遥网络科技
+      </span>
+      <span class="company-leveal">
+        <image src='../../image/post/leveal-icon.png' class='leveal-icon'></image>
+        <span>
+          一级雇主
+        </span>
+      </span>
+    </view>
+  </view>
+  <view class="company-block">
+    <span class="c-name">北京天之瑶网络科技有限公司</span>
+    <span class="c-add">
+      <image src='../../image/post/location.png'></image>
+      <span>北京市朝阳区小关北里于洋置业</span>
+    </span>
+    <span class="c-desc">
+      北京天之瑶网络科技有限公司主要提供以Linux环境为主的云虚拟主机、云服务器、独立服务器租用、企业邮箱等产品和服务。北京天之瑶网络科技有限公司主要提供以Linux环境为主的云虚拟主机、云服务器、独立服务器租用、企业邮箱等产品和服务。北京天之瑶网络科技有限公司主要提供以Linux环境为主的云虚拟主机、云服务器、独立服务器租用、企业邮箱等产品和服务。
+    </span>
+    <view class="c-imgs">
+      <image src='../../image/post/company.png'></image>
+      <image src='../../image/post/company.png'></image>
+      <image src='../../image/post/company.png'></image>
+    </view>
+  </view>
+  <view class='c-posts'>
+    <view class='post-item' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
+      <view class='post-left'>
+        <span class="post-name">
+          托管老师
+        </span>
+        <span class="post-price">
+          100-150<span>元/天</span>
+        </span>
+        <span class="post-min">
+          <image src='../../image/post/dingwei.png' class='min-icon'></image>
+          <span>
+            市南区
+          </span>
+          <image src='../../image/post/shizhong.png' class='min-icon'></image>
+          <span>
+            昨天12：24
+          </span>
+          <image src='../../image/post/huiyuan.png' class='min-icon'></image>
+          <span>
+            季度会员
+          </span>
+        </span>
+      </view>
+      <view class='post-right'>
+        <view class="post-toDetail">查看</view>
+      </view>
+    </view>
+  </view>
+</view>

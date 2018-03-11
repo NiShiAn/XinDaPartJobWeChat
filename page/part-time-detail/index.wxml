@@ -40,7 +40,7 @@
           一级雇主
         </span>
       </span>
-      <span class="com-detail-btn">
+      <span class="com-detail-btn" bindtap="goCompanyDetail">
       </span>
     </view>
   </view>

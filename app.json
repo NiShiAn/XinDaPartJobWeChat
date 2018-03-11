@@ -1,11 +1,12 @@
 {
-  "pages": [ 
+  "pages": [
+    "page/post-index/index",
+    "page/company-detail/index",
+    "page/change-city/index",
     "page/work-info/index",
     "page/contacts-edit/index",
     "page/contacts-list/index",
     "page/party-resume-edite/index",
-    "page/party-resume-list/index",
-    "page/post-index/index",
     "page/party-resume-list/index",
     "page/company-login/index",
     "page/full-time-detail/index",
@@ -13,7 +14,9 @@
     "page/part-time-detail/index",
     "page/person-info/index",
     "page/verificate-phone/index",
-    "page/buy-vip/index"
+    "page/buy-vip/index",
+    "page/sub-account-list/index"
+
   ],
   "window": {
     "navigationBarTextStyle": "#ffffff",

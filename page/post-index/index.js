@@ -18,6 +18,7 @@ P('index', {
       activeSubTypeId:1,  //切换全部区域or雇主等级or岗位分类
       //签到弹窗参数
       showSignModal:true,
+      city:""
     },
 
     onLaunch: function () {
@@ -41,6 +42,10 @@ P('index', {
       wx.showShareMenu({
         withShareTicket: true
       })
+      this.setData({
+        city: options.city
+      })  
+      console.log("options.city$$$$$$$$$"+options.city)
     },
 
     /**
