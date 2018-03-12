@@ -20,7 +20,7 @@ P('index', {
         }
       })
       wx.setNavigationBarTitle({
-        title: '兼职详情'
+        title: '兼职岗位详情'
       })
       wx.showShareMenu({
         withShareTicket: true

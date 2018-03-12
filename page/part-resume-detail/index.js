@@ -1,4 +1,4 @@
-/************全职页面详情****************/
+/************兼职简历详情页面****************/
 var P = require('../../lib/wxpage')
 P('index', {
     data: {
@@ -20,7 +20,7 @@ P('index', {
         }
       })
       wx.setNavigationBarTitle({
-        title: '全职岗位详情'
+        title: '兼职岗位详情'
       })
       wx.showShareMenu({
         withShareTicket: true
