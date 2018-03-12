@@ -1,5 +1,7 @@
 {
   "pages": [
+    "page/report-detail/index",
+    "page/person-info/index",
     "page/post-index/index",
     "page/post-job-category/index",
     "page/post-employer-grade/index",
@@ -14,7 +16,7 @@
     "page/full-time-detail/index",
     "page/tip-off-add/index",      
     "page/part-time-detail/index",
-    "page/person-info/index",
+    
     "page/verificate-phone/index",
     "page/buy-vip/index",
     "page/sub-account-list/index"

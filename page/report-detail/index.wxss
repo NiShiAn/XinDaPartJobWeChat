@@ -1,0 +1,90 @@
+.nav-box {
+  background-color: #efeff3;
+  height: 88rpx;
+  line-height: 88rpx;
+  padding-left: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.line-red {
+  height: 48rpx;
+  width: 8rpx;
+  background-color: #eb4144;
+  border-top-left-radius: 4rpx;
+  border-bottom-left-radius: 4rpx;
+  border-top-right-radius: 4rpx;
+  border-bottom-right-radius: 4rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+
+.nav-title {
+  color: rgb(53, 53, 53);
+  font-size: 34rpx;
+}
+
+.repoter-detail {
+  border: 1rpx solid #ddd;
+  background-color: #fff;
+  padding-left: 35rpx;
+  font-size: 30rpx;
+}
+
+.repoter-info-box {
+  border-bottom: 1rpx solid #ddd;
+  height: 88rpx;
+  line-height: 88rpx;
+  color: rgb(53, 53, 53);
+  overflow: hidden;
+}
+
+.repoter-info-box:last-child {
+  border-bottom: none;
+}
+
+.row {
+  overflow: hidden;
+  width: 100%;
+}
+
+.col-30 {
+  width: 25%;
+  float: left;
+}
+
+.col-70 {
+  width: 70%;
+  float: left;
+}
+
+.repoter-info-statues {
+  color: rgb(137, 137, 137);
+}
+
+.explain-box {
+  padding: 30rpx 35rpx;
+  font-size: 30rpx;
+  color: rgb(136,136,136);
+}
+
+.photo-list-box {
+  margin-top: 30rpx;
+}
+
+.photo-list-box image {
+  width: 110rpx;
+  height: 110rpx;
+  margin-left: 10rpx;
+}
+
+.back-feed-box {
+  height: 360rpx;
+  background-color: #fff;
+  padding: 30rpx 35rpx;
+  color: rgb(136,136,136);
+  font-size: 30rpx;
+  border: 1rpx solid #ddd;
+  margin-bottom: 30rpx;
+}

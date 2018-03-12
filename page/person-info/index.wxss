@@ -1,13 +1,13 @@
 .container {
   min-height: 100%;
   overflow-x: hidden;
-  background-color: rgba(239, 239, 244, 1);
+  background-color: #efeff3;
 }
 
 .recommendView {
   display: flex;
   flex-direction: row;
-  background-color: #FFf;
+  background-color: #efeff4;
   height: 80rpx;
   line-height: 80rpx;
   font-size: 22rpx;
@@ -17,7 +17,9 @@
   border-bottom: 1px solid #ddd;
 }
 
-
+.recommend-span-blue {
+    font-weight: bold;
+}
 
 .recommend-btn {
   color: #fff;
@@ -157,15 +159,17 @@
 }
 
 .word-num {
-  font-size: 28rpx;
+   font-size: 34rpx;
 }
 
 .company {
   font-size: 26rpx;
+  color: rgb(136, 136, 136);
 }
 
 .word-describe {
   font-size: 26rpx;
+  color: rgb(136, 136, 136);
 }
 
 /*  优质雇主列表*/

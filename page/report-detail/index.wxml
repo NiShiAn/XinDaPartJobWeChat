@@ -1,0 +1,45 @@
+<view class='contain'>
+  <view class='nav-box'>
+    <view class='line-red'></view>
+    <view class='nav-title'>举报对象</view>
+  </view>
+  <view class='repoter-detail'>
+    <view class='repoter-info-box row'>
+      <view class='repoter-info-title col-30'>姓名</view>
+      <view class='repoter-info-statues col-70'>张小明</view>
+    </view>
+    <view class='repoter-info-box row'>
+      <view class='repoter-info-title col-30'>岗位类别</view>
+      <view class='repoter-info-statues col-70'>张小明</view>
+    </view>
+  </view>
+    <view class='nav-box'>
+    <view class='line-red'></view>
+    <view class='nav-title'>举报原因</view>
+  </view>
+  <view class='repoter-detail'>
+    <view class='repoter-info-box'>
+      <view class='repoter-info-statues'>姓名</view>
+    </view>
+    <view class='repoter-info-box'>
+      <view class='repoter-info-statues'>张小明</view>
+    </view>
+  </view>
+  <view class='nav-box'>
+    <view class='line-red'></view>
+    <view class='nav-title'>说明或者凭证</view>
+  </view>
+  <view class='explain-box'>
+    <text>看发多少块老费劲克拉斯蝶恋蜂狂；sad发刻录机按时抵抗力发；阿乐山大佛；卡戴珊块老费劲；拉屎的福利卡多亏了书法家拉的时间里；付款</text>
+    <view class='photo-list-box'>
+      <image src='../../image/post/contacts.png'></image>
+    </view>
+  </view>
+  <view class='nav-box'>
+    <view class='line-red'></view>
+    <view class='nav-title'>平台反馈</view>
+  </view>
+  <view class='back-feed-box'>
+    待付款拉分开了大家啊块老费劲了肯定；是否疯狂拉升的房间里侃大山就放开了都是
+  </view>
+</view>
