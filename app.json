@@ -1,7 +1,8 @@
 {
   "pages": [
-    "page/part-resume-detail/index",
     "page/post-index/index",
+    "page/full-resume-detail/index",
+    "page/part-resume-detail/index",
     "page/party-resume-list/index",
     "page/report-detail/index",
     "page/person-info/index",
