@@ -3,6 +3,7 @@
     "page/report-detail/index",
     "page/person-info/index",
     "page/post-index/index",
+    "page/resume-list/index",
     "page/post-job-category/index",
     "page/post-employer-grade/index",
     "page/company-detail/index",
@@ -55,7 +56,7 @@
         "text": "岗位"
       },
       {
-        "pagePath": "page/post-index/index",
+        "pagePath": "page/resume-list/index",
         "iconPath": "image/icon/tongxue-gray.png",
         "selectedIconPath": "image/icon/tongxue-red.png",
         "text": "人才"

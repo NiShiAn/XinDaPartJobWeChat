@@ -1,0 +1,81 @@
+<!--首页页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class="type-container">
+     <scroll-view class="type-navbar" scroll-x="true">
+         <view class="type-box"  data-id="1" bindtap='tabChangeTypeClick'>
+             <view  class="type-navbar-item {{activeTypeId == 1 ? 'type-item-on' : ''}}">
+                 兼职简历
+             </view>
+         </view>
+         <view class="type-box"  data-id="2" bindtap='tabChangeTypeClick'>
+             <view class="type-navbar-item {{activeTypeId == 2 ? 'type-item-on' : ''}}">
+                全职简历
+             </view>
+         </view>
+    </scroll-view>
+  </view>
+  <view class="sub-type-container">
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 1 ? 'sub-type-active' : ''}}" data-id="1" bindtap='tabChangeSubTypeClick'>
+      全部区域
+    </view>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 2 ? 'sub-type-active' : ''}}" data-id="2" bindtap='toPostCategory'>
+      岗位分类
+    </view>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 3 ? 'sub-type-active' : ''}}" data-id="3" bindtap='toEmployerGrade'>
+      学历层次
+    </view>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 4 ? 'sub-type-active' : ''}}" data-id="4" bindtap='toEmployerGrade'>
+      性别
+    </view>
+    <view class="sub-type-search">
+      <image src='../../image/post/post-search.png' class='sub-type-search-img'></image>
+    </view>
+  </view>
+  <view class='post-container'>
+    <view class='post-item' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
+      <view class='post-left'>
+        <view class='re-info'>
+          <image src='../../image/post/boy.png' class='min-icon-sex'></image>
+          <image src='../../image/post/girl.png' class='min-icon-sex' style='display:none'></image>
+          <image src='../../image/post/head-img.png' class='min-icon-img'></image>
+          <span class="info">
+            <span class="name">
+              张溪
+            </span>
+            <span class="desc">
+              一句话描述兼职技能
+            </span>
+          </span>
+        </view>
+        <!-- <span class="post-name">
+          托管老师
+        </span>
+        <span class="post-price">
+          100-150<span>元/天</span>
+        </span> -->
+        <span class="post-min">
+          <image src='../../image/post/dingwei.png' class='min-icon'></image>
+          <span>
+            现居市南区
+          </span>
+          <image src='../../image/post/shizhong.png' class='min-icon'></image>
+          <span>
+            昨天12：24
+          </span>
+          <image src='../../image/post/xueli.png' class='min-icon'></image>
+          <span>
+            本科
+          </span>
+          <image src='../../image/post/gangwei.png' class='min-icon'></image>
+          <span>
+            文本编辑
+          </span>
+        </span>
+      </view>
+      <view class='post-right'>
+        <view class="post-toDetail">查看</view>
+      </view>
+    </view>
+  </view>
+</view>

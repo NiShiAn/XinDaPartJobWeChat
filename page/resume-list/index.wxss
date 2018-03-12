@@ -1,0 +1,191 @@
+/**index.wxss**/
+.container {
+  background-color: #fff;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.sub-type-container{
+  white-space: nowrap;
+  height: 80.14rpx;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom:0rpx;
+  border-top: 2rpx solid rgb(218, 218, 218);
+  border-bottom: 2rpx solid rgb(218, 218, 218);
+}
+.sub-type-box{
+  width: 22%;
+  height: 80.14rpx;
+  line-height: 80.14rpx;
+  float: left;
+  color: rgb(53, 53, 53);
+  text-align: center;
+  font-size: 26rpx;
+}
+.sub-type-line{
+  border-right: 2rpx solid rgb(218, 218, 218);
+}
+.sub-type-search{
+  height: 80.14rpx;
+  line-height: 80.14rpx;
+  color: rgb(53, 53, 53);
+  text-align: center;
+  font-size: 26rpx;
+}
+.sub-type-search-img{
+  width: 40rpx;
+  height: 32.31rpx;
+  display: block;
+  margin: 25rpx auto 0 auto
+}
+.sub-type-active{
+  color: #e64340;
+}
+/*******  岗位列表样式 *****/
+.post-container{
+  width: 100%;
+  min-height: 600rpx;
+  background: #efeff4;
+}
+.post-item{
+  width: 92%;
+  height: 200rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  position: relative;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.leveal-img{
+  width: 45rpx;
+  height: 176rpx;
+  position: absolute;
+  top:-6rpx;
+  left:20rpx;
+}
+.post-left{
+  width: 80%;
+  height: 100%;
+  float: left
+}
+.post-name{
+  width:100%;
+  display: block;
+  height: 60rpx;
+  line-height: 88rpx;
+  font-size: 34rpx;
+  color: rgb(53, 53, 53);
+}
+.post-price{
+   width:100%;
+  display: block;
+  height: 70rpx;
+  line-height: 80rpx;
+  font-size: 38rpx;
+  color: rgb(230, 67, 64);
+  font-weight: bold;
+}
+.post-price span{
+  font-size: 24rpx;
+}
+.re-info{
+  width: 100%;
+  height: 100rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  position: relative;
+}
+.re-info .min-icon-img{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  float: left;
+}
+.min-icon-sex{
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  top:90rpx;
+  left:70rpx;
+}
+.info{
+  width: 340rpx;
+  height: 100rpx;
+  display: block;
+  float: left;
+  margin-left: 20rpx;
+}
+.info .name{
+  display: block;
+  width: 340rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color: rgb(0, 0, 0);
+}
+.info .desc{
+  display: block;
+  width: 340rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+   font-size: 28rpx;
+  color: rgb(136, 136, 136);
+
+}
+.post-min{
+ width:100%;
+  display: block;
+  height: 70rpx;
+  line-height:43rpx;
+  font-size: 22rpx;
+  color: rgb(136, 136, 136);
+}
+.post-min{
+  display: inline-block;
+}
+.min-icon{
+  width: 22rpx;
+  height: 22rpx;
+  margin-left: 10rpx;
+}
+.post-right{
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.up-row{
+  width: 56rpx;
+  height: 56rpx;
+  border:3rpx solid rgb(223, 223, 223);
+  border-radius: 10rpx;
+  float: left;
+  margin-top: 70rpx;  
+  text-align: center 
+}
+.up-row image{
+  width: 35rpx;
+  height: 35rpx;
+  display: inline-block;
+  margin-top: 10rpx;
+}
+.post-toDetail{
+  width: 118rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+  border:3rpx solid rgb(223, 223, 223);
+  font-size: 26rpx; 
+  margin-top: 70rpx;   
+  float: left;    
+  background: white;
+  margin-left: 16.28rpx; 
+  text-align: center                        
+}
+.gg-btn{
+  background-color: rgb(230, 67, 64);
+  border-color: rgb(230, 67, 64);
+  color: white;
+}
+.wrz-btn{
+  color: rgb(136, 136, 136);
+}
