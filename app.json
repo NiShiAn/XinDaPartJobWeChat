@@ -1,5 +1,7 @@
 {
   "pages": [
+    "page/my-party-resume-list/index",
+    "page/my-full-resume-detail/index",
     "page/company-release-full-job/index",
     "page/company-report-list/index",
     "page/recommend-job-list/index",
@@ -17,8 +19,7 @@
     "page/work-info/index",
     "page/contacts-edit/index",
     "page/contacts-list/index",
-    "page/my-party-resume-list/index",
-    "page/my-party-resume-edite/index",
+    "page/party-resume-edite/index",  
     "page/company-login/index",
     "page/full-time-detail/index",
     "page/tip-off-add/index",      
