@@ -39,20 +39,83 @@
   </view>
   <view class='resume-title-box'>
     <view class='line-shu-big'></view>
-    <view class='resume-title-name'>求职意向</view>
+    <view class='resume-title-name'>工作时间</view>
   </view>
   <view class='info-box'>
-      <view class='bg-img' style="background-image: url('../../image/person/edite.png')">
-        <view class='margin-bottom-10'>
-          <text class='margin-right-20'>清华大学</text>
+      <input class='work-time' placeholder='再次输入工作时间'></input>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>工作内容</view>
+    <view class='resume-title-desc'>（以下内容仅为模板参考）</view>
+  </view>
+  <view class='info-box'>
+      <textarea class='work-content' placeholder='工作内容填写'></textarea>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>任职要求</view>
+    <view class='resume-title-desc'>（以下内容仅为模板参考）</view>
+  </view>
+  <view class='info-box'>
+      <textarea class='work-content' placeholder='任职要求填写'></textarea>
+  </view>
+
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>工作地点</view>
+  </view>
+  <view class='work-address-list'>
+    <view class='work-address-item'>
+      <view class='row'>
+        <view class='col-80'>
+          <view>北京朝阳区小关北里于洋职业大厦</view>
         </view>
-        <view class='margin-bottom-10'>
-          <text class='margin-right-20'>本科</text>
-          <text class='margin-right-20'>大三</text>
-        </view>
-        <view class='margin-bottom-10'>
-          <text class='margin-right-20'>数字媒体技术</text>
+        <view class='col-20'>
+          <image src='../../image/company-img/selecte.png' class='choose-right right-icon'></image>
         </view>
       </view>
     </view>
+    <view class='work-address-item-gray'>
+      <view class='row'>
+        <view class='col-80'>
+          <view>北京朝阳区小关北里于洋职业大厦</view>
+        </view>
+        <view class='col-20'>
+          <image src='../../image/company-img/selecte.png' class='choose-right right-icon'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='new-add-item'>
+    <image src='../../image/person/jia.png' class='add-icon'></image>
+    <view class='new-add-titile'>新增工作地点</view>
+  </view>
+
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>招聘联系人</view>
+  </view>
+  <view class='work-address-list'>
+    <view class='work-address-item'>
+      <view class='row'>
+        <view class='col-80'>
+          <view class='phone-person-info'>
+            <image src='../../image/post/contacts.png' class='head-img'></image>
+            <view class='person-info-box'>
+              <view class='person-number'>李经理 18663678978</view>
+              <view class='person-descr'>招聘联系人已实名认证</view>
+            </view>
+          </view>
+        </view>
+        <view class='col-20'>
+          <image src='../../image/company-img/selecte.png' class='choose-right right-icon-phone'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='new-add-item'>
+    <image src='../../image/person/jia.png' class='add-icon'></image>
+    <view class='new-add-titile'>新增工作地点</view>
+  </view>
 </view>

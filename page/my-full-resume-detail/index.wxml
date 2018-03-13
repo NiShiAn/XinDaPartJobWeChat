@@ -171,13 +171,66 @@
       </view>
     </view>
   </view>
-
+<view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>证书或者荣耀</view>
+  </view>
+  <view wx:if="{{false}}">
+    <view class='info-box'>
+      <view class='bg-img' style="background-image: url('../../image/person/edite.png')">
+        <view class='margin-bottom-10'>
+          <text class='margin-right-20'>网页设计</text>
+        </view>
+        <view class='margin-bottom-10'>
+          <text class='margin-right-20'>李沧区/市北区/市南区</text>
+        </view>
+        <view class='margin-bottom-10'>
+          <text class='margin-right-20'>周三上午和周末全天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class='add-base-info'>
+      <view class='v-center'>
+        <image src='../../image/person/jia.png' class='add-icon'></image>
+        <view class='add-describe'>新增证书或者荣誉</view>
+      </view>
+    </view>
+  </view>
   <view class='resume-title-box'>
     <view class='line-shu-big'></view>
-    <view class='resume-title-name'>技能详细描述</view>
+    <view class='resume-title-name'>实践经验或工作经历</view>
+  </view>
+  <view wx:if="{{false}}">
+    <view class='info-box'>
+      <view class='bg-img' style="background-image: url('../../image/person/edite.png')">
+        <view class='margin-bottom-10'>
+          <text class='margin-right-20'>网页设计</text>
+        </view>
+        <view class='margin-bottom-10'>
+          <text class='margin-right-20'>李沧区/市北区/市南区</text>
+        </view>
+        <view class='margin-bottom-10'>
+          <text class='margin-right-20'>周三上午和周末全天</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class='add-base-info'>
+      <view class='v-center'>
+        <image src='../../image/person/jia.png' class='add-icon'></image>
+        <view class='add-describe'>新增实践经验或工作经历</view>
+      </view>
+    </view>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>个人描述</view>
   </view>
   <view class='textarea-box-big'>
-    <textarea class='textarea-input-big' placeholder='请输入您的兼职技能简介，限制300字。' maxlength='300'></textarea>
+    <textarea class='textarea-input-big' placeholder='再次输入你的简历描述，限制300字。' maxlength='300'></textarea>
   </view>
   <view class='resume-title-box'>
     <view class='line-shu-big'></view>

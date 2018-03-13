@@ -221,3 +221,101 @@
 .margin-bottom-10:last-child {
   margin-bottom: 0;
 }
+
+.resume-title-desc {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 24rpx;
+  color: rgb(136, 136, 136);
+  margin-right: 20rpx;
+}
+
+.work-time {
+  padding-bottom: 40rpx;
+}
+
+/*工作地点样式  */
+.work-address-list {
+  background-color: #fff;
+  padding-left: 30rpx;
+}
+
+.work-address-item {
+  border-bottom: 1rpx solid #ddd;
+  padding: 50rpx 0 30rpx 0;
+}
+
+.work-address-item-gray:last-child , .work-address-item:last-child {
+  border-bottom: 0rpx solid #ddd;
+  padding: 50rpx 0 30rpx 0;
+}
+
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+
+.col-80 {
+  float: left;
+  width: 80%;
+}
+
+.col-20 {
+  float: left;
+  width: 20%;
+  position: relative;
+}
+
+.right-icon {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 35rpx;
+}
+
+.right-icon-phone {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 35rpx;
+  top: 30rpx;
+}
+
+.work-address-item {
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+}
+
+.work-address-item-gray {
+  font-size: 28rpx;
+  color: rgb(136, 136, 136);
+    border-bottom: 1rpx solid #ddd;
+  padding: 50rpx 0 30rpx 0;
+}
+
+.phone-person-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.head-img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.person-info-box {
+  padding-left: 20rpx;
+  padding-top: 10rpx;
+}
+
+.person-number {
+  font-size: 34rpx;
+  color: rgb(53, 53, 53);
+}
+
+.person-descr {
+  font-size: 22rpx;
+  color: rgb(136, 136, 136);
+  margin-top: 10rpx;
+}

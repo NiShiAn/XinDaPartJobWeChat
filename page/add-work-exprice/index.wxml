@@ -1,0 +1,29 @@
+<view class="contain">
+  <view class='word-type-box'>
+    <view class='position-box'>
+      <view class='position-type'>全职名称</view>
+      <view class='position-choose'>运营总监</view>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>岗位类别</view>
+      <view class='position-choose'>运营总监</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>学历要求</view>
+      <view class='position-choose'>本科</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>学历要求</view>
+      <input class='pay-range margin-left-35'></input>
+      <view class='line-heng'></view>
+      <input class='pay-range'></input>
+      <view class='pay-unit'>元/月</view>
+    </view>
+     <view class='position-box'>
+      <view class='position-type'>实习标签</view>
+      <switch checked bindchange="switch1Change" class='position-right'/>
+    </view>
+  </view>
+</view>

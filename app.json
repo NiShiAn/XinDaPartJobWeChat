@@ -1,8 +1,10 @@
 {
   "pages": [
-    "page/my-party-resume-list/index",
-    "page/my-full-resume-detail/index",
+    
     "page/company-release-full-job/index",
+    "page/my-full-resume-detail/index", 
+    "page/my-party-resume-list/index",
+    "page/delivery-resume-list/index",
     "page/company-report-list/index",
     "page/recommend-job-list/index",
     "page/post-index/index",
