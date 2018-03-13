@@ -71,15 +71,7 @@ P('index', {
      * 2：雇主等级
      * 3：岗位分类
      * **/
-    
-    
-    
-    
-    
-    
-    
-    
-    : function (e) {
+    tabChangeSubTypeClick: function (e) {
       this.setData({
         activeSubTypeId: e.currentTarget.dataset.id
       });
