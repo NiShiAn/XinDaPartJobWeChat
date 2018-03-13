@@ -1,6 +1,7 @@
 {
   "pages": [
     "page/post-index/index",
+    "page/company-search-result/index",
     "page/post-search-result/index",
     "page/post-company-search/index",  
     "page/my-party-resume-list/index",
