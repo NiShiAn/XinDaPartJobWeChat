@@ -1,0 +1,89 @@
+.word-type-box {
+  background-color: #fff;
+  padding-left: 35rpx;
+  border:1rpx solid #ddd;
+}
+
+.contain {
+  width: 100%;
+  height: 100%;
+  background-color: #efeff3;
+}
+
+.position-box {
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+
+.position-box:last-child {
+  border-bottom: none;
+}
+
+.position-type {
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  float: left;
+}
+
+.position-choose {
+  padding-left: 35rpx;
+  font-size: 30rpx;
+  color: rgb(217, 217, 217);
+  float: left;
+}
+
+.position-box image {
+  width: 25rpx;
+  height: 30rpx;
+  float: right;
+  margin-top: 29rpx;
+  margin-right: 35rpx;
+}
+
+.work-time-box {
+  margin-top: 20rpx;
+  padding-left: 35rpx;
+  background-color: #fff;
+}
+
+.work-time-view {
+  height: 88rpx;
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  line-height: 88rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+.work-time-txtarea-box {
+  padding: 30rpx 0;
+  font-size: 30rpx;
+  color: rgb(217, 217, 217)
+}
+
+.work-time-txtarea {
+  width: 100%;
+  margin-right: 35rpx;
+  font-size: 30rpx;
+  color: rgb(217, 217, 217);
+  height: 180rpx;
+}
+
+.primary {
+  margin: 40rpx 35rpx;
+}
+
+.input-style {
+  line-height: 88rpx;
+  height: 88rpx;
+  padding-left: 40rpx;
+  width: 200rpx;
+  color: #888888;
+  font-size: 30rpx;
+}
+
+.input-placeholder-style {
+  color: #d9d9d9;
+}

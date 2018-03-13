@@ -1,0 +1,32 @@
+<view class='contain'>
+  <view class='word-type-box'>
+    <view class='position-box'>
+      <view class='position-type'>学校名称</view>
+      <input class='input-style' placeholder='点击输入' placeholder-class='input-placeholder-style'></input>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>学历/学位</view>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>专业名称</view>
+      <input class='input-style' placeholder='点击输入'></input>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>入学时间</view>
+      <picker class='position-choose' mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          点击选择{{date}}
+        </view>
+      </picker>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>毕业时间</view>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+  </view>
+  <button type="primary" bindtap="primary" class="primary">保存</button>
+</view>

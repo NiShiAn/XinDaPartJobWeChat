@@ -1,0 +1,37 @@
+<view class='contain'>
+  <view class='word-type-box'>
+    <view class='position-box'>
+      <text class='position-type' decode="{{true}}">姓名&emsp;&emsp;&emsp;</text>
+      <input class='input-style' placeholder='点击输入' placeholder-class='input-placeholder-style'></input>
+    </view>
+    <view class='position-box'>
+      <text class='position-type' decode="{{true}}">性别&emsp;&emsp;&emsp;</text>
+      <view class='sex-choose'>男</view> <image src=''></image>
+    </view>
+    <view class='position-box'>
+      <text class='position-type' decode="{{true}}">出生年月&emsp;</text>
+      <picker class='position-choose' mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          点击选择{{date}}
+        </view>
+      </picker>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>现居住辖区</view>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>户口所在地</view>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <text class='position-type' decode="{{true}}">电话号码&emsp;</text>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+  </view>
+  <button type="primary" bindtap="primary" class="primary">保存</button>
+</view>

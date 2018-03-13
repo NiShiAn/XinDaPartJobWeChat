@@ -1,231 +1,254 @@
-.contain {
-  height: 100%;
+/**index.wxss**/
+.container {
   background-color: #efeff3;
+  min-height: 100%;
+  overflow-x: hidden;
 }
-
-.finish-box {
+.top-contenter{
   background-color: #fff;
-  padding: 40rpx 35rpx 20rpx 35rpx;
-  border-bottom: 1rpx solid #ddd;
+  height: 190rpx;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
-
-.finish-name {
-  font-size: 22rpx;
-  color: rgb(9, 187, 7);
-}
-
-.finish-rate {
-  font-size: 34rpx;
-  color: rgb(9, 187, 7);
-}
-
-.prograss-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 15rpx;
-  margin-bottom: 50rpx;
-}
-
-.prograsss-icon {
-  width: 15rpx;
-  height: 15rpx;
-}
-
-.line-heng-green {
-  display: inline-block;
-  width: 70rpx;
-  height: 2rpx;
-  background-color: rgb(9, 187, 7);
-  position: relative;
-  top: 5rpx;
-}
-
-.line-heng {
-  display: inline-block;
-  width: 70rpx;
-  height: 2rpx;
-  background-color: rgb(217, 217, 217);
-  position: relative;
-  top: 5rpx;
-}
-
-.row {
+.name-line{
+  height: 146rpx;
+  line-height: 146rpx;
   width: 100%;
-  overflow: hidden;
+  position: relative;
 }
-
-.col-33 {
-  width: 33.33333%;
+.min-icon-sex{
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  top:90rpx;
+  left:70rpx;
+}
+.head-img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+  display: block;
+  float: left
+}
+.name-infos{
+  width: 400rpx;
+  height: 100rpx;
+  display: block;
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.n-name{
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  display: block;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.n-school{
+ font-size: 24rpx;
+  color: rgb(53, 53, 53);
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.n-addr{
+ font-size: 24rpx;
+  color: rgb(53, 53, 53);
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.post-name{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.post-price{
+  float: right;
+  color: rgb(230, 67, 64);
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.post-price span{
+ font-weight: normal;
+  font-size: 26rpx;
+}
+.type-item{
+  width: 20%;
+  text-align: center;
+  font-size: 26rpx;
+  color: rgb(136, 136, 136);
+  border-right: 2rpx solid rgb(218, 218, 218);
+  float: left;
+}
+.type-item:first-child{
+  text-align: left;
+}
+.type-pingbi{
+  text-align: center;
+}
+.type-pingbi image{
+  width: 40rpx;
+  height: 26rpx;
+  display: block;
+  margin: 4rpx auto 0 30rpx;
+  float: right;
+}
+/*********** 企业信息 **********/
+.company-contenter{
+  background-color: #fff;
+  height: 140rpx;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 15rpx;
+  position: relative;
+}
+.company-contenter .text{
+  font-size: 24rpx;
+  color: rgb(9, 187, 7);
+  display: block;
+  padding-top: 20rpx;
+}
+.company-contenter .text span{
+  font-size: 36rpx;
+}
+.report-contenter{
+  width: 92%;
+  height: 80.61rpx;
+  line-height: 80.61rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.report-contenter span{
+  font-size: 24rpx;
+  font-family: "MicrosoftYaHei";
+  color: rgb(0, 132, 255);
+}
+.report-contenter view{
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 6rpx;
+  background-color: rgb(0, 132, 255);
+  text-align: center;
+  float: right;
+  color: white;
+  font-size: 24rpx;
+  margin-top: 15.2rpx;
+}
+.info-contenter{
+  background-color: #fff;
+  min-height: 270rpx;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.info-title{
+  width: 100%;
+  margin-top: 30rpx;
+}
+.info-line{
+  border-radius: 4rpx;
+  background-color: rgb(9, 187, 7);
+  width: 8rpx;
+  height: 48rpx;
+  float: left;
+}
+.info-text{
+  display: block;
+  width: 500rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-left: 24rpx;
+   font-size: 34rpx;
+  font-family: "MicrosoftYaHei";
+  color: rgb(53, 53, 53);
+}
+.info-con{
+   font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  line-height: 50rpx;
+  margin-top: 15rpx;
+}
+.info-con span{
+  display: block;
+}
+.re-img-list{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 15rpx;
+}
+/********** 工作地点样式实现 *******/
+.add-name{
+   font-size: 26rpx;
+  color: rgb(136, 136, 136);
+  display: block
+}
+.add-map{
+  width: 100%;
+  height: 316rpx;
+}
+.contact-container{
+  background-color: #fff;
+  height: 200rpx;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: relative;
+}
+.contact-img{
+  width: 140rpx;
+  height: 140rpx;
+  margin-top: 30rpx;
+  float: left;
+}
+.contact-info{
+float: left;
+width: 280rpx;
+height: 100rpx;
+margin-top: 50rpx;
+margin-left: 20rpx;
+}
+.contact-info .name{
+   font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  display: block;
+}
+.contact-info .tips{
+   font-size: 24rpx;
+  font-family: "MicrosoftYaHei";
+  color: rgb(170, 170, 170);
+}
+.con-btns{
+  width: 220rpx;
+  height: 100rpx;
+  border-radius: 50px;
+  background-color: rgb(230, 67, 64);
+  margin-top: 50rpx;
   float: left;
   text-align: center;
   position: relative;
-  font-size: 26rpx;
-  color: rgb(136, 136, 136);
 }
-
-.line-shu {
-  position: absolute;
-  top: 5rpx;
-  right: 1rpx;
+.con-btn{
+  width: 41rpx;
+  height: 50rpx;
+  margin-top: 25rpx;
+  margin: 25rpx 30rpx;
+}
+.con-btns view{
   width: 2rpx;
-  height: 26rpx;
-  background-color: rgb(214, 214, 214);
+  height: 50rpx;
+  position: absolute;
+  top:24rpx;
+  left: 109rpx;
+  background: white;
 }
-
-.resume-btn-arr {
-  padding: 15rpx 35rpx;
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.btn-ground,.btn-reflash,.btn-preview,.btn-save {
-  display: inline-block;
-  width: 120rpx;
-  height: 60rpx;
-  line-height: 60rpx;
-  text-align: center;
-  color: rgb(53, 53, 53);
-  border: 1rpx solid #ddd;
-  border-radius: 8rpx;
-  font-size: 26rpx;
-}
-
-
-/*编辑列表样式  */
-.resume-title-box {
-  height: 88rpx;
-  background-color: #efeff3;
-  padding: 0 35rpx;
-  border: 1rpx solid #ddd;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.line-shu-big {
-  width: 8rpx;
-  height: 48rpx;
-  margin-top: 20rpx;
-  margin-right: 20rpx;
-  background-color: rgb(9, 187, 7);
-}
-
-.resume-title-name {
-  height: 88rpx;
-  line-height: 88rpx;
-  font-size: 34rpx;
-  color: rgb(53, 53, 53);
-  margin-right: 20rpx;
-}
-
-.resume-title-des {
-  height: 88rpx;
-  line-height: 88rpx;
-  font-size: 22rpx;
-  color: rgb(136, 136, 136);
-  position: relative;
-  top: 5rpx;
-}
-
-.upload-img-box , .add-base-info , .info-box {
-  background-color: #fff;
-}
-
-.info-box {
-  padding: 30rpx 35rpx;
-  font-size: 28rpx;
-  color: rgb(136, 136, 136);
- 
-}
-
-.bg-img {
-  background-repeat: no-repeat;
-  background-size: 28rpx 28rpx;
-  background-position: right center;
-}
-
-.margin-right-20 {
-  margin-right: 20rpx;
-}
-
-.margin-right-20:last-child {
-  margin-right: 0;
-}
-
-.margin-bottom-10 {
-  margin-bottom: 10rpx;
-}
-
-.margin-bottom-10:last-child {
-  margin-bottom: 0;
-}
-
-.upload-img-border {
-  margin: 30rpx 35rpx;
-  display: inline-block;
-  width: 116rpx;
-  height: 116rpx;
-  border: 1rpx solid #ddd;
-  text-align: center;
-}
-
-.upload-img {
-  width: 56rpx;
-  height: 56rpx;
-  margin-top: 30rpx;
-}
-
-.add-base-info {
-  padding: 74rpx 0;
-}
-
-.v-center {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-}
-
-.add-icon {
-  width: 30rpx;
-  height: 30rpx;
-  margin-right: 15rpx;
-  position: relative;
-  top: 5rpx;
-}
-
-.add-describe {
-  font-size: 30rpx;
-  color: rgb(53, 53, 53);
-}
-
-.textarea-box {
-  background-color: #fff;
-  height: 180rpx;
-}
-
-.textarea-input {
-  font-size: 30rpx;
-  color: rgb(178, 178, 178);
-  height: 180rpx;
-  padding: 30rpx 35rpx;
-}
-
-.textarea-box-big {
-  background-color: #fff;
-  height: 360rpx;
-}
-
-.textarea-input-big {
-  font-size: 30rpx;
-  color: rgb(178, 178, 178);
-  height: 360rpx;
-  padding: 30rpx 35rpx;
-}
-
-.mien-img-list {
-  background-color: #fff;
-  margin-bottom: 30rpx;
+.detail-gg{
+  width: 100%;
+  height: 200rpx;
 }
