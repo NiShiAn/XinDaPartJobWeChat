@@ -7,9 +7,9 @@
        <image src='../../image/post/boy.png' class='min-icon-sex'></image>
        <image src='../../image/post/girl.png' class='min-icon-sex' style='display:none'></image>
        <span class="name-infos">
-        <span class="n-name">张溪  1993-10</span>
-        <span class="n-school">清华大学/计算机科学与技术</span>
+        <span class="n-name">张溪</span>
         <span class="n-addr">现居青岛/山东泰安人</span>
+        <span class="is-learn">实习</span>
        </span>
     </view>
     <view class='type-line'>
@@ -23,7 +23,7 @@
         本科大二
       </view>
       <view class="type-item">
-        文本编辑
+        1993-10
       </view>
       <view class="type-pingbi">
         <image src='../../image/post/pingbi.png'></image>

@@ -38,13 +38,14 @@
   float: left;
   margin-top: 20rpx;
   margin-left: 20rpx;
+  position: relative;
 }
 .n-name{
   font-size: 30rpx;
   color: rgb(53, 53, 53);
   display: block;
-  height: 40rpx;
-  line-height: 40rpx;
+  height: 50rpx;
+  line-height: 60rpx;
 }
 .n-school{
  font-size: 24rpx;
@@ -57,8 +58,23 @@
  font-size: 24rpx;
   color: rgb(53, 53, 53);
   display: block;
+  height: 60rpx;
+  line-height: 50rpx;
+}
+.is-learn{
+  display: inline-block;
+  width: auto;
   height: 30rpx;
   line-height: 30rpx;
+  font-size: 24rpx;
+  color: white;
+  border-radius: 8rpx;
+  background-color: rgb(140, 213, 0);
+ position: absolute;
+ top:10rpx;
+ left:100rpx;
+ padding: 2rpx 10rpx;
+
 }
 .post-name{
   color: rgb(0, 0, 0);
