@@ -1,0 +1,25 @@
+<!--首页页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class='post-container'>
+    <view class='post-item' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
+      <view class='post-left'>
+        <view class='re-info'>
+          <image src='../../image/post/head-img.png' class='min-icon-img'></image>
+          <span class="info">
+            <span class="name">
+              张溪
+            </span>
+            <span class="desc">
+              一句话描述兼职技能
+            </span>
+          </span>
+        </view>
+      </view>
+      <view class='post-right'>
+        <image src='../../image/post/duihao.png' class='select-img'></image>
+      </view>
+    </view>
+  </view>
+  <button type="primary" bindtap="primary" class="primary"> 确认 </button>
+</view>

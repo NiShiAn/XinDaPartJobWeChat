@@ -52,4 +52,13 @@ P('index', {
         url: "/page/company-detail/index?postId=1"
       })
     },
+
+    /**
+     * 点击去投资简历
+     * **/
+    toDeliveryResume: function () {
+      wx.navigateTo({
+        url: "/page/delivery-resume-list/index"
+      })
+    }
 })

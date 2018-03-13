@@ -1,4 +1,4 @@
-/************付费课堂页面****************/
+/************岗位首页页面****************/
 var P = require('../../lib/wxpage')
 P('index', {
     data: {
@@ -20,7 +20,7 @@ P('index', {
         }
       })
       wx.setNavigationBarTitle({
-        title: '兼职岗位详情'
+        title: '兼职'
       })
       wx.showShareMenu({
         withShareTicket: true
@@ -34,31 +34,19 @@ P('index', {
       //this.getPayCourseList();
       wx.stopPullDownRefresh()
     },
-
     /**
-     * 点击跳转到举报页面
+     * 点击跳转到详情页面
+     * 判断是跳转到岗位详情or兼职详情
      * **/
-    toTipOffTap: function (e) {
-      wx.navigateTo({
-        url: "/page/tip-off-add/index?postId=1"
-      })
+    toDetailTap: function (e) {
+        if(this.data.activeTypeId==1){
+            wx.navigateTo({
+                url: "/page/part-time-detail/index?postId=1"
+            })
+        }else{
+            wx.navigateTo({
+                url: "/page/full-time-detail/index?postId=1"
+            })
+        }
     },
-
-    /**
-     * 点击跳转到企业详情
-     * **/
-    goCompanyDetail: function (e) {
-      wx.navigateTo({
-        url: "/page/company-detail/index?postId=1"
-      })
-    },
-
-    /**
-     * 点击去投资简历
-     * **/
-    toDeliveryResume:function(){
-      wx.navigateTo({
-        url: "/page/delivery-resume-list/index"
-      })
-    }
 })

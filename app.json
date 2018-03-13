@@ -1,5 +1,12 @@
 {
   "pages": [
+    "page/company-release-full-job/index",
+    "page/company-report-list/index",
+    "page/recommend-job-list/index",
+    "page/post-index/index",
+    "page/full-resume-detail/index",
+    "page/part-resume-detail/index",
+    "page/party-resume-list/index",
     "page/report-detail/index",
     "page/person-info/index",
     "page/resume-list/index",
@@ -17,7 +24,6 @@
     "page/tip-off-add/index",      
     "page/part-time-detail/index",
     "page/verificate-phone/index",
-    "page/post-index/index",
     "page/buy-vip/index",
     "page/sub-account-list/index"
   ],

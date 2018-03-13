@@ -138,7 +138,7 @@
         </span>
       </view>
       <view class="con-btns">
-        <image src='../../image/post/call.png' class='con-btn'></image>
+        <image src='../../image/post/call.png' class='con-btn' bindtap='toDeliveryResume'></image>
         <image src='../../image/post/phone.png' class='con-btn'></image>
         <view>
         </view>
