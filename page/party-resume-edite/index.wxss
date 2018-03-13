@@ -93,11 +93,6 @@
   font-size: 26rpx;
 }
 
-.resume-title-box {
-  height: 88rpx;
-  border: 1rpx solid #ddd;
-  padding: 0 35rpx;
-}
 
 /*编辑列表样式  */
 .resume-title-box {

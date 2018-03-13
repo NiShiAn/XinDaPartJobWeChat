@@ -1,0 +1,58 @@
+<view class="contain">
+  <view class='word-type-box'>
+    <view class='position-box'>
+      <view class='position-type'>全职名称</view>
+      <view class='position-choose'>运营总监</view>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>岗位类别</view>
+      <view class='position-choose'>运营总监</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>学历要求</view>
+      <view class='position-choose'>本科</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>学历要求</view>
+      <input class='pay-range margin-left-35'></input>
+      <view class='line-heng'></view>
+      <input class='pay-range'></input>
+      <view class='pay-unit'>元/月</view>
+    </view>
+     <view class='position-box'>
+      <view class='position-type'>实习标签</view>
+      <switch checked bindchange="switch1Change" class='position-right'/>
+    </view>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>求职意向</view>
+  </view>
+  <view class='welfare-list'>
+    <view class='welfare-item click-welfare-item'>五险</view> <view class='welfare-item'>带薪休假</view>
+  </view>
+  <view class='new-add-item'>
+    <image src='../../image/person/jia.png' class='add-icon'></image>
+    <view class='new-add-titile'>新增福利待遇</view>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>求职意向</view>
+  </view>
+  <view class='info-box'>
+      <view class='bg-img' style="background-image: url('../../image/person/edite.png')">
+        <view class='margin-bottom-10'>
+          <text class='margin-right-20'>清华大学</text>
+        </view>
+        <view class='margin-bottom-10'>
+          <text class='margin-right-20'>本科</text>
+          <text class='margin-right-20'>大三</text>
+        </view>
+        <view class='margin-bottom-10'>
+          <text class='margin-right-20'>数字媒体技术</text>
+        </view>
+      </view>
+    </view>
+</view>
