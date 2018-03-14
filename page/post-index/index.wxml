@@ -1,4 +1,6 @@
-<!--首页页面-->
+<!--模块：岗位-->
+<!--页面：兼职&&全职岗位列表-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class="type-container">
