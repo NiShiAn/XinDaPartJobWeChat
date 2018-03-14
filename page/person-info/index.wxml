@@ -73,7 +73,7 @@
   </view>
   <view class='recommendView'>
     <view class='good-employer-title'>优选雇主</view>
-    <image src='../../image/person/' class='warning-img'></image>
+    <image src='../../image/company-img/report.png' class='warning-img'></image>
   </view>
   <view class='employer-list'>
     <view class='employer-item'>
@@ -93,8 +93,8 @@
           </view>
         </view>
       </view>
-      <view class='employer-item-left'>
-          <image class='employer-go-img' src='../../image/post/post-search.png'></image>
+      <view class='employer-item-left text-align-right'>
+          <image src='../../image/company-center/row-right.png' class='go-icon'></image>
         </view>
     </view>
   </view>

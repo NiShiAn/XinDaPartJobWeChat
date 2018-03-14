@@ -175,9 +175,9 @@
 /*  优质雇主列表*/
 
 .warning-img {
-  width: 60rpx;
-  height: 60rpx;
-  margin-top: 10rpx;
+  width: 40rpx;
+  height: 45rpx;
+  margin-top: 16.5rpx;
 }
 
 .employer-item {
@@ -185,9 +185,17 @@
   height: 130rpx;
   padding-top: 30rpx;
   overflow: hidden;
-  display: flex;
-  flex-direction: row;
   border-bottom: 1px solid #ddd;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+  margin-right: 35rpx;
+  padding-top: 20rpx;
 }
 
 .employer-item:last-child {
@@ -323,19 +331,37 @@
   border-radius: 8rpx;
 }
 
+.company-left-icon {
+  width: 38rpx;
+  height: 38rpx;
+}
+
 .go-icon {
   width: 18rpx;
   height: 25rpx;
-  margin-right:35rpx;
-  margin-top:40rpx;
 }
 
-.warning-img {
-  width: 40rpx;
-  height: 45rpx;
-  margin-top: 16.5rpx;
+.auth-statues {
+  font-size: 20rpx;
+  background-color: #eb4144;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 5rpx 10rpx;
+  color: #fff;
+  border-radius: 3rpx;
+  position:relative;
+  top:-15rpx;
+  left: 12rpx;
 }
 
-.text-align-right {
-  text-align:right;
+.auth-good-descr {
+  font-size: 22rpx;
+  color: rgb(136, 136, 136);
+  position: relative;
+  top: -10rpx;
+}
+
+.icon-left {
+  padding-top: 30rpx;
+  margin-right: 25rpx;
 }

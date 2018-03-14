@@ -24,11 +24,11 @@
   <view class='word-type-box'>
     <view class='position-box'>
       <view class='position-type'>全职名称</view>
-      <input class='position-choose' placeholder='运营总监'></input>
+      <view class='position-choose'>运营总监</view>
     </view>
     <view class='position-box'>
       <view class='position-type'>全职名称</view>
-      <input class='position-choose' placeholder='运营总监'></input>
+      <view class='position-choose'>运营总监</view>
     </view>
     <view class='position-box'>
       <view class='position-type'>学历要求</view>

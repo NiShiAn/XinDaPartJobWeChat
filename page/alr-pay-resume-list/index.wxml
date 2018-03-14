@@ -1,0 +1,43 @@
+<!--企业的 已投递、已购买的岗位列表、面试邀请、岗位推荐  -->
+<view class='post-container'>
+  <view class='job-des-box' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
+    <view class='job-title-des'>
+      <view class='job-title'>一句话描述兼职技能（兼职）</view>
+      <view class='job-time'>今天10：50</view>
+    </view>
+    <view class='post-item'>
+      <view class='post-left'>
+        <view class='resume-info-box'>
+          <image src='../../image/post/contacts.png' class='head-img'></image>
+          <view class='resume-info-view'>
+            <view class='resume-name-box'>
+              <text class="post-name">托管老师</text> 
+              <text class='internship'>实习</text>
+            </view>
+            <text class='job-describe'>销售代表</text>
+          </view>
+        </view>
+      </view>
+      <view class='post-right'>
+        <view class='up-row'>
+          <image src='../../image/person/delete.png' class='min-icon'></image>
+        </view>
+        <view class="post-toDetail">查看</view>
+      </view>
+      <view class="post-min">
+          <image src='../../image/post/dingwei.png' class='min-icon'></image>
+          <span class='margin-right-20'>
+            市南区
+          </span>
+          <image src='../../image/post/shizhong.png' class='min-icon'></image>
+          <span class='margin-right-20'>
+            昨天12：24
+          </span>
+          <image src='../../image/post/huiyuan.png' class='min-icon'></image>
+          <span class='margin-right-20'>
+            季度会员
+          </span>
+        </view>
+    </view>
+  </view>
+</view>

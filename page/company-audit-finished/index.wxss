@@ -270,8 +270,3 @@
   position: relative;
   top: 25rpx;
 }
-
-.position-choose {
-  height: 88rpx;
-  line-height: 88rpx;
-}

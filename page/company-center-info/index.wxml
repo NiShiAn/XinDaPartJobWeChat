@@ -1,0 +1,228 @@
+<view class="container">
+  <!-- <view class='recommendView'>
+    <view class='recommend-span-blue'>推荐好友使用可+10积分</view>
+    <view class='recommend-btn'>推荐</view>
+  </view> -->
+  <view class='head-view' style="background-image: url('../../image/company-img/bg.jpg')">
+    <view class='head-info'>
+      <view class='head-image-box'>
+       <image class='head-image' src='{{headImg}}' mode='scaleToFill'></image>
+      </view>
+      <view class='person-info-view'>
+        <view class='person-name'>李明龙</view>
+        <view class='integral-rule'>积分规则</view>
+      </view>
+      <image class='map-img' src='../../image/company-img/customerService.png' mode='scaleToFill'></image>
+    </view>
+    <view class='party-job-type'>
+      <view class='my-party-job'>发布兼职</view>
+      <view class='my-all-job'>发布全职</view>
+    </view>   
+  </view>
+  <view class='resume-info'>
+    <view class='resume-item'>
+      <image src='../../image/company-img/alReleased.png' class='resume-image'></image>
+      <view class='resume-detail'>
+        <view>
+          <span class='word-num'>66</span>
+          <span class='company'>个</span>
+        </view>
+        <view class='word-describe'>
+          智能岗位匹配
+        </view>
+      </view>
+    </view>
+    <view class='resume-item'>
+      <image src='../../image/company-img/matching.png' class='resume-image'></image>
+      <view class='resume-detail'>
+        <view>
+          <span class='word-num'>66</span>
+          <span class='company'>个</span>
+        </view>
+        <view class='word-describe'>
+          平台推荐岗位
+        </view>
+      </view>
+      <view class='line-shu'></view>
+    </view>
+    <view class='resume-item'>
+      <image src='../../image/company-img/alrDelivery.png' class='resume-image'></image>
+      <view class='resume-detail'>
+        <view>
+          <span class='word-num'>66</span>
+          <span class='company'>个</span>
+        </view>
+        <view class='word-describe'>
+          面试邀请记录
+        </view>
+      </view>
+    </view>
+    <view class='resume-item'>
+      <image src='../../image/company-img/position.png' class='resume-image'></image>
+      <view class='resume-detail'>
+        <view>
+          <span class='word-num'>66</span>
+          <span class='company'>个</span>
+        </view>
+        <view class='word-describe'>
+          已投递的岗位
+        </view>
+        <view class='line-shu'></view>
+      </view>
+    </view>
+  </view>
+  <view class='recommendView'>
+    <view class='good-employer-title'>设置</view>
+    <image src='../../image/company-img/report.png' class='warning-img'></image>
+  </view>
+  <view class='employer-list'>
+    <view class='employer-item'>
+      <view class='float-left icon-left'>
+        <image src='../../image/company-img/EnterpriseCertification.png' class='company-left-icon'></image>
+      </view>
+      <view class='float-left auth-info-box'>
+        <view>
+          <text class='person-name'>企业认证</text>
+          <text class='auth-statues'>已认证</text>
+        </view>
+        <view>
+          <text class='auth-good-descr'>完成企业认证，则可升级雇主等级，增强企业信誉</text>
+        </view>
+      </view>
+      <view class='float-right'> 
+        <image src='../../image/company-center/row-right.png' class='go-icon'></image>
+      </view>
+    </view>
+    <view class='employer-item'>
+      <view class='float-left icon-left'>
+        <image src='../../image/company-img/manager.png' class='company-left-icon'></image>
+      </view>
+      <view class='float-left auth-info-box'>
+        <view>
+          <text class='person-name'>招聘联系人管理及认证</text>
+          <text class='auth-statues'>已认证</text>
+        </view>
+        <view>
+          <text class='auth-good-descr'>多个招聘联系人并认证，增强招聘真实性以及效率</text>
+        </view>
+      </view>
+      <view class='float-right'> 
+        <image src='../../image/company-center/row-right.png' class='go-icon'></image>
+      </view>
+    </view>
+    <view class='employer-item'>
+      <view class='float-left icon-left'>
+        <image src='../../image/company-img/go-up-class.png' class='company-left-icon'></image>
+      </view>
+      <view class='float-left auth-info-box'>
+        <view>
+          <text class='person-name'>升级会员</text>
+          <text class='auth-statues'>年度会员剩余15天</text>
+        </view>
+        <view>
+          <text class='auth-good-descr'>成为会员，提高企业招聘效率</text>
+        </view>
+      </view>
+      <view class='float-right'> 
+        <image src='../../image/company-center/row-right.png' class='go-icon'></image>
+      </view>
+    </view>
+    <view class='employer-item'>
+      <view class='float-left icon-left'>
+        <image src='../../image/company-img/subAccount.png' class='company-left-icon'></image>
+      </view>
+      <view class='float-left auth-info-box'>
+        <view>
+          <text class='person-name'>招聘子账号</text>
+          <text class='auth-statues'>1/4</text>
+        </view>
+        <view>
+          <text class='auth-good-descr'>多人招聘更轻松</text>
+        </view>
+      </view>
+      <view class='float-right'> 
+        <image src='../../image/company-center/row-right.png' class='go-icon'></image>
+      </view>
+    </view>
+    <view class='employer-item'>
+      <view class='float-left icon-left'>
+        <image src='../../image/company-img/position-work.png' class='company-left-icon'></image>
+      </view>
+      <view class='float-left auth-info-box'>
+        <view>
+          <text class='person-name'>工作多地点</text>
+        </view>
+        <view>
+          <text class='auth-good-descr'>工作多地点，一次设置，简单使用</text>
+        </view>
+      </view>
+      <view class='float-right'> 
+        <image src='../../image/company-center/row-right.png' class='go-icon'></image>
+      </view>
+    </view>
+    <view class='employer-item'>
+      <view class='float-left icon-left'>
+        <image src='../../image/company-img/TaskRelease.png' class='company-left-icon'></image>
+      </view>
+      <view class='float-left auth-info-box'>
+        <view>
+          <text class='person-name'>特工任务发布</text>
+        </view>
+        <view>
+          <text class='auth-good-descr'>特工任务发布</text>
+        </view>
+      </view>
+      <view class='float-right'> 
+        <image src='../../image/company-center/row-right.png' class='go-icon'></image>
+      </view>
+    </view>
+    <view class='employer-item'>
+      <view class='float-left icon-left'>
+        <image src='../../image/company-img/Advertisement.png' class='company-left-icon'></image>
+      </view>
+      <view class='float-left auth-info-box'>
+        <view>
+          <text class='person-name'>平台广告投放</text>
+        </view>
+        <view>
+          <text class='auth-good-descr'>平台有多处广告投放</text>
+        </view>
+      </view>
+      <view class='float-right'> 
+        <image src='../../image/company-center/row-right.png' class='go-icon'></image>
+      </view>
+    </view>
+    <view class='employer-item'>
+      <view class='float-left icon-left'>
+        <image src='../../image/company-img/invoice-info.png' class='company-left-icon'></image>
+      </view>
+      <view class='float-left auth-info-box'>
+        <view>
+          <text class='person-name'>发票信息</text>
+        </view>
+        <view>
+          <text class='auth-good-descr'>消费开发票</text>
+        </view>
+      </view>
+      <view class='float-right'> 
+        <image src='../../image/company-center/row-right.png' class='go-icon'></image>
+      </view>
+    </view>
+  </view>
+  <view class='program-list'>
+    <view class='program-item'>
+      <view class='col-20 img-center'>
+        <image src='../../image/post/contacts.png' class='program-img'></image>
+      </view>
+      <view class='col-60'>
+        <view class='program-title'>新大课堂</view>
+        <view class='program-describe'>副标题描述</view>
+      </view>
+      <view class='col-20'>
+        <view class='concer-btn'>关注</view>
+      </view>
+    </view>
+  </view>
+  <view class='change-city'>切换城市</view>
+  <view class='change-city'>退出账号</view>
+</view>
