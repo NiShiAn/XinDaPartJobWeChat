@@ -1,5 +1,6 @@
 {
   "pages": [
+    "page/integral-detail/index",
     "page/post-index/index",
     "page/integral-employer-grade/index",
     "page/company-audit-statues/index",

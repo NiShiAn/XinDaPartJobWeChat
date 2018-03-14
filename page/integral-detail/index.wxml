@@ -1,0 +1,31 @@
+<!--首页页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class="title-block">
+    <span class="name"> 
+      总积分
+    </span>
+    <span class="value">
+      4117
+    </span>
+  </view>
+  <view class='post-container'>
+    <view class='post-item' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
+      <view class='post-left'>
+        <view class='re-info'>
+          <span class="info">
+            <span class="name">
+              签到
+            </span>
+            <span class="desc">
+              2018-03-11 09：39
+            </span>
+          </span>
+        </view>
+      </view>
+      <view class='post-right'>
+        +5
+      </view>
+    </view>
+  </view>
+</view>
