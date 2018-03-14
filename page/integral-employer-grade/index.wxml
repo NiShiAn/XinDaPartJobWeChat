@@ -1,0 +1,186 @@
+<!--首页页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class='company-contenter'>
+    <image src='../../image/post/company.png' class='company-img'></image>
+    <view class='company-info'>
+      <span class="company-name">
+        北京天之遥网络科技
+      </span>
+      <span class="company-leveal">
+        <image src='../../image/post/leveal-icon.png' class='leveal-icon'></image>
+        <span>
+          一级雇主
+        </span>
+      </span>
+    </view>
+    <view class="total-integral">
+      <span class="ig-val">
+        4116
+      </span>
+      <span class="ig-text">
+        总积分>
+      </span>
+    </view>
+  </view>
+  <view class='ig-container'>
+    <view class='ig-left'>
+      <view class='ig-title'>
+          二级雇主可享受
+      </view>
+      <view class='ig-list' >
+        <view class='ig-item'>
+          <image src='../../image/company-center/ig-icon1.png' class='ig-icon'></image>
+          <span class="ig-item-text">
+          优秀职位信息展示在微信公众号每日推荐 
+          </span>
+        </view>
+        <view class='ig-item'>
+          <image src='../../image/company-center/ig-icon2.png' class='ig-icon'></image>
+          <span class="ig-item-text">
+          相关信息享受优先审核 
+          </span>
+        </view>
+        <view class='ig-item' style='border-bottom:0'>
+          <image src='../../image/company-center/ig-icon3.png' class='ig-icon'></image>
+          <span class="ig-item-text">
+          雇主等级首页展示 
+          </span>
+        </view>
+      </view>
+      <view class='ig-title'>
+          晋升详情
+      </view>
+      <view class='ig-list' >
+        <view class='ig-item2'>
+          <image src='../../image/company-center/ig-icon4.png' class='ig-icon2'></image>
+          <view class='ig-spans'>
+            <span class="ig-item-text2">
+            企业已认证 
+            </span>
+            <span class="ig-item-subtext2">
+            获得评级资格 
+            </span>
+          </view>
+        </view>
+        <view class='ig-item2'>
+          <image src='../../image/company-center/ig-icon4.png' class='ig-icon2'></image>
+          <view class='ig-spans'>
+            <span class="ig-item-text2">
+            企业月度会员，可稳定创造就业岗位 
+            </span>
+            <span class="ig-item-subtext2">
+            +980积分  
+            </span>
+          </view>
+        </view>
+        <view class='ig-item2'>
+          <image src='../../image/company-center/ig-icon4.png' class='ig-icon2'></image>
+          <view class='ig-spans'>
+            <span class="ig-item-text2">
+            企业0次举报 
+            </span>
+            <span class="ig-item-subtext2">
+            不降级（举报核实扣除至下一等级起始积分）  
+            </span>
+          </view>
+        </view>
+        <view class='ig-item2'>
+          <image src='../../image/company-center/ig-icon4.png' class='ig-icon2'></image>
+          <view class='ig-spans'>
+            <span class="ig-item-text2">
+            历史总计职位25个，并高于平均20% 
+            </span>
+            <span class="ig-item-subtext2">
+            +250积分   +200积分  
+            </span>
+          </view>
+        </view>
+        <view class='ig-item2'>
+          <image src='../../image/company-center/ig-icon4.png' class='ig-icon2'></image>
+          <view class='ig-spans'>
+            <span class="ig-item-text2">
+            历史总计薪酬高于平均27% 
+            </span>
+            <span class="ig-item-subtext2">
+            +270积分  
+            </span>
+          </view>
+        </view>
+        <view class='ig-item2'>
+          <image src='../../image/company-center/ig-icon4.png' class='ig-icon2'></image>
+          <view class='ig-spans'>
+            <span class="ig-item-text2">
+            推荐5家企业入驻，间接增加就业机会 
+            </span>
+            <span class="ig-item-subtext2">
+            +500积分  
+            </span>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='ig-right'>
+      <view class='ig-right-block'>
+        <span class="name">
+          未认证雇主
+        </span>
+        <span class="name-value">
+         
+        </span>
+      </view>
+      <view class='ig-right-block'>
+        <span class="name">
+          普通雇主
+        </span>
+        <span class="name-value">
+
+        </span>
+      </view>
+      <view class='ig-right-block'>
+        <span class="name">
+          一级雇主
+        </span>
+        <span class="name-value">
+          >=500积分
+        </span>
+      </view>
+      <view class='ig-right-block'>
+        <span class="name">
+          二级雇主
+        </span>
+        <span class="name-value">
+          >=2500积分
+        </span>
+        <view class="select-block">
+          <image src='../../image/company-center/select-icon-ig.png' class='select-icon-ig'></image>
+        </view>
+      </view>
+      <view class='ig-right-block'>
+        <span class="name">
+          三级雇主
+        </span>
+        <span class="name-value">
+          >=5000积分
+        </span>
+      </view>
+      <view class='ig-right-block'>
+        <span class="name">
+          四级雇主
+        </span>
+        <span class="name-value">
+          >=7500积分
+        </span>
+      </view>
+      <view class='ig-right-block'>
+        <span class="name">
+          五级雇主
+        </span>
+        <span class="name-value">
+          >=10000积分
+        </span>
+        
+      </view>
+    </view>
+  </view>
+</view>

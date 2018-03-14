@@ -66,11 +66,11 @@ P('index', {
     toDetailTap: function (e) {
         if(this.data.activeTypeId==1){
             wx.navigateTo({
-                url: "/page/part-time-detail/index?postId=1"
+              url: "/page/part-resume-detail/index?postId=1"
             })
         }else{
             wx.navigateTo({
-                url: "/page/full-time-detail/index?postId=1"
+              url: "/page/full-resume-detail/index?postId=1"
             })
         }
     },

@@ -1,0 +1,108 @@
+/**index.wxss**/
+.container {
+  background-color: #efeff3;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.info-contenter{
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 30rpx;
+}
+.info-title{
+  width: 100%;
+  margin-top: 30rpx;
+  position: relative
+}
+.info-line{
+  border-radius: 4rpx;
+  background-color: rgb(230, 67, 64);
+  width: 8rpx;
+  height: 48rpx;
+  float: left;
+}
+.info-text{
+  display: block;
+  width: 500rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-left: 24rpx;
+   font-size: 34rpx;
+  font-family: "MicrosoftYaHei";
+  color: rgb(53, 53, 53);
+}
+.info-tip{
+  color: #999999;
+  font-size: 26rpx;
+  position: absolute;
+  left: 170rpx;
+  top:9rpx;
+}
+.info-con{
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  line-height: 250rpx;
+  margin-top: 15rpx;
+  background: #fff;
+}
+.info-con span{
+  display: block;
+}
+.section{
+  width: 92%;
+  height: 86rpx;
+  margin: 0 auto;
+}
+.input-text{
+  display: block;
+  float: left;
+  width: 156rpx;
+  height: 86rpx;
+  line-height: 86rpx;
+  font-size: 34rpx;
+  color: rgb(53, 53, 53);
+}
+.input{
+  display: block;
+  float: left;
+  width: 530rpx;
+  height: 86rpx;
+  line-height: 86rpx;
+}
+.checkbox-group{
+  
+}
+.checkbox{
+  display: block;
+  width: 92%;
+  height: 86rpx;
+  margin: 0 auto
+}
+.section-area{
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 20rpx;
+   font-size: 30rpx;
+  color: rgb(178, 178, 178);
+}
+.section-area textarea{
+  height:248rpx;
+}
+.add-photo{
+  width: 114rpx;
+  height: 114rpx;
+  border: 2rpx solid rgb(204, 204, 204);
+}
+.add-photo image{
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 100rpx;
+  margin: 17rpx auto;
+}
+.primary{
+  width: 92%;
+  margin: 30rpx auto;
+  font-size: 36rpx;
+}

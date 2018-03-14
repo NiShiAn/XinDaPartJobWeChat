@@ -1,9 +1,14 @@
 {
   "pages": [
+    "page/post-index/index",
+    "page/integral-employer-grade/index",
     "page/company-audit-statues/index",
     "page/company-audit-edite/index",
     "page/company-release-full-job/index",
-    "page/post-index/index",
+    "page/add-resume-report/index",
+    "page/delivery-post-list/index",
+    "page/resume-search-result/index",
+    "page/resume-search/index",
     "page/company-search-result/index",
     "page/full-time-detail/index",
     "page/post-search-result/index",

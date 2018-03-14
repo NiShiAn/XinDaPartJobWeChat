@@ -1,0 +1,88 @@
+<!--首页页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class="info-item">
+    <view class='info-contenter'>
+      <view class='info-title'>
+        <view class="info-line">
+        </view>
+        <span class="info-text">
+          举报对象
+        </span>
+        <span class="info-tip">(不会透露举报人的信息，请放心举报)</span>
+        </view>
+      </view>
+      <view class='info-con'>
+        <view class="section">
+          <span class="input-text">姓名</span>
+          <input placeholder="张小萌" auto-focus class="input"/>
+        </view>
+        <view class="section">
+          <span class="input-text">兼职技能</span>
+          <input placeholder="一句话描述兼职技能" auto-focus class="input"/>
+        </view>
+      </view>
+    </view>
+  <view class="info-item">
+    <view class='info-contenter'>
+      <view class='info-title'>
+        <view class="info-line">
+        </view>
+        <span class="info-text">
+          举报电话
+        </span>
+        </view>
+      </view>
+      <view class='info-con' style='height:900rpx'>
+        <checkbox-group bindchange="checkboxChange" class="checkbox-group">
+          <label class="checkbox">
+            <checkbox value="电话虚假（空号、无人接听）" checked="1"/>电话虚假（空号、无人接听）
+          </label>
+           <label class="checkbox">
+            <checkbox value=" 非法收费（培训费、介绍费等）" checked="2"/>非法收费（培训费、介绍费等）
+          </label>
+           <label class="checkbox">
+            <checkbox value="职位虚假（薪资、工作地点等）" checked="3"/>职位虚假（薪资、工作地点等）
+          </label>
+          <label class="checkbox">
+            <checkbox value="职位虚假（薪资、工作地点等）" checked="3"/>职位虚假（薪资、工作地点等）
+          </label>
+          <label class="checkbox">
+            <checkbox value="涉黄违法" checked="3"/>涉黄违法
+          </label>
+          <label class="checkbox">
+            <checkbox value="招聘刷单刷钻人员 " checked="3"/>招聘刷单刷钻人员 
+          </label>
+          <label class="checkbox">
+            <checkbox value="职业冒充直招" checked="3"/>职业冒充直招 
+          </label>
+          <label class="checkbox">
+            <checkbox value="招聘培训信息（非直招）" checked="3"/>招聘培训信息（非直招） 
+          </label>
+          <label class="checkbox">
+            <checkbox value="其他" checked="3"/>其他 
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  <view class="info-item">
+    <view class='info-contenter'>
+      <view class='info-title'>
+        <view class="info-line">
+        </view>
+        <span class="info-text">
+          说明或凭证
+        </span>
+        </view>
+      </view>
+      <view class='info-con' style='height:400rpx'>
+        <view class="section-area">
+          <textarea bindblur="bindTextAreaBlur"  placeholder="自动变高" />
+          <view class="add-photo">
+            <image src='../../image/post/add.png'></image>
+          </view>
+        </view>
+      </view>
+      <button type="primary" bindtap="primary" class="primary"> 提交 </button>
+  </view>
+</view>

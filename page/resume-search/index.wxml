@@ -1,0 +1,38 @@
+<!--岗位列表-选择岗位分类-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class="search-container">
+    <image src='../../image/post/search.png' class='search-img'></image>
+    <input  maxlength="10" placeholder="最大输入长度10" class="search-input" />
+    <span class="cancle">取消</span>
+  </view>
+  <view class="title-line">
+    <span>历史搜索</span>
+    <image src='../../image/post/delete.png' class='delete-img'></image>
+  </view>
+  <view class="em-list">
+    <span class="em-item em-item-select">全部</span>
+    <span class="em-item">财务总监</span>
+    <span class="em-item">会计</span>
+    <span class="em-item">工程师</span>
+    <span class="em-item">传单</span>
+    <span class="em-item">岗位</span>
+    <span class="em-item">财务总监</span>
+    <span class="em-item">会计</span>
+    <span class="em-item">工程师</span>
+  </view>
+  <view class="title-line">
+    <span>热门搜索</span>
+  </view>
+  <view class="em-list">
+    <span class="em-item em-item-select">全部</span>
+    <span class="em-item">财务总监</span>
+    <span class="em-item">会计</span>
+    <span class="em-item">工程师</span>
+    <span class="em-item">传单</span>
+    <span class="em-item">岗位</span>
+    <span class="em-item">财务总监</span>
+    <span class="em-item">会计</span>
+    <span class="em-item">工程师</span>
+  </view>
+</view>

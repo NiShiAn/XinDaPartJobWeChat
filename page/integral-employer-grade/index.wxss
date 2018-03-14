@@ -1,0 +1,209 @@
+/**index.wxss**/
+.container {
+  background-color: #efeff3;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+/*********** 企业信息 **********/
+.company-contenter{
+  background-color: #fff;
+  height: 200rpx;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: relative;
+}
+.company-img{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-top: 60rpx;
+  float: left;
+}
+.company-info{
+  width: 460rpx;
+  height: 128rpx;
+  margin-top: 36rpx;
+  float: left;
+  padding-left: 20rpx;
+  
+}
+.company-name{
+  font-size: 34rpx;
+  color: rgb(0, 0, 0);
+  display: block;
+  height: 60rpx;
+  line-height: 84rpx;
+}
+.company-leveal{
+ display: block;
+ height: 60rpx;
+ line-height: 60rpx;
+}
+.leveal-icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+.company-leveal span{
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+}
+.com-detail-btn{
+  display: block;
+  content: " ";
+  height: 20rpx;
+  width: 20rpx;
+  border-width: 4rpx 4rpx 0 0;
+  border-color: #C8C8CD;
+  border-style: solid;
+  transform: rotate(45deg);
+  position: absolute;
+  top:87rpx;
+  right:38rpx;
+}
+.total-integral{
+  width: 166rpx;
+  height: 82rpx;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top:50rpx;
+}
+.ig-val{
+  font-size: 50rpx;
+  color: rgb(230, 67, 64);
+  font-weight: bold;
+  display: block;
+}
+.ig-text{
+  font-size: 22rpx;
+  color: rgb(230, 67, 64);
+  display: block;
+}
+.ig-container{
+  width: 100%;
+  min-height: 750rpx;
+  background: #efeff4;
+}
+.ig-left{
+  width: 570rpx;
+  min-height: 750rpx;
+  float: left;
+  border-right: 2rpx solid rgb(217, 217, 217);
+}
+.ig-title{
+  width: 94%;
+  height: 78rpx;
+  line-height: 78rpx;
+  background-color: #efeff3;
+  border-top: 2rpx solid rgb(217, 217, 217);
+  border-bottom: 2rpx solid rgb(217, 217, 217);
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  padding-left: 6%;
+}
+.ig-list{
+  width: 100%;
+  background: white
+}
+.ig-item{
+  width: 100%;
+  height: 60rpx;
+  border-bottom: 2rpx solid rgb(217, 217, 217);
+  clear: both;
+}
+.ig-icon{
+  width: 28rpx;
+  height: 28rpx;
+  display: block;
+  float: left;
+  margin-left: 6%;
+  margin-top: 16rpx;
+}
+.ig-item-text{
+  font-size: 24rpx;
+  color: rgb(53, 53, 53);
+  display: block;
+  float: left;
+  margin-left: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.ig-item2{
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 2rpx solid rgb(217, 217, 217);
+  clear: both;
+}
+.ig-icon2{
+  width: 28rpx;
+  height: 28rpx;
+  display: block;
+  float: left;
+  margin-left: 6%;
+  margin-top: 36rpx;
+}
+.ig-spans{
+  width: 500rpx;
+  height: 100%;
+  float: left;
+}
+.ig-item-text2{
+  font-size: 24rpx;
+  color: rgb(53, 53, 53);
+  display: block;
+  margin-left: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.ig-item-subtext2{
+  font-size: 22rpx;
+  color: #999;
+  display: block;
+  margin-left: 20rpx;
+}
+
+
+/***** 右边部分样式 *******/
+.ig-right{
+  width: 174rpx;
+  min-height: 750rpx;
+  float: left;
+  background: #fff;
+}
+.ig-right-block{
+  width: 100%;
+  height: 148rpx;
+  border-top: 2rpx solid rgb(217, 217, 217);
+  position: relative;
+}
+.name{
+  display: block;
+  text-align: right;
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  height: 74rpx;
+  line-height: 100rpx;
+}
+.name-value{
+  display: block;
+  text-align: right;
+  font-size: 24rpx;
+  color: #999;
+  height: 74rpx;
+  line-height: 60rpx;
+}
+.select-block{
+  width: 30rpx;
+  border-left: 2rpx solid red;
+  height: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+}
+.select-icon-ig{
+  width: 20rpx;
+  height: 30rpx;
+  display: block;
+  margin-top:60rpx;
+}
