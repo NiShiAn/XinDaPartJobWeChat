@@ -118,4 +118,22 @@
     <image src='../../image/person/jia.png' class='add-icon'></image>
     <view class='new-add-titile'>新增工作地点</view>
   </view>
+    <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>会员服务</view>
+  </view>
+  <view class='word-type-box'>
+     <view class='position-box'>
+      <view class='position-type'>智能刷新</view>
+      <switch checked bindchange="switch1Change" class='position-right'/>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>预约刷新</view>
+      <image src='../../image/company-center/row-right.png'></image>
+      <view class='no-order'>未预约</view>
+    </view>
+  </view>
+  <button type="primary" bindtap="primary" class="primary">预览</button>
+  <button type="default" bindtap="primary" class="default">保存</button>
+  <button type="warn" bindtap="primary" class="warn">发布</button>
 </view>

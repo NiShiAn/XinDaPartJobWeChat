@@ -1,0 +1,272 @@
+/*头部进度调样式  */
+.contain {
+  height: 100%;
+  background-color: #efeff3;
+}
+
+.finish-box {
+  background-color: #fff;
+  padding: 40rpx 35rpx 20rpx 35rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.finish-name {
+  font-size: 22rpx;
+  color: #ee4d52;
+}
+
+.finish-rate {
+  font-size: 34rpx;
+  color: #ee4d52;
+  font-weight: bold;
+}
+
+.prograss-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15rpx;
+  margin-bottom: 50rpx;
+}
+
+.prograsss-icon {
+  width: 15rpx;
+  height: 15rpx;
+}
+
+.line-heng-green {
+  display: inline-block;
+  width: 70rpx;
+  height: 2rpx;
+  background-color: rgb(9, 187, 7);
+  position: relative;
+  top: 5rpx;
+}
+
+.line-heng {
+  display: inline-block;
+  width: 70rpx;
+  height: 2rpx;
+  background-color: rgb(217, 217, 217);
+  position: relative;
+  top: 5rpx;
+}
+
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+
+.col-33 {
+  width: 33.33333%;
+  float: left;
+  text-align: center;
+  position: relative;
+  font-size: 26rpx;
+  color: rgb(136, 136, 136);
+}
+
+.line-shu {
+  position: absolute;
+  top: 5rpx;
+  right: 1rpx;
+  width: 2rpx;
+  height: 26rpx;
+  background-color: rgb(214, 214, 214);
+}
+
+.save-btn {
+  font-size: 34rpx;
+  color: rgb(53, 53, 53);
+  border: 1rpx solid #ddd;
+  padding: 5rpx 20rpx;
+  position: relative;
+  top: -20rpx;
+  border-radius: 8rpx;
+}
+
+/* 信息显示样式 */
+.word-type-box {
+  background-color: #fff;
+  padding-left: 35rpx;
+  border:1rpx solid #ddd;
+}
+
+.logo-type-box {
+  background-color: #fff;
+  padding: 30rpx 35rpx;
+  border:1rpx solid #ddd;
+}
+
+.position-box {
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+
+.position-box:last-child {
+  border-bottom: none;
+}
+
+.position-type {
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  float: left;
+}
+
+.position-choose {
+  padding-left: 35rpx;
+  font-size: 30rpx;
+  color: rgb(217, 217, 217);
+  float: left;
+}
+
+.position-box image {
+  width: 25rpx;
+  height: 30rpx;
+  float: right;
+  margin-top: 29rpx;
+  margin-right: 35rpx;
+}
+
+.work-time-box {
+  margin-top: 20rpx;
+  padding-left: 35rpx;
+  background-color: #fff;
+}
+
+.work-time-view {
+  height: 88rpx;
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  line-height: 88rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+.work-time-txtarea-box {
+  padding: 30rpx 0;
+  font-size: 30rpx;
+  color: rgb(217, 217, 217)
+}
+
+.work-time-txtarea {
+  width: 100%;
+  margin-right: 35rpx;
+  font-size: 30rpx;
+  color: rgb(217, 217, 217);
+  height: 180rpx;
+}
+
+.primary {
+  margin: 40rpx 35rpx;
+}
+
+.margin-left-35 {
+  margin-left: 35rpx;
+}
+
+.pay-range {
+  background-color: #efeff3;
+  color: rgb(136, 136, 136);
+  width: 190rpx;
+  height: 60rpx;
+  text-align: center;
+  float: left;
+  margin-top: 15rpx;
+}
+
+.pay-range:last-child {
+  margin-left: 0rpx;
+}
+
+
+.pay-unit {
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  color: rgb(136, 136, 136);
+  float: left;
+}
+
+.position-right {
+  float: right;
+  margin-right: 20rpx;
+}
+
+/*标题样式  */
+.resume-title-box {
+  height: 88rpx;
+  background-color: #efeff3;
+  padding: 0 35rpx;
+  border: 1rpx solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.resume-around-box {
+  background-color: #efeff3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.resume-title-around {
+  height: 88rpx;
+  background-color: #efeff3;
+  padding: 0 35rpx;
+  border: 1rpx solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.line-shu-big {
+  width: 8rpx;
+  height: 48rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  background-color: rgb(9, 187, 7);
+}
+
+.resume-title-name {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 34rpx;
+  color: rgb(53, 53, 53);
+  margin-right: 20rpx;
+}
+
+.company-simple-descr {
+  height: 350rpx;
+  padding: 30rpx 0;
+  font-size: 28rpx;
+}
+
+.resume-title-desc {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 24rpx;
+  color: rgb(136, 136, 136);
+  margin-right: 20rpx;
+}
+
+.logo-img {
+  height: 116rpx;
+  width: 116rpx;
+  margin-right: 20rpx;
+}
+
+.company-auth-img {
+  width: 115rpx;
+  height: 160rpx;
+}
+
+.report-icon {
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  position: relative;
+  top: 25rpx;
+}

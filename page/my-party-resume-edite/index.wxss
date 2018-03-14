@@ -17,6 +17,7 @@
 .finish-rate {
   font-size: 34rpx;
   color: rgb(9, 187, 7);
+  font-weight: bold;
 }
 
 .prograss-box {

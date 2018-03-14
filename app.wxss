@@ -171,3 +171,10 @@ page {
   border-bottom: 4rpx solid rgb(230, 67, 64);
 }
 
+.warn , .default {
+  margin: 40rpx 35rpx;
+}
+
+.default {
+  background-color: #fff !important;
+}

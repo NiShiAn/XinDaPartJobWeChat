@@ -319,3 +319,10 @@
   color: rgb(136, 136, 136);
   margin-top: 10rpx;
 }
+
+.no-order {
+  font-size: 30rpx;
+  color: rgb(217, 217, 217);
+  float: right;
+  margin-right: 20rpx;
+}

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "page/company-audit-edite/index",
+    "page/company-release-full-job/index",
     "page/post-index/index",
     "page/company-search-result/index",
     "page/full-time-detail/index",
@@ -7,9 +9,6 @@
     "page/post-company-search/index",  
     "page/my-party-resume-list/index",
     "page/my-full-resume-detail/index",
-    "page/company-release-full-job/index",
-    "page/my-full-resume-detail/index",
-    "page/my-party-resume-list/index",
     "page/delivery-resume-list/index",
     "page/company-report-list/index",
     "page/recommend-job-list/index",
@@ -28,7 +27,6 @@
     "page/contacts-list/index",
     "page/party-resume-edite/index",
     "page/company-login/index",
-    
     "page/tip-off-add/index",      
     "page/part-time-detail/index",
     "page/verificate-phone/index",

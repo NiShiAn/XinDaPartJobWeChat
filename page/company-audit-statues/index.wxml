@@ -1,0 +1,77 @@
+<view class='contain'>
+  <view class='audit-statues-box'>
+    <image src='../../image/company-img/warning.png'></image>
+    <view class='audit-statues-title'>审核未通过</view>
+    <view class='audit-error-title'>请上传高清营业执照照片，否则无法识别</view>
+  </view>
+  <view class='finish-box'>
+    <view class='finish-title'>
+      <text class='finish-name'>企业信息完成度：</text>
+      <text class='finish-rate'>35%</text>
+    </view>
+    <view class='prograss-box'>
+      <image src='../../image/person/guzhu.png' class='prograsss-icon'></image>
+      <view class='line-heng-green'></view>
+      <image src='../../image/person/guzhu.png' class='prograsss-icon'></image>
+      <view class='line-heng'></view>
+      <image src='../../image/person/guzhu.png' class='prograsss-icon'></image>
+      <view class='line-heng'></view>
+      <image src='../../image/person/guzhu.png' class='prograsss-icon'></image>
+      <view class='line-heng'></view>
+      <image src='../../image/person/guzhu.png' class='prograsss-icon'></image>
+      <view class='save-btn'>保存</view>
+    </view>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>基本信息</view>
+  </view>
+  <view class='word-type-box'>
+    <view class='position-box'>
+      <view class='position-type'>全职名称</view>
+      <view class='position-choose'>运营总监</view>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>全职名称</view>
+      <view class='position-choose'>运营总监</view>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>学历要求</view>
+      <view class='position-choose'>本科</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>企业简介</view>
+    <view class='resume-title-desc'>（上传企业LOGO增加企业信誉度）</view>
+  </view>
+  <view class='word-type-box'>
+    <textarea class='company-simple-descr' placeholder='企业简介描述'></textarea>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>企业LOGO</view>
+  </view>
+  <view class='logo-type-box'>
+    <image src='../../image/post/contacts.png' class='logo-img'></image>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>实景图片</view>
+  </view>
+  <view class='logo-type-box'>
+    <image src='../../image/post/contacts.png' class='logo-img'></image>
+    <image src='../../image/post/contacts.png' class='logo-img'></image>
+  </view>
+  <view class='resume-title-around'>
+    <view class='resume-around-box'>
+      <view class='line-shu-big'></view>
+      <view class='resume-title-name'>企业认证</view>
+    </view>
+    <image src='../../image/company-img/report.png' class='report-icon'></image> 
+  </view>
+  <view class='logo-type-box'>
+    <image src='../../image/post/contacts.png' class='company-auth-img'></image>
+  </view>
+</view>
