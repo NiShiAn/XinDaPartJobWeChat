@@ -1,5 +1,6 @@
 {
   "pages": [
+    "page/company-audit-statues/index",
     "page/company-audit-edite/index",
     "page/company-release-full-job/index",
     "page/post-index/index",

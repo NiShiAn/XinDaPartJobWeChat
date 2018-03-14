@@ -1,6 +1,6 @@
 <view class='contain'>
   <view class='audit-statues-box'>
-    <image src='../../image/company-img/warning.png'></image>
+    <image src='../../image/company-img/warning.png' class='audit-icon'></image>
     <view class='audit-statues-title'>审核未通过</view>
     <view class='audit-error-title'>请上传高清营业执照照片，否则无法识别</view>
   </view>

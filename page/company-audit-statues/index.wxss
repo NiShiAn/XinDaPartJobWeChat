@@ -1,3 +1,30 @@
+.audit-statues-box {
+  height: 250rpx;
+  background-color: rgb(253, 223, 222);
+  border:1rpx solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+}
+
+.audit-icon {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+}
+
+.audit-statues-title {
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  margin-top: 20rpx;
+}
+
+.audit-error-title {
+  font-size: 22rpx;
+  color: rgb(136, 136, 136);
+  margin-top: 20rpx;
+}
 /*头部进度调样式  */
 .contain {
   height: 100%;
