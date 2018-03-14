@@ -1,0 +1,50 @@
+/**index.wxss**/
+.container {
+  background-color: #efeff3;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.contracts-list{
+  width: 100%;
+  height: auto;
+}
+.sub-item{
+  width: 92%;
+  height:90rpx;
+  line-height: 90rpx;
+  background: white;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-bottom: 14rpx;
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+}
+.body-view{
+  float: right;
+}
+.title{
+  width: 92%;
+  height:90rpx;
+  line-height: 90rpx;
+  background: #efeff3;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-bottom: 14rpx;
+   font-size: 34rpx;
+  color: rgb(53, 53, 53);
+}
+.layout{
+  width: 92%;
+  height:90rpx;
+  line-height: 90rpx;
+  background: white;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-bottom: 30rpx;
+  margin-bottom: 14rpx;
+   font-size: 34rpx;
+  color: rgb(53, 53, 53);
+  text-align: center;
+  border-top: 2rpx solid rgb(217,217, 217);
+  border-bottom: 2rpx solid rgb(217,217, 217)
+}

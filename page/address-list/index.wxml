@@ -1,0 +1,19 @@
+<!--联系人列表页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class='contracts-list'>
+    <view class='contracts-item' wx:for="{{[1, 2, 3]}}" wx:for-item="i">
+      <view class='info'>
+        <span class="name"><span>山东省</span><span>青岛市</span><span>李沧区</span></span>
+        <span class="tip">书院路1号苏宁大厦</span>
+      </view>
+      <view class="op">
+        <image src='../../image/post/delete.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class="add-contracts">
+    <span class="icon">+</span>
+    <span class="text">新增工作地点</span>
+  </view>
+</view>

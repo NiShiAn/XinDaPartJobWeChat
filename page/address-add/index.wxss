@@ -1,0 +1,58 @@
+/**index.wxss**/
+.container {
+  background-color: #fff;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.search-container{
+  height: 74rpx;
+  width: 100%;
+  background: #efeff4;
+  padding-top:14rpx;
+  position: relative;
+}
+.search-img{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top:28rpx;
+  left: 32rpx;
+}
+.search-input{
+  width: 86%;
+  padding-left: 8%;
+  height: 60rpx;
+  background: white;
+  margin-left: 3%;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  color: black;
+}
+.address{
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 30rpx;
+}
+.name{
+  font-size: 34rpx;
+  color: rgb(53, 53, 53);
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+}
+.name span{
+  display: inline-block;
+  margin-right: 14rpx;
+}
+.tip{
+  font-size: 26rpx;
+  color: rgb(136, 136, 136);
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+}
+.primary{
+  width: 92%;
+  margin: 30rpx auto;
+}

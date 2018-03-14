@@ -1,0 +1,97 @@
+/**index.wxss**/
+.container {
+  background-color: #efeff3;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.contracts-list{
+  width: 100%;
+  height: auto;
+}
+.contracts-item{
+  width: 92%;
+  height: 164rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+  background: #fff;
+  margin-top: 14rpx;
+  /* border-top:2rpx solid #d6d6d6;
+   border-bottom:2rpx solid #d6d6d6; */
+}
+.info{
+  width: 558rpx;
+  height: 100rpx;
+  float: left;
+  margin-top: 32rpx;
+  margin-left: 20rpx;
+}
+.name{
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+}
+.name span{
+  display: inline-block;
+  margin-right: 14rpx;
+}
+.tip{
+  font-size: 24rpx;
+  color: rgb(170, 170, 170);
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+}
+.op{
+  width: 40rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  float: left;
+  margin-top: 67rpx;
+  margin-left: 70rpx;
+}
+.op view{
+  width: 2rpx;
+  height: 30rpx;
+   background-color: rgb(217, 217, 217);
+   display: inline-block;
+   margin-left: 30rpx;
+    margin-right: 30rpx;
+}
+.op image{
+  width: 26rpx;
+  height: 30rpx;
+}
+.add-contracts{
+  width: 92%;
+  height: 88rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+  background: #fff;
+  margin-top: 14rpx;
+}
+.add-contracts .icon{
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 26rpx;
+   border-radius: 50%;
+  background-color: rgb(9, 187, 7);
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 24rpx;
+  float: left;
+  margin-left: 30%;
+  margin-top: 29rpx;
+}
+.add-contracts .text{
+  height: 30rpx;
+  line-height: 30rpx;
+  display: block;
+   font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  float: left;
+  margin-left: 2%;
+  margin-top: 29rpx;
+}

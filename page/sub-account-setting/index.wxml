@@ -1,0 +1,68 @@
+<!--联系人列表页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class='contracts-list'>
+    <view class='sub-item'>
+      <span>岗位管理</span>
+      <view class="body-view">
+        <switch checked bindchange="switch1Change"/>
+      </view>
+    </view>
+    <view class='sub-item'>
+      <span>简历管理</span>
+      <view class="body-view">
+        <switch checked bindchange="switch1Change"/>
+      </view>
+    </view>
+  </view>
+  <view class="title">
+    企业设置
+  </view>
+  <view class='contracts-list'>
+    <view class='sub-item'>
+      <span>企业认证 </span>
+      <view class="body-view">
+        <switch checked bindchange="switch1Change"/>
+      </view>
+    </view>
+    <view class='sub-item'>
+      <span>招聘联系人管理及认证</span>
+      <view class="body-view">
+        <switch checked bindchange="switch1Change"/>
+      </view>
+    </view>
+    <view class='sub-item'>
+      <span>升级会员</span>
+      <view class="body-view">
+        <switch checked bindchange="switch1Change"/>
+      </view>
+    </view>
+    <view class='sub-item'>
+      <span>工作多地点</span>
+      <view class="body-view">
+        <switch checked bindchange="switch1Change"/>
+      </view>
+    </view>
+    <view class='sub-item'>
+      <span>特工任务发布</span>
+      <view class="body-view">
+        <switch checked bindchange="switch1Change"/>
+      </view>
+    </view>
+    <view class='sub-item'>
+      <span>平台广告投放</span>
+      <view class="body-view">
+        <switch checked bindchange="switch1Change"/>
+      </view>
+    </view>
+    <view class='sub-item'>
+      <span>发票信息</span>
+      <view class="body-view">
+        <switch checked bindchange="switch1Change"/>
+      </view>
+    </view>
+  </view>
+  <view class="layout">
+    注销此子账号
+  </view>
+</view>
