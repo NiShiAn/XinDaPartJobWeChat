@@ -123,5 +123,14 @@ P('index', {
       this.setData({
         showSignModal: false
       });
-    }
+    },
+
+    /**
+    * 点击跳转到搜索页面
+    * **/
+    toPostCompanySearch: function (e) {
+      wx.navigateTo({
+        url: "/page/post-company-search/index"
+      })
+    },
 })

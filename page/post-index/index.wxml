@@ -26,7 +26,7 @@
       岗位分类
     </view>
     <view class="sub-type-search">
-      <image src='../../image/post/post-search.png' class='sub-type-search-img'></image>
+      <image src='../../image/post/post-search.png' class='sub-type-search-img' bindtap='toPostCompanySearch'></image>
     </view>
   </view>
   <view class='swiper-container'>

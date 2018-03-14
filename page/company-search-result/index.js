@@ -20,7 +20,7 @@ P('index', {
         }
       })
       wx.setNavigationBarTitle({
-        title: '岗位搜索结果'
+        title: '企业搜索结果'
       })
       wx.showShareMenu({
         withShareTicket: true
