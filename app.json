@@ -1,7 +1,8 @@
 {
   "pages": [
+    "page/company-center-info/index",    
+    "page/post-index/index",    
     "page/person-info/index",
-    "page/company-center-info/index",
     "page/alr-pay-resume-list/index",
     "page/company-audit-edite/index",
     "page/company-audit-statues/index",
