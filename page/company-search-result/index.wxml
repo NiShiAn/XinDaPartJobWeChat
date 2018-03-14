@@ -6,37 +6,26 @@
     <input  maxlength="10" placeholder="最大输入长度10" class="search-input" />
     <span class="cancle">取消</span>
   </view>
-  <view class='post-container'>
-    <view class='post-item' wx:for="{{[1, 2, 3, 4, 5,1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
-      <image src='../../image/post/{{i}}-employer.png' class="leveal-img"></image>
-      <view class='post-left'>
-        <span class="post-name">
-          托管老师
+  <view class='post-container' wx:for="{{[1, 2, 3, 4, 5,1, 2, 3, 4, 5]}}" >
+    <view class='company-contenter'>
+    <image src='../../image/post/company.png' class='company-img'></image>
+    <view class='company-info'>
+      <span class="company-name">
+        北京天之遥网络科技
+      </span>
+      <span class="company-leveal">
+        <image src='../../image/post/em-grade.png' class='leveal-icon'></image>
+        <span>
+          一级雇主
         </span>
-        <span class="post-price">
-          100-150<span>元/天</span>
+        <image src='../../image/post/gangwei.png' class='leveal-icon'></image>
+        <span>
+          27个招聘岗位
         </span>
-        <span class="post-min">
-          <image src='../../image/post/dingwei.png' class='min-icon'></image>
-          <span>
-            市南区
-          </span>
-          <image src='../../image/post/shizhong.png' class='min-icon'></image>
-          <span>
-            昨天12：24
-          </span>
-          <image src='../../image/post/huiyuan.png' class='min-icon'></image>
-          <span>
-            季度会员
-          </span>
-        </span>
-      </view>
-      <view class='post-right'>
-        <!-- <view class='up-row'>
-          <image src='../../image/post/up-row.png' class='min-icon'></image>
-        </view> -->
-        <view class="post-toDetail">查看</view>
-      </view>
+      </span>
+      <span class="com-detail-btn" bindtap="goCompanyDetail">
+      </span>
     </view>
+  </view>
     </view>
 </view>

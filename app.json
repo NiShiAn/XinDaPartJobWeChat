@@ -2,6 +2,7 @@
   "pages": [
     "page/post-index/index",
     "page/company-search-result/index",
+    "page/full-time-detail/index",
     "page/post-search-result/index",
     "page/post-company-search/index",  
     "page/my-party-resume-list/index",
@@ -24,7 +25,7 @@
     "page/contacts-list/index",
     "page/party-resume-edite/index",
     "page/company-login/index",
-    "page/full-time-detail/index",
+    
     "page/tip-off-add/index",      
     "page/part-time-detail/index",
     "page/verificate-phone/index",
