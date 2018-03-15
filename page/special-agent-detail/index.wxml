@@ -9,20 +9,23 @@
     </view>
     <view class='type-line'>
       <view class="type-item">
-        教育培训
+        今天10：35
       </view>
       <view class="type-item">
-        工资日结
+        23浏览
       </view>
       <view class="type-item">
-        256浏览
+        23申请
       </view>
       <view class="type-item">
-        56申请
+        赏金10元
       </view>
       <view class="type-pingbi">
         <image src='../../image/post/pingbi.png'></image>
       </view>
+    </view>
+    <view class='phone-block'>
+      <image src='../../image/post/spa-phone.png' class="phone"></image>
     </view>
   </view>
 </view>

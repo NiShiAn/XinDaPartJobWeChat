@@ -1,6 +1,8 @@
 {
   "pages": [
     "page/post-index/index",
+    "page/special-agent-list/index",
+    "page/special-agent-detail/index",
     "page/address-add/index",
     "page/address-list/index",
     "page/contacts-list/index",
@@ -65,7 +67,7 @@
         "text": "个人中心"
       },
       {
-        "pagePath": "page/post-index/index",
+        "pagePath": "page/special-agent-list/index",
         "iconPath": "image/icon/freecourse-gray.png",
         "selectedIconPath": "image/icon/freecourse-red.png",
         "text": "特工"
