@@ -1,0 +1,39 @@
+<!--模块：个人中心-->
+<!--页面：我的举报-->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class='post-container'>
+  <view class="type-container">
+     <scroll-view class="type-navbar" scroll-x="true">
+         <view class="type-box"  data-id="1" bindtap='tabChangeTypeClick'>
+             <view  class="type-navbar-item {{activeTypeId == 1 ? 'type-item-on' : ''}}">
+                 我的举报
+             </view>
+         </view>
+         <view class="type-box"  data-id="2" bindtap='tabChangeTypeClick'>
+             <view class="type-navbar-item {{activeTypeId == 2 ? 'type-item-on' : ''}}">
+                我被举报
+             </view>
+         </view>
+    </scroll-view>
+  </view>
+  <view class='job-des-box' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
+    <view class='job-title-des'>
+      <view class='job-title'>一句话描述兼职技能（兼职）</view>
+      <view class='job-time'>今天10：50</view>
+    </view>
+    <view class='post-item'>
+      <view class='post-left'>
+        <span class="post-name">
+          托管老师
+        </span>
+        <span class="post-price">
+          虚假简历
+        </span>
+      </view>
+      <view class='post-right'>
+        <view class="post-toDetail">已反馈</view>
+      </view>
+    </view>
+  </view>
+</view>
