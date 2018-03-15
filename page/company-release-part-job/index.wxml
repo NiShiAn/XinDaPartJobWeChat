@@ -1,0 +1,127 @@
+<!--页面：企业发布兼职编辑&&新增页面->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="contain">
+  <view class='word-type-box'>
+    <view class='position-box'>
+      <view class='position-type'>兼职名称</view>
+      <view class='position-choose'>运营总监</view>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>岗位类别</view>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>结算方式</view>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>学历要求</view>
+      <input class='pay-range margin-left-35'></input>
+      <view class='line-heng'></view>
+      <input class='pay-range'></input>
+      <view class='pay-unit'>元/月</view>
+    </view>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>工作时间</view>
+  </view>
+  <view class='info-box'>
+      <input class='work-time' placeholder='在此输入工作时间'></input>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>工作内容</view>
+    <view class='resume-title-desc'>（以下内容仅为模板参考）</view>
+  </view>
+  <view class='info-box'>
+      <textarea class='work-content' placeholder='工作内容填写'></textarea>
+  </view>
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>任职要求</view>
+    <view class='resume-title-desc'>（以下内容仅为模板参考）</view>
+  </view>
+  <view class='info-box'>
+      <textarea class='work-content' placeholder='任职要求填写'></textarea>
+  </view>
+
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>工作地点</view>
+  </view>
+  <view class='work-address-list'>
+    <view class='work-address-item'>
+      <view class='row'>
+        <view class='col-80'>
+          <view>北京朝阳区小关北里于洋职业大厦</view>
+        </view>
+        <view class='col-20'>
+          <image src='../../image/company-img/selecte.png' class='choose-right right-icon'></image>
+        </view>
+      </view>
+    </view>
+    <view class='work-address-item-gray'>
+      <view class='row'>
+        <view class='col-80'>
+          <view>北京朝阳区小关北里于洋职业大厦</view>
+        </view>
+        <view class='col-20'>
+          <image src='../../image/company-img/selecte.png' class='choose-right right-icon'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='new-add-item'>
+    <image src='../../image/person/jia.png' class='add-icon'></image>
+    <view class='new-add-titile'>新增工作地点</view>
+  </view>
+
+  <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>招聘联系人</view>
+  </view>
+  <view class='work-address-list'>
+    <view class='work-address-item'>
+      <view class='row'>
+        <view class='col-80'>
+          <view class='phone-person-info'>
+            <image src='../../image/post/contacts.png' class='head-img'></image>
+            <view class='person-info-box'>
+              <view class='person-number'>李经理 18663678978</view>
+              <view class='person-descr'>招聘联系人已实名认证</view>
+            </view>
+          </view>
+        </view>
+        <view class='col-20'>
+          <image src='../../image/company-img/selecte.png' class='choose-right right-icon-phone'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='new-add-item'>
+    <image src='../../image/person/jia.png' class='add-icon'></image>
+    <view class='new-add-titile'>新增工作地点</view>
+  </view>
+    <view class='resume-title-box'>
+    <view class='line-shu-big'></view>
+    <view class='resume-title-name'>会员服务</view>
+  </view>
+  <view class='word-type-box'>
+     <view class='position-box'>
+      <view class='position-type'>智能刷新</view>
+      <switch checked bindchange="switch1Change" class='position-right'/>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>预约刷新</view>
+      <image src='../../image/company-center/row-right.png'></image>
+      <view class='no-order'>未预约</view>
+    </view>
+  </view>
+  <button type="primary" bindtap="primary" class="primary">预览</button>
+  <button type="default" bindtap="primary" class="default">保存</button>
+  <button type="warn" bindtap="primary" class="warn">发布</button>
+</view>

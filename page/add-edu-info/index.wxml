@@ -1,0 +1,27 @@
+<!--模块：个人中心-->
+<!--页面：兼职-教育信息-->
+<!--作者：崔建伟-->
+<view class="contain">
+  <view class='word-type-box'>
+    <view class='position-box'>
+      <view class='position-type'>院校名称</view>
+      <input class='position-choose' placeholder='点击输入' placeholder-class='input-placeholder'></input>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>专业名称</view>
+      <input class='position-choose' placeholder='点击输入' placeholder-class='input-placeholder'></input>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>教育状态</view>
+      <view class="position-choose">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            点击输入{{array[index]}}
+          </view>
+        </picker>
+      </view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+  </view>
+  <button type="primary" bindtap="primary" class="primary">保存</button>
+</view>

@@ -1,12 +1,17 @@
 {
   "pages": [
+    "page/add-edu-info/index",
+    "page/add-full-work-info/index",
+    "page/add-language/index",
+    "page/add-honor/index",
+    "page/add-work-exprice/index",        
+    "page/company-release-part-job/index",
     "page/my-party-resume-list/index",
     "page/alr-pay-resume-list/index",
     "page/company-release-full-job/index",
     "page/recommend-job-list/index",
     "page/my-report-list/index",
     "page/company-report-list/index",    
-    "page/add-work-exprice/index",
     "page/my-full-resume-detail/index",
     "page/add-work-info/index",
     "page/verificate-phone/index",

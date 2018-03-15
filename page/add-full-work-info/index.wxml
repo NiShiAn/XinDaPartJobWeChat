@@ -1,0 +1,27 @@
+<!--模块：个人中心-->
+<!--页面：添加全职求职意向-->
+<!--作者：崔建伟-->
+<view class='contain'>
+  <view class='word-type-box'>
+    <view class='position-box'>
+      <view class='position-type'>职位类别</view>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>工作地点</view>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>期望薪资</view>
+      <view class='position-choose'>点击选择</view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+     <view class='position-box'>
+      <view class='position-type'>实习标签</view>
+      <switch checked bindchange="switch1Change" class='position-right'/>
+    </view>
+  </view>
+  <button type="primary" bindtap="primary" class="primary">保存</button>
+</view>

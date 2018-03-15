@@ -4,29 +4,38 @@
 <view class="contain">
   <view class='word-type-box'>
     <view class='position-box'>
-      <view class='position-type'>全职名称</view>
-      <view class='position-choose'>运营总监</view>
+      <view class='position-type'>公司名称</view>
+      <input class='position-choose' placeholder='点击输入'></input>
     </view>
     <view class='position-box'>
-      <view class='position-type'>岗位类别</view>
-      <view class='position-choose'>运营总监</view>
+      <view class='position-type'>入职时间</view>
+      <view class='position-choose'>点击选择</view>
       <image src='../../image/company-center/row-right.png'></image>
     </view>
     <view class='position-box'>
-      <view class='position-type'>学历要求</view>
-      <view class='position-choose'>本科</view>
+      <view class='position-type'>离职时间</view>
+      <view class='position-choose'>点击选择</view>
       <image src='../../image/company-center/row-right.png'></image>
     </view>
     <view class='position-box'>
-      <view class='position-type'>学历要求</view>
+      <view class='position-type'>岗位名称</view>
+      <input class='position-choose' placeholder='点击输入'></input>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>职位薪金</view>
       <input class='pay-range margin-left-35'></input>
       <view class='line-heng'></view>
       <input class='pay-range'></input>
       <view class='pay-unit'>元/月</view>
     </view>
-     <view class='position-box'>
-      <view class='position-type'>实习标签</view>
-      <switch checked bindchange="switch1Change" class='position-right'/>
+  </view>
+  <view class='work-descr-box'>
+    <view class='work-descr-title'>
+      工作描述
+    </view>
+    <view>
+      <textarea placeholder='请输入工作描述' class='work-content'></textarea>
     </view>
   </view>
+  <button type="primary" bindtap="primary" class="primary">保存</button>
 </view>

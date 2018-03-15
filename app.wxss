@@ -178,3 +178,9 @@ page {
 .default {
   background-color: #fff !important;
 }
+
+
+.input-placeholder {
+  color: rgb(217, 217, 217) !important;
+}
+
