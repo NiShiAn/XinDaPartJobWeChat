@@ -1,3 +1,6 @@
+<!--页面：举报详情页面-->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
 <view class='contain'>
   <view class='nav-box'>
     <view class='line-red'></view>

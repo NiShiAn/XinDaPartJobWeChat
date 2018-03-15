@@ -1,3 +1,6 @@
+<!--页面：企业认证新增页面-->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
 <view class='contain'>
   <view class='finish-box'>
     <view class='finish-title'>

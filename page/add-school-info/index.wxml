@@ -1,3 +1,7 @@
+<!--模块：企业中心-->
+<!--页面：新增教育信息-->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
 <view class='contain'>
   <view class='word-type-box'>
     <view class='position-box'>

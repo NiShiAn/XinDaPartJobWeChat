@@ -1,3 +1,7 @@
+<!--模块：个人中心-->
+<!--页面：切换城市-->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
 <view class='contain'>
   <view class='search-box'>
     <view class='{{isShowInput > 1 ? "search-bg-view" : "search-bg-view-start"}}' bindtap='searchClick'>

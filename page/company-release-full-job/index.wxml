@@ -1,3 +1,6 @@
+<!--页面：企业发布全职编辑&&新增页面->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
 <view class="contain">
   <view class='word-type-box'>
     <view class='position-box'>

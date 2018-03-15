@@ -1,3 +1,6 @@
+<!--模块：个人中心-->
+<!--页面：我的简历已填写&&新增-->
+<!--作者：崔建伟-->
 <view class='contain'>
   <view class='finish-box'>
     <view class='finish-title'>

@@ -1,3 +1,7 @@
+<!--模块：个人中心-->
+<!--页面：添加基本信息-->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
 <view class='contain'>
   <view class='word-type-box'>
     <view class='position-box'>

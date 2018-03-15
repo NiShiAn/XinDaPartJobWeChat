@@ -1,4 +1,6 @@
 <!--企业的 已投递、已购买的岗位列表、面试邀请、岗位推荐  -->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
 <view class='post-container'>
   <view class='job-des-box' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
     <view class='job-title-des'>

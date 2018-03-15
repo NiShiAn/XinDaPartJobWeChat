@@ -1,3 +1,7 @@
+<!--模块：个人中心-->
+<!--页面：个人中心-->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class='recommendView'>
     <view class='recommend-span-blue'>推荐好友使用可+10积分</view>

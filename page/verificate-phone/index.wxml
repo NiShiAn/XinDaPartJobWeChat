@@ -1,3 +1,6 @@
+<!--模块：个人中心-->
+<!--页面：验证手机号-->
+<!--作者：崔建伟-->
 <view class='contain'>
   <view class='phone-alert-tile'>请输入手机号</view>
   <view class='phone-box'>

@@ -1,3 +1,7 @@
+<!--模块：个人中心-->
+<!--页面：我的智能岗位匹配&&平台推荐岗位&&面试邀请记录&&已经投递的岗位-->
+<!--作者：崔建伟-->
+<!--1px = 750/320 = 2.34rpx;-->
 <view class='post-container'>
   <view class='job-des-box' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
     <view class='job-title-des'>
