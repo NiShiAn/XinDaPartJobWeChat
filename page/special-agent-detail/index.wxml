@@ -1,0 +1,28 @@
+<!--首页页面-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class='top-contenter'>
+    <view class='name-line'>
+      <span class="post-name">
+        托管老师
+      </span>
+    </view>
+    <view class='type-line'>
+      <view class="type-item">
+        教育培训
+      </view>
+      <view class="type-item">
+        工资日结
+      </view>
+      <view class="type-item">
+        256浏览
+      </view>
+      <view class="type-item">
+        56申请
+      </view>
+      <view class="type-pingbi">
+        <image src='../../image/post/pingbi.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

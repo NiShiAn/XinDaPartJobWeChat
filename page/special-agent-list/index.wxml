@@ -1,0 +1,19 @@
+<!--岗位列表-选择岗位分类-->
+<!--1px = 750/320 = 2.34rpx;-->
+<view class="container">
+  <view class="search-container">
+    <image src='../../image/post/search.png' class='search-img'></image>
+    <input  maxlength="10" placeholder="搜索" class="search-input" />
+  </view>
+  <view class='spa-list'>
+    <view class='spa-item' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" >
+      <image src='../../image/post/banner1.png' class="spa-img">
+        <span class="title">史上最脏面包试吃</span>
+        <view class="bottom">
+          <span class="time">今天 14:36</span>
+          <span class="pay">赏金：10元</span>
+        </view>
+      </image>
+    </view>
+  </view>
+</view>

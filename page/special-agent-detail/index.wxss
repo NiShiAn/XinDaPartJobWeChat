@@ -1,0 +1,257 @@
+/**index.wxss**/
+.container {
+  background-color: #efeff3;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.top-contenter{
+  background-color: #fff;
+  height: 170rpx;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.name-line{
+  height: 126rpx;
+  line-height: 126rpx;
+  width: 100%;
+}
+.post-name{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.post-price{
+  float: right;
+  color: rgb(230, 67, 64);
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.post-price span{
+ font-weight: normal;
+  font-size: 26rpx;
+}
+.type-item{
+  width: 20%;
+  text-align: center;
+  font-size: 26rpx;
+  color: rgb(136, 136, 136);
+  border-right: 2rpx solid rgb(218, 218, 218);
+  float: left;
+}
+.type-item:first-child{
+  text-align: left;
+}
+.type-pingbi{
+  text-align: center;
+}
+.type-pingbi image{
+  width: 40rpx;
+  height: 26rpx;
+  display: block;
+  margin: 4rpx auto 0 30rpx;
+  float: right;
+}
+/*********** 企业信息 **********/
+.company-contenter{
+  background-color: #fff;
+  height: 200rpx;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 15rpx;
+  position: relative;
+}
+.company-img{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 10rpx;
+  margin-top: 36rpx;
+  float: left;
+}
+.company-info{
+  width: 460rpx;
+  height: 128rpx;
+  margin-top: 36rpx;
+  float: left;
+  padding-left: 20rpx;
+  
+}
+.company-name{
+  font-size: 34rpx;
+  color: rgb(0, 0, 0);
+  display: block;
+  font-weight: bold;
+  height: 60rpx;
+  line-height: 84rpx;
+}
+.company-leveal{
+ display: block;
+ height: 60rpx;
+ line-height: 60rpx;
+}
+.leveal-icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+.company-leveal span{
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+}
+.com-detail-btn{
+  display: block;
+  content: " ";
+  height: 20rpx;
+  width: 20rpx;
+  border-width: 4rpx 4rpx 0 0;
+  border-color: #C8C8CD;
+  border-style: solid;
+  transform: rotate(45deg);
+  position: absolute;
+  top:87rpx;
+  right:38rpx;
+}
+.report-contenter{
+  width: 92%;
+  height: 80.61rpx;
+  line-height: 80.61rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.report-contenter span{
+  font-size: 24rpx;
+  font-family: "MicrosoftYaHei";
+  color: rgb(0, 132, 255);
+}
+.report-contenter view{
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 6rpx;
+  background-color: rgb(0, 132, 255);
+  text-align: center;
+  float: right;
+  color: white;
+  font-size: 24rpx;
+  margin-top: 15.2rpx;
+}
+.info-contenter{
+  background-color: #fff;
+  min-height: 270rpx;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.info-title{
+  width: 100%;
+  margin-top: 30rpx;
+}
+.info-line{
+  border-radius: 4rpx;
+  background-color: rgb(230, 67, 64);
+  width: 8rpx;
+  height: 48rpx;
+  float: left;
+}
+.info-text{
+  display: block;
+  width: 500rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-left: 24rpx;
+   font-size: 34rpx;
+  font-family: "MicrosoftYaHei";
+  color: rgb(53, 53, 53);
+}
+.info-con{
+   font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  line-height: 50rpx;
+  margin-top: 15rpx;
+}
+.info-con span{
+  display: block;
+}
+/********** 工作地点样式实现 *******/
+.add-name{
+   font-size: 26rpx;
+  color: rgb(136, 136, 136);
+  display: block
+}
+.add-map{
+  width: 100%;
+  height: 316rpx;
+}
+.contact-container{
+  background-color: #fff;
+  height: 200rpx;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: relative;
+}
+.contact-img{
+  width: 140rpx;
+  height: 140rpx;
+  margin-top: 30rpx;
+  float: left;
+}
+.contact-info{
+float: left;
+width: 280rpx;
+height: 100rpx;
+margin-top: 50rpx;
+margin-left: 20rpx;
+}
+.contact-info .name{
+   font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  display: block;
+}
+.contact-info .tips{
+   font-size: 24rpx;
+  font-family: "MicrosoftYaHei";
+  color: rgb(170, 170, 170);
+}
+.con-btns{
+  width: 220rpx;
+  height: 100rpx;
+  border-radius: 50px;
+  background-color: rgb(230, 67, 64);
+  margin-top: 50rpx;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.con-btn{
+  width: 41rpx;
+  height: 50rpx;
+  margin-top: 25rpx;
+  margin: 25rpx 30rpx;
+}
+.con-btns view{
+  width: 2rpx;
+  height: 50rpx;
+  position: absolute;
+  top:24rpx;
+  left: 109rpx;
+  background: white;
+}
+.detail-gg{
+  width: 100%;
+  height: 200rpx;
+}
+.info-con span.fuli{
+   border-radius: 6px;
+  background-color: rgb(239, 239, 244);
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 10rpx 30rpx;
+  margin-right: 10rpx;
+  font-size: 26rpx;
+  color: rgb(53, 53, 53);
+  margin-bottom: 10rpx;
+}
