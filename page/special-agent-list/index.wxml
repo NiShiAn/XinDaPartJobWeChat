@@ -1,4 +1,6 @@
-<!--岗位列表-选择岗位分类-->
+<!--模块：特工-->
+<!--页面：特工详情-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class="search-container">
@@ -6,7 +8,7 @@
     <input  maxlength="10" placeholder="搜索" class="search-input" />
   </view>
   <view class='spa-list'>
-    <view class='spa-item' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" >
+    <view class='spa-item' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i"  bindtap='toSpecialAgentDetail'>
       <image src='../../image/post/banner1.png' class="spa-img">
         <span class="title">史上最脏面包试吃</span>
         <view class="bottom">

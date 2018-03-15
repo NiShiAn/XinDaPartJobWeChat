@@ -1,4 +1,6 @@
-<!--首页页面-->
+<!--模块：人才（简历）-->
+<!--页面：全职简历详情-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class='top-contenter'>

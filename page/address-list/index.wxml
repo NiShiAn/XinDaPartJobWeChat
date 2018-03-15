@@ -1,4 +1,6 @@
-<!--联系人列表页面-->
+<!--模块：企业中心-->
+<!--页面：多地址管理，地址列表-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class='contracts-list'>

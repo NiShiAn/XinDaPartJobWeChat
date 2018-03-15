@@ -1,4 +1,6 @@
-<!--首页页面-->
+<!--模块：简历（人才）-->
+<!--页面：搜索简历结果页面-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class="search-container">

@@ -1,3 +1,6 @@
+<!--模块：企业管理-->
+<!--页面：新增子账号-->
+<!--作者：liulingling-->
 <view class='contain'>
   <view class='phone-alert-tile'>输入登录子账号的手机号</view>
   <view class='phone-box'>

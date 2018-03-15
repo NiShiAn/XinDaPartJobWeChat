@@ -1,4 +1,6 @@
-<!--联系人列表页面-->
+<!--模块：企业管理-->
+<!--页面：子账号列表-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class='contracts-list'>

@@ -1,4 +1,6 @@
-<!--岗位列表-选择岗位分类-->
+<!--模块：岗位-->
+<!--页面：岗位》选择岗位分类-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class="type-container">
