@@ -1,4 +1,6 @@
-<!--岗位列表-选择岗位分类-->
+<!--模块：企业中心-->
+<!--页面：多地址管理，新增地址-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class="search-container">

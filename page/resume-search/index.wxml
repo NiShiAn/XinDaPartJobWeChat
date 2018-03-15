@@ -1,4 +1,6 @@
-<!--岗位列表-选择岗位分类-->
+<!--模块：简历（人才）-->
+<!--页面：搜索全职&&兼职简历-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class="search-container">

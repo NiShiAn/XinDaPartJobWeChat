@@ -1,4 +1,6 @@
-<!--首页页面-->
+<!--模块：企业中心-->
+<!--页面：积分详情-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class="title-block">

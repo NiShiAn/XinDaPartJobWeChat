@@ -1,4 +1,6 @@
-<!--首页页面-->
+<!--模块：岗位-->
+<!--页面：举报岗位页面-->
+<!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class="info-item">

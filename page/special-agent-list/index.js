@@ -34,4 +34,13 @@ P('index', {
       //this.getPayCourseList();
       wx.stopPullDownRefresh()
     },
+
+    /**
+    * 点击跳转到特工详情页面
+    * **/
+    toSpecialAgentDetail: function (e) {
+      wx.navigateTo({
+        url: "/page/special-agent-detail/index"
+      })
+    },
 })
