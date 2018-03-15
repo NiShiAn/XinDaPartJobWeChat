@@ -17,7 +17,7 @@ P('index', {
       activeTypeId:1,     //切换兼职or全职
       activeSubTypeId:1,  //切换全部区域or雇主等级or岗位分类
       //签到弹窗参数
-      showSignModal:true,
+      showSignModal:false,
       city:""
     },
 
