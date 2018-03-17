@@ -5,7 +5,7 @@
 <view class="container">
   <view class="search-container">
     <image src='../../image/post/search.png' class='search-img'></image>
-    <input  maxlength="10" placeholder="最大输入长度10" class="search-input" />
+    <input  maxlength="10" placeholder="搜索" class="search-input" />
     <span class="cancle">取消</span>
   </view>
   <view class="title-line">

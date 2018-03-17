@@ -23,7 +23,7 @@ P('index', {
         }
       })
       wx.setNavigationBarTitle({
-        title: '兼职'
+        title: '人才'
       })
       wx.showShareMenu({
         withShareTicket: true
@@ -76,26 +76,27 @@ P('index', {
     },
 
     /**
-    * 点击跳转选择雇主等级
+    * 兼职简历：1：全部区域 2：岗位分类 3：学历层次 4：性别
+    * 全职简历：1：全部区域 2：岗位分类 3：学历层次 4：时间
     * **/
-    toEmployerGrade: function (e) {
-      wx.navigateTo({
-        url: "/page/post-employer-grade/index?postId=1"
-      })
+    toChooseCondition: function (e) {
+      var id = e.currentTarget.dataset.id;
       this.setData({
         activeSubTypeId: e.currentTarget.dataset.id
       });
+        wx.navigateTo({
+          url: "/page/resume-change-condition/index?tyepId=" + this.data.activeTypeId+"&subTypeId="+id
+        })
     },
 
     /**
-    * 点击跳转选择岗位分类
+     * 点击跳转到简历搜索页面
+     * 1:兼职简历：
+     * 2:全职简历：
     * **/
-    toPostCategory: function (e) {
+    toSearchPage:function(){
       wx.navigateTo({
-        url: "/page/post-job-category/index?postId=1"
+        url: "/page/resume-search/index?tyepId=" + this.data.activeTypeId
       })
-      this.setData({
-        activeSubTypeId: e.currentTarget.dataset.id
-      });
-    },
+    }
 })

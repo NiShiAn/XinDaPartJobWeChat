@@ -5,8 +5,8 @@
 <view class="container">
   <view class="search-container">
     <image src='../../image/post/search.png' class='search-img'></image>
-    <input  maxlength="10" placeholder="最大输入长度10" class="search-input" />
-    <span class="cancle">取消</span>
+    <input   placeholder="搜索" class="search-input" bindblur="bindSearch" value='{{keywords}}'/>
+    <span class="cancle" bindtap="cancleSearch">取消</span>
   </view>
   <view class="type-container">
      <scroll-view class="type-navbar" scroll-x="true">
