@@ -19,12 +19,12 @@
       <image class='map-img' src='../../image/person/location.png' mode='scaleToFill'></image>
     </view>
     <view class='party-job-type'>
-      <view class='my-party-job'>我的兼职简历</view>
-      <view class='my-all-job'>我的全职简历</view>
+      <view class='my-party-job' bindtap='goPartResume'>我的兼职简历</view>
+      <view class='my-all-job' bindtap='goFullResume'>我的全职简历</view>
     </view>   
   </view>
   <view class='resume-info'>
-    <view class='resume-item'>
+    <view class='resume-item' data-id='1' bindtap='goJobList'>
       <image src='../../image/person/matching.png' class='resume-image'></image>
       <view class='resume-detail'>
         <view>
@@ -36,7 +36,7 @@
         </view>
       </view>
     </view>
-    <view class='resume-item'>
+    <view class='resume-item' data-id='2' bindtap='goJobList'>
       <image src='../../image/person/commond.png' class='resume-image'></image>
       <view class='resume-detail'>
         <view>
@@ -49,7 +49,7 @@
       </view>
       <view class='line-shu'></view>
     </view>
-    <view class='resume-item'>
+    <view class='resume-item' data-id='3' bindtap='goJobList'>
       <image src='../../image/person/interview.png' class='resume-image'></image>
       <view class='resume-detail'>
         <view>
@@ -61,7 +61,7 @@
         </view>
       </view>
     </view>
-    <view class='resume-item'>
+    <view class='resume-item' data-id='4' bindtap='goJobList'>
       <image src='../../image/person/delivery.png' class='resume-image'></image>
       <view class='resume-detail'>
         <view>
@@ -77,11 +77,13 @@
   </view>
   <view class='recommendView'>
     <view class='good-employer-title'>优选雇主</view>
-    <image src='../../image/company-img/report.png' class='warning-img'></image>
+    <view bindtap='goReportView'>
+      <image src='../../image/company-img/report.png' class='warning-img'></image>
+    </view>
   </view>
   <view class='employer-list'>
     <view class='employer-item'>
-      <view class='employer-item-left'>
+      <view class='employer-item-left' >
         <image src='../../image/post/company.png' class='employer-head-img'></image>
       </view>
       <view class='employer-info'>
@@ -116,5 +118,5 @@
       </view>
     </view>
   </view>
-  <view class='change-city'>切换城市</view>
+  <view class='change-city' bindtap='goChangeCity'>切换城市</view>
 </view>

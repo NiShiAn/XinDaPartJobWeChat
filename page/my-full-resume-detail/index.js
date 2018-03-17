@@ -45,5 +45,97 @@ P('index', {
                 });
             }
         })
+    },
+
+    //跳转相关添加信息页面
+    /**
+     * 1:添加基本信息 
+     * 2:添加求职信息
+     * 3:添加教育信息
+     * 4:添加语言能力
+     * 5:添加证书或者荣誉
+     * 6:添加实践经验或工作经历
+     */
+    goAddView: function (e) {
+      switch (e.currentTarget.dataset.id) {
+        case '1':
+          wx.navigateTo({
+            url: '/page/add-base-info/index',
+          })
+          break;
+        case '2':
+          wx.navigateTo({
+            url: '/page/add-work-exprice/index',
+          })
+          break;
+        case '3':
+          wx.navigateTo({
+            url: '/page/add-school-info/index',
+          })
+          break;
+        case '4':
+          wx.navigateTo({
+            url: '/page/add-language/index',
+          })
+          break;
+        case '5':
+          wx.navigateTo({
+            url: '/page/add-honor/index',
+          })
+          break;
+        case '6':
+          wx.navigateTo({
+            url: '/page/add-full-work-info/index',
+          })
+          break;
+        default:
+          break;
+      }
+    },
+
+    //跳转相关编辑信息页面
+    /**
+     * 1:编辑基本信息
+     * 2:编辑求职信息
+     * 3:编辑教育信息
+     * 4:编辑语言能力
+     * 5:编辑证书或者荣誉
+     * 6:编辑实践经验或工作经历
+     */
+    goAddEditeView: function (e) {
+      switch (e.currentTarget.dataset.id) {
+        case '1':
+          wx.navigateTo({
+            url: '/page/add-base-info/index',
+          })
+          break;
+        case '2':
+          wx.navigateTo({
+            url: '/page/add-work-exprice/index',
+          })
+          break;
+        case '3':
+          wx.navigateTo({
+            url: '/page/add-school-info/index',
+          })
+          break;
+        case '4':
+          wx.navigateTo({
+            url: '/page/add-language/index',
+          })
+          break;
+        case '5':
+          wx.navigateTo({
+            url: '/page/add-honor/index',
+          })
+          break;
+        case '6':
+          wx.navigateTo({
+            url: '/page/add-full-work-info/index',
+          })
+          break;
+        default:
+          break;
+      }
     }
 });

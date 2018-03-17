@@ -243,3 +243,26 @@
   background-color: #fff;
   margin-bottom: 30rpx;
 }
+
+.new-add-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+  border: 1px solid #ddd;
+}
+
+.add-icon-two {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 15rpx;
+  position: relative;
+  top: 30rpx;
+}
+
+.new-add-titile {
+  color: rgb(53, 53, 53);
+  font-size: 28rpx;
+}

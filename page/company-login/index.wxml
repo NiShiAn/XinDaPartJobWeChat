@@ -19,6 +19,6 @@
         <checkbox value="1" checked="22"/>阅读并同意<span class="agree">《用户使用协议》</span>和<span class="agree">《承诺书》</span>
       </label>
     </checkbox-group>
-    <button type="primary"  class="login-btn"> 登陆 </button>
+    <button type="primary"  class="login-btn" bindtap='loginCompanyView'> 登陆 </button>
   </view>
 </view>

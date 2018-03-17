@@ -34,4 +34,11 @@ P('index', {
       //this.getPayCourseList();
       wx.stopPullDownRefresh()
     },
+    
+    loginCompanyView: function() {
+      console.log("1")
+      wx.navigateTo({
+        url: "/page/company-center-info/index",
+      })
+    }
 })

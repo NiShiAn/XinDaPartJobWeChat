@@ -1,5 +1,5 @@
 <!--模块：个人中心-->
-<!--页面：我的简历已填写&&新增-->
+<!--页面：我的兼职简历已填写&&新增-->
 <!--作者：崔建伟-->
 <view class='contain'>
   <view class='finish-box'>
@@ -58,9 +58,9 @@
     <view class='line-shu-big'></view>
     <view class='resume-title-name'>基本信息</view>
   </view>
-  <view wx:if="{{true}}">
+  <view wx:if="{{viewType != '1'}}">
     <view class='info-box'>
-      <view class='bg-img' style="background-image: url('../../image/person/edite.png')">
+      <view class='bg-img' style="background-image: url('../../image/person/edite.png')" bindtap='goAddView' data-id='1'>
         <view class='margin-bottom-10'>
           <text class='margin-right-20'>李小萌</text>
           <text class='margin-right-20'>女</text>
@@ -80,7 +80,7 @@
     <view class='add-base-info'>
       <view class='v-center'>
         <image src='../../image/person/jia.png' class='add-icon'></image>
-        <view class='add-describe'>添加基本信息</view>
+        <view class='add-describe' bindtap='goAddView' data-id='1'>添加基本信息</view>
       </view>
     </view>
   </view>
@@ -89,9 +89,9 @@
     <view class='line-shu-big'></view>
     <view class='resume-title-name'>教育信息</view>
   </view>
-  <view wx:if="{{true}}">
+  <view wx:if="{{viewType != '1'}}">
     <view class='info-box'>
-      <view class='bg-img' style="background-image: url('../../image/person/edite.png')">
+      <view class='bg-img' style="background-image: url('../../image/person/edite.png')" bindtap='goAddView' data-id='2'>
         <view class='margin-bottom-10'>
           <text class='margin-right-20'>清华大学</text>
         </view>
@@ -109,7 +109,7 @@
     <view class='add-base-info'>
       <view class='v-center'>
         <image src='../../image/person/jia.png' class='add-icon'></image>
-        <view class='add-describe'>添加教育信息</view>
+        <view class='add-describe' bindtap='goAddView' data-id='2'>添加教育信息</view>
       </view>
     </view>
   </view>
@@ -118,9 +118,9 @@
     <view class='line-shu-big'></view>
     <view class='resume-title-name'>求职意向</view>
   </view>
-  <view wx:if="{{true}}">
+  <view wx:if="{{viewType != '1'}}">
     <view class='info-box'>
-      <view class='bg-img' style="background-image: url('../../image/person/edite.png')">
+      <view class='bg-img' style="background-image: url('../../image/person/edite.png')" bindtap='goAddView' data-id='3'>
         <view class='margin-bottom-10'>
           <text class='margin-right-20'>网页设计</text>
         </view>
@@ -137,7 +137,7 @@
     <view class='add-base-info'>
       <view class='v-center'>
         <image src='../../image/person/jia.png' class='add-icon'></image>
-        <view class='add-describe'>添加求职信息</view>
+        <view class='add-describe' bindtap='goAddView' data-id='3'>添加求职信息</view>
       </view>
     </view>
   </view>

@@ -15,12 +15,12 @@
       <image class='map-img' src='../../image/company-img/customerService.png' mode='scaleToFill'></image>
     </view>
     <view class='party-job-type'>
-      <view class='my-party-job'>发布兼职</view>
-      <view class='my-all-job'>发布全职</view>
+      <view class='my-party-job' bindtap='goPartJob'>发布兼职</view>
+      <view class='my-all-job' bindtap='goFullJob'>发布全职</view>
     </view>   
   </view>
   <view class='resume-info'>
-    <view class='resume-item'>
+    <view class='resume-item' bindtap='goJobList' data-id='1'>
       <image src='../../image/company-img/alReleased.png' class='resume-image'></image>
       <view class='resume-detail'>
         <view>
@@ -32,7 +32,7 @@
         </view>
       </view>
     </view>
-    <view class='resume-item'>
+    <view class='resume-item' bindtap='goJobList' data-id='2'>
       <image src='../../image/company-img/matching.png' class='resume-image'></image>
       <view class='resume-detail'>
         <view>
@@ -45,7 +45,7 @@
       </view>
       <view class='line-shu'></view>
     </view>
-    <view class='resume-item'>
+    <view class='resume-item' bindtap='goJobList' data-id='3'>
       <image src='../../image/company-img/alrDelivery.png' class='resume-image'></image>
       <view class='resume-detail'>
         <view>
@@ -57,7 +57,7 @@
         </view>
       </view>
     </view>
-    <view class='resume-item'>
+    <view class='resume-item' bindtap='goJobList' data-id='4'>
       <image src='../../image/company-img/position.png' class='resume-image'></image>
       <view class='resume-detail'>
         <view>

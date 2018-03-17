@@ -31,16 +31,14 @@ P('index', {
   },
 
   searchClick:function(){
-    console.log('1')
     this.setData({
-      isShowInput:2
+      isShowInput:0
     });
   },
 
   disappearBlur:function(){
-    console.log('2')
     this.setData({
-      isShowInput: 0
+      isShowInput: 2
     });
   }
 

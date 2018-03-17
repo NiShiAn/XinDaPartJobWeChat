@@ -4,13 +4,13 @@
 <!--1px = 750/320 = 2.34rpx;-->
 <view class='contain'>
   <view class='search-box'>
-    <view class='{{isShowInput > 1 ? "search-bg-view" : "search-bg-view-start"}}' bindtap='searchClick'>
+    <view class="{{isShowInput > 1 ? 'search-bg-view' : 'search-bg-view-start'}}" bindtap='searchClick'>
       <image src='../../image/person/search.png' class='search-img'></image>
       <view wx:if="{{isShowInput > 1}}">
         <view class='search-alert'>搜索</view>
       </view>
       <view wx:else>
-        <input placeholder='搜索' class='search-title' bindblur="disappearBlur"></input>
+        <input placeholder='搜索' class='search-title' bindblur="disappearBlur" focus="true"></input>
       </view>
     </view>
   </view>

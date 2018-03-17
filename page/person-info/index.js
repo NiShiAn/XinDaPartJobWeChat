@@ -42,7 +42,34 @@ P('index', {
       }
     });
   },
-
-  
-
+  //我的兼职简历按钮
+  goPartResume: function () {
+    wx.navigateTo({
+      url: '/page/my-party-resume-list/index',
+    })
+  },
+  //我的全职简历按钮 
+  goFullResume: function () {
+    wx.navigateTo({
+      url: '/page/my-full-resume-detail/index',
+    })
+  },
+  //跳转智能岗位、平台推荐岗位、面试邀请记录、已投递的岗位
+  goJobList: function　(e) {
+    wx.navigateTo({
+      url: '/page/recommend-job-list/index?jobType=' + e.currentTarget.dataset.id,
+    })
+  },
+  //我的举报页面
+  goReportView: function () {
+    wx.navigateTo({
+      url: '/page/my-report-list/index',
+    })
+  },
+  //切换城市列表
+  goChangeCity: function () {
+    wx.navigateTo({
+      url: '/page/change-city/index',
+    })
+  }
 })
