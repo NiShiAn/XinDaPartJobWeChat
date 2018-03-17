@@ -63,5 +63,24 @@ P('index', {
     wx.navigateTo({
       url: '/page/change-city/index',
     })
+  },
+  /**
+   * 跳转到企业认证 1：编辑 2：进行中 3：已认证
+   */
+  goCompanyAudit: function (e) {
+    if (e.currentTarget.dataset.id == '1') {
+      wx.navigateTo({
+        url: '/page/company-audit-edite/index',
+      })
+    } else if (e.currentTarget.dataset.id == '2') {
+      wx.navigateTo({
+        url: '/page/company-audit-statues/index',
+      })
+    } else {
+      wx.navigateTo({
+        url: '/page/company-audit-finished/index',
+      })
+    }
+    
   }
 })

@@ -76,7 +76,7 @@
     <image src='../../image/company-img/report.png' class='warning-img'></image>
   </view>
   <view class='employer-list'>
-    <view class='employer-item'>
+    <view class='employer-item' bindtap='goCompanyAudit' data-id='1'> 
       <view class='float-left icon-left'>
         <image src='../../image/company-img/EnterpriseCertification.png' class='company-left-icon'></image>
       </view>

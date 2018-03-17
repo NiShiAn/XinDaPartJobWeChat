@@ -36,7 +36,6 @@ P('index', {
     },
     
     loginCompanyView: function() {
-      console.log("1")
       wx.navigateTo({
         url: "/page/company-center-info/index",
       })
