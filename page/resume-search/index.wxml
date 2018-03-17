@@ -5,8 +5,8 @@
 <view class="container">
   <view class="search-container">
     <image src='../../image/post/search.png' class='search-img'></image>
-    <input  maxlength="10" placeholder="搜索" class="search-input" />
-    <span class="cancle">取消</span>
+    <input  maxlength="10" placeholder="搜索" class="search-input" bindblur='toSeatchTap'/>
+    <span class="cancle" bindtap="cancleSearch">取消</span>
   </view>
   <view class="title-line">
     <span>历史搜索</span>

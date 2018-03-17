@@ -40,15 +40,26 @@ P('index', {
      * 1:跳转到岗位搜索结果页面
      * 2:跳转到企业搜索结果页面
      * **/
-    toResultTap: function (e) {
+    toSeatchTap: function (e) {
+      var keywords = e.detail.value;
       if (this.data.activeTypeId == 1) {
         wx.navigateTo({
-          url: "/page/post-search-result/index?postId=1"
+          url: "/page/resume-search-result/index?keywords="+keywords+"&typeId=1"
         })
       } else {
         wx.navigateTo({
-          url: "/page/company-search-result/index?postId=1"
+          url: "/page/resume-search-result/index?keywords=" + keywords + "&typeId=1"
         })
       }
     },
+
+    /**
+     * 点击取消搜索
+     * **/
+    cancleSearch:function(){
+      this.setData({
+        keywords: ""
+      });
+      
+    }
 })
