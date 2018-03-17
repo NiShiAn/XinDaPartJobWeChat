@@ -116,6 +116,19 @@ P('index', {
         activeSubTypeId: e.currentTarget.dataset.id
       });
     },
+
+    /**
+    * 点击全部区域跳转到区域选择
+    * **/
+    toChooseRegion: function (e) {
+      wx.navigateTo({
+        url: "/page/post-change-region/index"
+      })
+      this.setData({
+        activeSubTypeId: e.currentTarget.dataset.id
+      });
+    },
+
     /**
      * 点击关闭签到弹窗
      * **/

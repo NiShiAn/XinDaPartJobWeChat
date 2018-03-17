@@ -2,9 +2,11 @@
 var P = require('../../lib/wxpage')
 P('index', {
     data: {
-      activeTypeId:1,    //1:兼职简历  2：全职简历
-      keywords: "",      //简历搜索关键词
+      //2:检索分类
+      activeTypeId:1,     //切换兼职or全职
+      activeSubTypeId:1,  //切换全部区域or雇主等级or岗位分
     },
+
     onLaunch: function () {
     },
 
@@ -21,7 +23,7 @@ P('index', {
         }
       })
       wx.setNavigationBarTitle({
-        title: '搜索'
+        title: '选择雇主等级'
       })
       wx.showShareMenu({
         withShareTicket: true
@@ -37,29 +39,23 @@ P('index', {
     },
 
     /**
-     * 1:跳转到岗位搜索结果页面
-     * 2:跳转到企业搜索结果页面
+     * 点击tab切换兼职&&全职
      * **/
-    toSeatchTap: function (e) {
-      var keywords = e.detail.value;
-      if (this.data.activeTypeId == 1) {
-        wx.navigateTo({
-          url: "/page/resume-search-result/index?keywords="+keywords+"&typeId=1"
-        })
-      } else {
-        wx.navigateTo({
-          url: "/page/resume-search-result/index?keywords=" + keywords + "&typeId=1"
-        })
-      }
+    tabChangeTypeClick: function (e) {
+      this.setData({
+        activeTypeId: e.currentTarget.dataset.id
+      });
     },
 
     /**
-     * 点击取消搜索
+     * 点击二级分类切换
+     * 1：全部区域
+     * 2：雇主等级
+     * 3：岗位分类
      * **/
-    cancleSearch:function(){
+    tabChangeSubTypeClick: function (e) {
       this.setData({
-        keywords: ""
+        activeSubTypeId: e.currentTarget.dataset.id
       });
-      
-    }
+    },
 })

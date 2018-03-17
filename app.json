@@ -1,8 +1,9 @@
 {
   "pages": [
     "page/post-index/index",
-    "page/person-info/index",
     "page/change-city/index",
+    "page/post-change-region/index",
+    "page/resume-change-condition/index",
     "page/add-edu-info/index",
     "page/add-full-work-info/index",
     "page/add-language/index",
@@ -24,6 +25,9 @@
     "page/my-party-resume-edite/index",
     "page/add-resume-report/index",
     "page/company-center-info/index",
+
+    "page/person-info/index",
+
     "page/special-agent-list/index",
     "page/special-agent-detail/index",
     "page/address-add/index",

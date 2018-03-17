@@ -18,19 +18,22 @@
     </scroll-view>
   </view>
   <view class="sub-type-container">
-    <view class="sub-type-box sub-type-line {{activeSubTypeId == 1 ? 'sub-type-active' : ''}}" data-id="1" bindtap='tabChangeSubTypeClick'>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 1 ? 'sub-type-active' : ''}}" data-id="1" bindtap='toChooseCondition'>
       全部区域
     </view>
-    <view class="sub-type-box sub-type-line {{activeSubTypeId == 2 ? 'sub-type-active' : ''}}" data-id="2" bindtap='toPostCategory'>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 2 ? 'sub-type-active' : ''}}" data-id="2" bindtap='toChooseCondition'>
       岗位分类
     </view>
-    <view class="sub-type-box sub-type-line {{activeSubTypeId == 3 ? 'sub-type-active' : ''}}" data-id="3" bindtap='toEmployerGrade'>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 3 ? 'sub-type-active' : ''}}" data-id="3" bindtap='toChooseCondition'>
       学历层次
     </view>
-    <view class="sub-type-box sub-type-line {{activeSubTypeId == 4 ? 'sub-type-active' : ''}}" data-id="4" bindtap='toEmployerGrade'>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 2 ? 'sub-type-active' : ''}}" data-id="4" bindtap='toChooseCondition' wx:if="{{activeTypeId==2}}">
+      时间顺序
+    </view>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 4 ? 'sub-type-active' : ''}}" data-id="4" bindtap='toChooseCondition' wx:if="{{activeTypeId==1}}">
       性别
     </view>
-    <view class="sub-type-search">
+    <view class="sub-type-search" bindtap='toSearchPage'>
       <image src='../../image/post/post-search.png' class='sub-type-search-img'></image>
     </view>
   </view>

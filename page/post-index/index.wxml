@@ -18,7 +18,7 @@
     </scroll-view>
   </view>
   <view class="sub-type-container">
-    <view class="sub-type-box sub-type-line {{activeSubTypeId == 1 ? 'sub-type-active' : ''}}" data-id="1" bindtap='tabChangeSubTypeClick'>
+    <view class="sub-type-box sub-type-line {{activeSubTypeId == 1 ? 'sub-type-active' : ''}}" data-id="1" bindtap='toChooseRegion'>
       全部区域
     </view>
     <view class="sub-type-box sub-type-line {{activeSubTypeId == 2 ? 'sub-type-active' : ''}}" data-id="2" bindtap='toEmployerGrade'>

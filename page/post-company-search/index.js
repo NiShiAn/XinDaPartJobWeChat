@@ -2,8 +2,8 @@
 var P = require('../../lib/wxpage')
 P('index', {
     data: {
-      //2:检索分类
-      activeTypeId:1,     //切换兼职or全职
+      activeTypeId:1,   //1:岗位；2：企业
+      keywords:""       //搜索关键词
     },
 
     onLaunch: function () {
@@ -46,28 +46,40 @@ P('index', {
       });
       if (this.data.activeTypeId == 1) {
         wx.navigateTo({
-          url: "/page/post-search-result/index?postId=1"
+          url: "/page/post-search-result/index?keywords=" + this.data.keywords
         })
       } else {
         wx.navigateTo({
-          url: "/page/company-search-result/index?postId=1"
+          url: "/page/company-search-result/index?keywords=" + this.data.keywords
         })
       }
     },
 
+    // /**
+    //  * 文本框失去焦点时,搜索列表
+    //  * **/
+    // bindSearch:function(e){
+    //   var keywords = e.detail.value;
+    //   this.setData({
+    //     keywords: keywords
+    //   });
+    //   if (this.data.activeTypeId == 1) {
+    //     wx.navigateTo({
+    //       url: "/page/post-search-result/index?keywords=" + keywords
+    //     })
+    //   } else {
+    //     wx.navigateTo({
+    //       url: "/page/company-search-result/index?keywords="+keywords
+    //     })
+    //   }
+    // },
+
     /**
-     * 1:跳转到岗位搜索结果页面
-     * 2:跳转到企业搜索结果页面
+     * 取消搜索
      * **/
-    toResultTap: function (e) {
-      if (this.data.activeTypeId == 1) {
-        wx.navigateTo({
-          url: "/page/post-search-result/index?postId=1"
-        })
-      } else {
-        wx.navigateTo({
-          url: "/page/company-search-result/index?postId=1"
-        })
-      }
-    },
+    cancleSearch:function(){
+      this.setData({
+        keywords: ""
+      });
+    }
 })
