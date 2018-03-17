@@ -82,5 +82,41 @@ P('index', {
       })
     }
     
+  },
+
+  /**
+   * 跳转招聘联系人列表
+   */
+  toContactList:function(){
+    wx.navigateTo({
+      url: '/page/contacts-list/index',
+    })
+  },
+
+  /**
+   * 跳转升级会员
+   */
+  toBuyVip: function () {
+    wx.navigateTo({
+      url: '/page/buy-vip/index',
+    })
+  },
+
+  /**
+   * 跳转到子账号列表
+   */
+  toSubAccountList: function () {
+    wx.navigateTo({
+      url: '/page/sub-account-list/index',
+    })
+  },
+
+  /**
+   * 跳转到工作多地址
+   */
+  toAddressList:function(){
+    wx.navigateTo({
+      url: '/page/address-list/index',
+    })
   }
 })

@@ -34,4 +34,13 @@ P('index', {
       //this.getPayCourseList();
       wx.stopPullDownRefresh()
     },
+
+  /**
+   * 新增工作地址
+   */
+    toAddressAdd: function () {
+      wx.navigateTo({
+        url: '/page/address-add/index',
+      })
+    }
 })

@@ -14,7 +14,7 @@
       </view>
     </view>
   </view>
-  <view class="add-contracts">
+  <view class="add-contracts" bindtap='toAddressAdd'>
     <span class="icon">+</span>
     <span class="text">新增工作地点</span>
   </view>

@@ -34,4 +34,23 @@ P('index', {
       //this.getPayCourseList();
       wx.stopPullDownRefresh()
     },
+
+    /**
+    * 修改新增子账号
+    */
+    toSubAccountEdit: function () {
+      wx.navigateTo({
+        url: '/page/sub-account-add/index?subAccountId=1',
+      })
+    },
+
+    /**
+    * 设置子账号权限
+    */
+    toSubAccountSetting:function(){
+      wx.navigateTo({
+        url: '/page/sub-account-setting/index?subAccountId=1',
+      })
+    }
+
 })

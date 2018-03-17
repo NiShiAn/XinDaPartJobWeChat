@@ -17,7 +17,7 @@
         </span>
       </view>
       <view class="op">
-        <image src='../../image/post/edit.png'></image>
+        <image src='../../image/post/edit.png' bindtap='toSubAccountEdit'></image>
       </view>
     </view>
     <view class="sub-account-list">
@@ -25,29 +25,29 @@
         <span class="index">子账号（一）：</span>
         <span class="phone">18363974853</span>
         <view class="imgs">
-          <image src='../../image/post/edit.png'></image>
-          <image src='../../image/post/delete.png'></image>
+          <image src='../../image/post/edit.png' bindtap='toSubAccountEdit'></image>
+          <image src='../../image/post/delete.png' bindtap='toSubAccountSetting'></image>
         </view>
       </view>
       <view class="sub-account-item">
         <span class="index">子账号（一）：</span>
         <span class="phone">18363974853</span>
         <view class="imgs">
-          <image src='../../image/post/edit.png'></image>
-          <image src='../../image/post/delete.png'></image>
+          <image src='../../image/post/edit.png' bindtap='toSubAccountEdit'></image>
+          <image src='../../image/post/delete.png' bindtap='toSubAccountSetting'></image>
         </view>
       </view>
       <view class="sub-account-item">
         <span class="index">子账号（一）：</span>
         <span class="phone">18363974853</span>
         <view class="imgs">
-          <image src='../../image/post/edit.png'></image>
-          <image src='../../image/post/delete.png'></image>
+          <image src='../../image/post/edit.png' bindtap='toSubAccountEdit'></image>
+          <image src='../../image/post/delete.png' bindtap='toSubAccountSetting'></image>
         </view>
       </view>
     </view>
   </view>
-  <view class="add-contracts">
+  <view class="add-contracts" bindtap='toSubAccountEdit'>
     <span class="icon">+</span>
     <span class="text">新增子账号</span>
   </view>

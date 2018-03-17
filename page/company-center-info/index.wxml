@@ -93,13 +93,13 @@
         <image src='../../image/company-center/row-right.png' class='go-icon'></image>
       </view>
     </view>
-    <view class='employer-item'>
+    <view class='employer-item' bindtap='toContactList'>
       <view class='float-left icon-left'>
         <image src='../../image/company-img/manager.png' class='company-left-icon'></image>
       </view>
       <view class='float-left auth-info-box'>
         <view>
-          <text class='person-name'>招聘联系人管理及认证</text>
+          <text class='person-name' >招聘联系人管理及认证</text>
           <text class='auth-statues'>已认证</text>
         </view>
         <view>
@@ -110,7 +110,7 @@
         <image src='../../image/company-center/row-right.png' class='go-icon'></image>
       </view>
     </view>
-    <view class='employer-item'>
+    <view class='employer-item' bindtap='toBuyVip'>
       <view class='float-left icon-left'>
         <image src='../../image/company-img/go-up-class.png' class='company-left-icon'></image>
       </view>
@@ -127,7 +127,7 @@
         <image src='../../image/company-center/row-right.png' class='go-icon'></image>
       </view>
     </view>
-    <view class='employer-item'>
+    <view class='employer-item' bindtap='toSubAccountList'>
       <view class='float-left icon-left'>
         <image src='../../image/company-img/subAccount.png' class='company-left-icon'></image>
       </view>
@@ -144,7 +144,7 @@
         <image src='../../image/company-center/row-right.png' class='go-icon'></image>
       </view>
     </view>
-    <view class='employer-item'>
+    <view class='employer-item' bindtap='toAddressList'>
       <view class='float-left icon-left'>
         <image src='../../image/company-img/position-work.png' class='company-left-icon'></image>
       </view>

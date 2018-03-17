@@ -34,4 +34,14 @@ P('index', {
       //this.getPayCourseList();
       wx.stopPullDownRefresh()
     },
+
+    /**
+    * 编辑招聘联系人
+    */
+    toContactEdit: function () {
+      wx.navigateTo({
+        url: '/page/contacts-edit/index?contactId=1',
+      })
+    },
+
 })

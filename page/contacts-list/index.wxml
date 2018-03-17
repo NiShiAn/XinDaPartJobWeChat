@@ -4,7 +4,7 @@
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class='contracts-list'>
-    <view class='contracts-item' wx:for="{{[1, 2, 3]}}" wx:for-item="i">
+    <view class='contracts-item' wx:for="{{[1, 2, 3]}}" wx:for-item="i" bindtap='toContactEdit'>
       <image src='../../image/post/head-img.png' class='head-img'>
       </image>
       <view class='info'>
@@ -18,7 +18,7 @@
       </view>
     </view>
   </view>
-  <view class="add-contracts">
+  <view class="add-contracts" bindtap='toContactEdit'>
     <span class="icon">+</span>
     <span class="text">新增招聘联系人信息</span>
   </view>
