@@ -173,58 +173,14 @@
             <image src='../../image/post/close.png' class="close" bindtap='closeSignModal'></image>
             <view class="m-title">连续签到积分几何加倍</view>
             <view class="m-list">
-              <view class="m-item">
-                <view class="m-item-2">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2 m-no-sign">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2 m-no-sign">+5
-                </view>
-              </view>
-              <view class="m-item">
-                <view class="m-item-2 m-no-sign">+5
+              <view class="m-item" wx:for="{{SignList}}" wx:for-index="signIndex" wx:for-item="signItem">
+               <view class="m-item-2 {{!signItem.IsSigned? 'm-no-sign':''}}">{{signItem.Value}}
                 </view>
               </view>
             </view>
-            <view class="sign-btn">签到
+            <view class="sign-btn" bindtap='SubmitSign'>签到
             </view>
-            <span class="tips">本次签到连续累计获取：105积分</span>
+            <span class="tips">本次签到连续累计获取：{{TotalValue}}积分</span>
         </view>
     </view>
 </view>

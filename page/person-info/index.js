@@ -28,7 +28,7 @@ P('index', {
       withShareTicket: true
     }),
     
-    wx.login({
+   wx.login({
       success: function () {
         wx.getUserInfo({
           success: function (res) {
@@ -40,7 +40,7 @@ P('index', {
           }
         });
       }
-    });
+   });
   },
   //我的兼职简历按钮
   goPartResume: function () {

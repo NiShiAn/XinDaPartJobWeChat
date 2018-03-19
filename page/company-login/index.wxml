@@ -7,18 +7,20 @@
     <span class="login-title">仅限招聘企业登录</span>
     <view class="section">
       <view class="section__title">手机号</view>
-      <input  bindinput="bindKeyInput" placeholder="请填写手机号码"/>
+      <input  bindinput="phoneInput" placeholder="请填写手机号码" maxlength='11'/>
     </view>
     <view class="section">
       <view class="section__title">验证码</view>
-      <input  bindinput="bindKeyInput" placeholder="输入验证码"/>
-      <span>获取验证码</span>
+      <input  bindinput="bindKeyInput" placeholder="输入验证码"  bindinput="verifyInput" style='width:300rpx'/>
+      <span bindtap="GetVerify" style="display: {{ is_show ? 'block' : 'none' }};">获取验证码</span>
+      <span style="display: {{ is_show ? 'none' : 'block' }};">{{last_time}}s</span>
     </view>
     <checkbox-group bindchange="checkboxChange">
       <label class="checkbox">
         <checkbox value="1" checked="22"/>阅读并同意<span class="agree">《用户使用协议》</span>和<span class="agree">《承诺书》</span>
       </label>
     </checkbox-group>
-    <button type="primary"  class="login-btn" bindtap='loginCompanyView'> 登陆 </button>
+    <button type="primary"  class="login-btn" bindtap='CompanyLogin'> 登陆 </button>
   </view>
 </view>
+

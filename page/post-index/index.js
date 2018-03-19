@@ -18,7 +18,13 @@ P('index', {
       activeSubTypeId:1,  //切换全部区域or雇主等级or岗位分类
       //签到弹窗参数
       showSignModal:false,
+      //获取签到信息返回的列表
+      SignList:[],
+      TodayIsSigned:false,
+      TotalValue:0,
+
       city:""
+
     },
 
     onLaunch: function () {
@@ -45,7 +51,7 @@ P('index', {
       this.setData({
         city: options.city
       })  
-      console.log("options.city$$$$$$$$$"+options.city)
+      this.GetSignInInfo()
     },
 
     /**
@@ -56,6 +62,61 @@ P('index', {
       wx.stopPullDownRefresh()
     },
 
+    /**
+      * 获取签到信息接口
+    * **/
+    GetSignInInfo:function(){
+      console.log("^^^^^")
+      var that=this;
+      var token = wx.getStorageSync('wxToken')
+      wx.request({
+        url: getApp().data.host + 'api/SignIn/GetSignInInfo',
+        data: {
+          'Token': token,
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function (res) {
+          if (res.data.Msg) {
+            that.setData({
+              SignList: res.data.Info.List,
+              TodayIsSigned: res.data.Info.TodayIsSigned,
+              TotalValue: res.data.Info.TotalValue,
+            });
+            if (!res.data.Info.TodayIsSigned){
+              that.setData({
+                showSignModal:true,
+              });
+            }
+           console.log("^^^^^"+JSON.stringify(res.data))
+          }
+        }
+      })
+    },
+
+    /**
+    * 点击签到
+    * **/
+    SubmitSign:function(){
+      var that=this;
+      var token = wx.getStorageSync('wxToken')
+      wx.request({
+        url: getApp().data.host + 'api/SignIn/SignIn',
+        data: {
+          'Token': token,
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function (res) {
+          if (res.data.Msg) {
+            that.setData({
+              showSignModal: false,
+              TodayIsSigned:true
+            });
+          }
+        }
+      })
+    },
     /**
      * 点击tab切换兼职&&全职
      * **/
