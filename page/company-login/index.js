@@ -1,4 +1,8 @@
 /************企业登录页面****************/
+/***
+ * 企业登录》
+ * 点击获取验证码
+ * */
 var countdown = 60;
 var settime = function (that) {
   if (countdown == 0) {
@@ -26,7 +30,8 @@ P('index', {
       last_time: '',
       is_show: true,
       phone: "",
-      verify:""
+      verify:"",
+      isEPLogin:false
     },
 
     onLaunch: function () {
@@ -45,9 +50,23 @@ P('index', {
           timingFunc: 'easeIn'
         }
       })
-      wx.setNavigationBarTitle({
-        title: '兼职详情'
-      })
+      var EPLogin = wx.getStorageSync('EPLogin')
+      if (EPLogin){
+        wx.setNavigationBarTitle({
+          title: '企业中心'
+        })
+        this.setData({
+          isEPLogin: true //false
+        })
+      }else{
+        wx.setNavigationBarTitle({
+          title: '企业登录页面'
+        })
+        this.setData({
+          isEPLogin: false //false
+        })
+      }
+      
       wx.showShareMenu({
         withShareTicket: true
       })
@@ -62,14 +81,19 @@ P('index', {
     },
     
     
-    //获取用户输入的用户名
+    
+    /**
+    * 获取用户输入的用户名
+    * **/
     phoneInput: function (e) {
       this.setData({
         phone: e.detail.value
       })
     },
 
-    //获取用户输入的用户名
+    /**
+    * 获取用户输入的验证码
+    * **/
     verifyInput: function (e) {
       this.setData({
         verify: e.detail.value
@@ -116,11 +140,10 @@ P('index', {
     },
 
     /**
-    * 点击获取验证码
+    * 点击进行企业登录
     * **/
     CompanyLogin: function () {
       var that = this;
-      // 将获取验证码按钮隐藏60s，60s后再次显示
       if (that.data.phone == "") {
         wx.showToast({
           title: '请填写手机号~',
@@ -151,8 +174,8 @@ P('index', {
             wx.setStorageSync('CIsMainAccount', res.data.Info.IsMainAccount);
             wx.setStorageSync('wxToken', res.data.Info.Token);
             wx.setStorageSync('EPLogin', true);
-            wx.navigateTo({
-              url: "/page/company-center-info/index",
+            that.setData({
+              isEPLogin: true //false
             })
           } 
         }
