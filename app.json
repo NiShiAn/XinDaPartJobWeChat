@@ -1,5 +1,6 @@
 {
   "pages": [
+    "page/verificate-phone/index",
     "page/post-index/index",
     "page/change-city/index",
     "page/post-change-region/index",
@@ -21,7 +22,7 @@
     "page/my-report-list/index",
     "page/company-report-list/index",
     "page/add-work-info/index",
-    "page/verificate-phone/index",
+   
     "page/my-party-resume-edite/index",
     "page/add-resume-report/index",
     "page/company-center-info/index",

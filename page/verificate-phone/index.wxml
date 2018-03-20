@@ -6,7 +6,7 @@
   <view class='phone-box'>
     <view class='phone-area-code'>+86</view>
     <view class='phone-input-view'>
-      <input class='phone-input' placeholder='请填写手机号'></input>
+      <input class='phone-input' placeholder='请填写手机号'  bindinput ="phoneNumInput"></input>
     </view>
   </view>
   <view class='verification-code-box'>
@@ -14,7 +14,7 @@
     <view class='verification-input-box'>
       <input class='verification-number-input' placeholder='请输入验证码'></input>
     </view>
-    <button type="primary" bindtap="primary" class="verification-btn"> 获取验证码</button>
+    <button type="primary" bindtap="getCode" class="verification-btn" disabled='{{btnStatues}}'>{{codeTime}}</button>
   </view>
   <button type="primary" bindtap="primary" class="primary"> 保存</button>
 </view>
