@@ -1,5 +1,7 @@
 .contain {
   background-color: #efeff3;
+  width: 100%;
+  height: 100%;
 }
 
 .phone-alert-tile {
