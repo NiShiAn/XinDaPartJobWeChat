@@ -58,6 +58,29 @@ P('index', {
         this.setData({
           isEPLogin: true //false
         })
+        var that=this;
+        wx.request({
+          url: getApp().data.host + 'api/Account/EPDefaultLogin',
+          data: {
+            "Phone": that.data.phone,
+            "OpenId": wx.getStorageSync('wxOpenId'),
+            "City": '0532',
+          },
+          method: 'POST',
+          dataType: 'json',
+          success: function (res) {
+            if (res.data.Msg) {
+              console.log("*********" + JSON.stringify(res.data))
+              wx.setStorageSync('CIsMainAccount', res.data.Info.IsMainAccount);
+              wx.setStorageSync('wxToken', res.data.Info.Token);
+              wx.setStorageSync('EPLogin', true);
+              wx.setStorageSync('EPPhone', that.data.phone);
+              that.setData({
+                isEPLogin: true //false
+              })
+            }
+          }
+        })
       }else{
         wx.setNavigationBarTitle({
           title: '企业登录页面'
@@ -174,6 +197,7 @@ P('index', {
             wx.setStorageSync('CIsMainAccount', res.data.Info.IsMainAccount);
             wx.setStorageSync('wxToken', res.data.Info.Token);
             wx.setStorageSync('EPLogin', true);
+            wx.setStorageSync('EPPhone', that.data.phone);
             that.setData({
               isEPLogin: true //false
             })

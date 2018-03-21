@@ -36,6 +36,7 @@ require('./lib/wxpage').A({
     wx.login({
       success: function (res) {
         var wxUserInfo = wx.getStorageSync('wxUserInfo')
+        console.log(":"+res.code)
         wx.request({
           url: that.data.host + 'api/Account/GetUserInfo',
           data: {
