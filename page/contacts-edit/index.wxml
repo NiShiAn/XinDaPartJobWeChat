@@ -3,6 +3,7 @@
 <!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
+  <form bindsubmit="savaContract">
   <view class='info-contenter'>
     <view class='info-title'>
       <view class="info-line">
@@ -14,28 +15,32 @@
       </view>
     </view>
     <view class='info-con'>
-      <view class="add-photo">
+      <image src='{{ShowUrl}}' wx:if="{{ShowUrl!=''}}" class="image-list" bindtap='uploadImg'></image>
+      <view class="add-photo" bindtap='uploadImg' wx:if="{{ShowUrl==''}}">
         <image src='../../image/post/add.png'></image>
       </view>
+      
     </view>
     <view class="info-list">
       <view class="section">
         <view class="section__title">姓名</view>
-        <input  bindinput="bindKeyInput" placeholder="输入您的姓名"/>
+        <input  bindinput="bindKeyInput" placeholder="输入您的姓名" name="ContactsName" value='{{EPContactsName}}'/>
       </view>
       <view class="section">
         <view class="section__title">手机</view>
         <view class='row'>
-          <span>未认证</span>
+
+          <span>{{Phone==''?'未认证':Phone}}</span>
            <image src='../../image/company-center/row-right.png'></image>
         </view>
       </view>
-       <view class="section">
+       <!-- <view class="section">
         <view class="section__title">实名认证</view>
         <view class='row'>
            <image src='../../image/company-center/row-right.png' style='margin-left:108rpx;'></image>
         </view>
-      </view>
+      </view> -->
     </view>
-     <button type="primary" bindtap="primary" class="primary"> 保存 </button>
+     <button type="primary" bindtap="primary" class="primary" formType="submit"> 保存 </button>
+    </form>
 </view>

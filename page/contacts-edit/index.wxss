@@ -51,10 +51,17 @@
   padding-right: 4%;
   padding-top: 31rpx;
 }
+.image-list{
+  width: 114rpx;
+  height: 114rpx;
+  float:left;
+  margin-left: 20rpx;
+}
 .add-photo{
   width: 114rpx;
   height: 114rpx;
   border: 2rpx solid rgb(204, 204, 204);
+   float:left;
 }
 .add-photo image{
   display: block;

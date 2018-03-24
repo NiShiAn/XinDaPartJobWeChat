@@ -4,21 +4,22 @@
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class='contracts-list'>
-    <view class='contracts-item' wx:for="{{[1, 2, 3]}}" wx:for-item="i" bindtap='toContactEdit'>
-      <image src='../../image/post/head-img.png' class='head-img'>
+    <view class='contracts-item' wx:for="{{ContactList}}" wx:for-item="item"  wx:for-index="index" >
+      <image src='{{item.HeadPicUrl}}' class='head-img'>
       </image>
       <view class='info'>
-        <span class="name"><span>李经理</span><span>18654223124</span></span>
-        <span class="tip">招聘联系人已实名认证</span>
+        <span class="name"><span>{{item.EPContactsName}}</span><span>{{item.Phone}}</span></span>
+        <span class="tip" wx:if="{{item.IsAuth}}">招聘联系人已实名认证</span>
+         <span class="tip" wx:if="{{!item.IsAuth}}">招聘联系人未来实名认证</span>
       </view>
       <view class="op">
-        <image src='../../image/post/delete.png'></image>
+        <image src='../../image/post/delete.png' bindtap='toContactDelete' data-id="{{item.EPContactsId}}" data-index="{{index}}"></image>
         <view></view>
-        <image src='../../image/post/edit.png'></image>
+        <image src='../../image/post/edit.png' bindtap='toContactEdit' data-id="{{item.EPContactsId}}"></image>
       </view>
     </view>
   </view>
-  <view class="add-contracts" bindtap='toContactEdit'>
+  <view class="add-contracts" bindtap='toContactEdit' data-id='0'>
     <span class="icon">+</span>
     <span class="text">新增招聘联系人信息</span>
   </view>
