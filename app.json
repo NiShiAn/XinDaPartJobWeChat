@@ -1,7 +1,8 @@
 {
   "pages": [
-    "page/verificate-phone/index",
     "page/post-index/index",
+    "page/verificate-phone/index",
+    
     "page/change-city/index",
     "page/post-change-region/index",
     "page/resume-change-condition/index",
