@@ -1,0 +1,149 @@
+.word-type-box {
+  background-color: #fff;
+  padding-left: 35rpx;
+  border:1rpx solid #ddd;
+}
+
+.contain {
+  width: 100%;
+  height: 100%;
+  background-color: #efeff3;
+}
+
+.position-box {
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+
+.position-box:last-child {
+  border-bottom: none;
+}
+
+.position-type {
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  float: left;
+}
+
+.position-choose {
+  padding-left: 35rpx;
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  float: left;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.position-box image {
+  width: 25rpx;
+  height: 30rpx;
+  float: right;
+  margin-top: 29rpx;
+  margin-right: 35rpx;
+}
+
+.work-time-box {
+  margin-top: 20rpx;
+  padding-left: 35rpx;
+  background-color: #fff;
+}
+
+.work-time-view {
+  height: 88rpx;
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+  line-height: 88rpx;
+  border-bottom: 1px solid #ddd;
+}
+
+.work-time-txtarea-box {
+  padding: 30rpx 0;
+  font-size: 30rpx;
+  color: rgb(217, 217, 217)
+}
+
+.work-time-txtarea {
+  width: 100%;
+  margin-right: 35rpx;
+  font-size: 30rpx;
+  color: rgb(217, 217, 217);
+  height: 180rpx;
+}
+
+.primary {
+  margin: 40rpx 35rpx;
+}
+
+.margin-left-35 {
+  margin-left: 35rpx;
+}
+
+.pay-range {
+  background-color: #efeff3;
+  color: rgb(136, 136, 136);
+  width: 190rpx;
+  height: 60rpx;
+  text-align: center;
+  float: left;
+  margin-top: 15rpx;
+}
+
+.pay-range:last-child {
+  margin-left: 0rpx;
+}
+
+.line-heng {
+  width: 30rpx;
+  height: 2rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  float: left;
+  margin-top: 40rpx;
+  background-color: #ddd;
+}
+
+.pay-unit {
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  color: rgb(136, 136, 136);
+  float: left;
+}
+
+.position-right {
+  float: right;
+  margin-right: 20rpx;
+}
+
+
+.work-descr-box {
+  margin-top: 10rpx;
+  background-color: #fff;
+  padding-left: 35rpx;
+}
+
+.work-descr-title {
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+  border-bottom: 1rpx solid #ddd;
+}
+
+.work-content {
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  color: rgb(53, 53, 53);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.margin-20 {
+  margin-right: 20rpx;
+}

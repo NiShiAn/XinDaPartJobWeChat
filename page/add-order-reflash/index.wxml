@@ -1,0 +1,50 @@
+<!--模块：个人中心-->
+<!--页面：预约刷新设置页面-->
+<!--作者：崔建伟-->
+<view class="contain">
+  <view class='word-type-box'>
+    <view class='position-box'>
+      <view class='position-type'>开始时间</view>
+      <view class="position-choose flex-row">
+          <picker class='margin-20' mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="picker">
+              {{date}}
+            </view>
+          </picker>
+          <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+            <view class="picker">
+              {{time}}
+            </view>
+          </picker>
+      </view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>间隔时间</view>
+      <text class='position-choose' bindtap='actionSheetClick'>点击选择</text>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>刷新次数</view>
+      <view class="position-choose">
+        <picker bindchange="bindPickerChangeNumber" value="{{indexNumber}}" range="{{arrayNumber}}">
+          <view class="picker">
+            {{arrayNumber[indexNumber]}}
+          </view>
+        </picker>
+      </view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+    <view class='position-box'>
+      <view class='position-type'>刷新天数</view>
+      <view class="position-choose">
+        <picker bindchange="bindPickerChangeDay" value="{{indexDay}}" range="{{arrayDay}}">
+          <view class="picker">
+            {{arrayDay[indexDay]}}
+          </view>
+        </picker>
+      </view>
+      <image src='../../image/company-center/row-right.png'></image>
+    </view>
+  </view>
+  <button type="primary" bindtap="primary" class="primary">保存</button>
+</view>

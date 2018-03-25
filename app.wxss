@@ -133,9 +133,6 @@ page {
     padding-left: 0;
     padding-right: 0;
 }
-.section__ctn{
-
-}
 
 /**** tab切换样式 *******/
 .type-navbar{
@@ -197,4 +194,8 @@ page {
   color: #fff;
   text-align: center;
   line-height: 60rpx;
+}
+
+.picker{
+  color: rgb(53, 53, 53) !important;
 }
