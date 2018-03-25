@@ -1,11 +1,13 @@
 /************付费课堂页面****************/
-var P = require('../../lib/wxpage')
+var P = require('../../lib/wxpage');
+var util = require('../../util/util');
 P('index', {
   data: {
-    codeTime:'获取验证码',
+    codeTime: '获取验证码',
     btnStatues: false,
     phoneNum: "",//用户输入的手机号码
-    codeNumber:"",//数据获取的验证码
+    codeNumber: "",//数据获取的验证码
+    popErrorMsg:""
   },
 
   onLaunch: function () {
@@ -43,33 +45,38 @@ P('index', {
    * 获取手机验证吗
    */
 
-  getCode:function(e){
+  getCode: function (e) {
     console.log(this.data.phoneNum);
     var phone = this.data.phoneNum;
     if (!(/^1[34578]\d{9}$/.test(phone))) {
-      wx.showToast({
-        title: '手机号有误',
-        icon: 'success',
-        duration: 2000
+      // wx.showToast({
+      //   title: '手机号码有误',
+      // });
+      // wx.setTopBarText({
+      //   text: 'hello, world!'
+      // })
+      this.setData({
+        popErrorMsg:"手机号码有误"
       });
+      util.ohShitfadeOut(this);
       return
     }
     var that = this;
     var timeNum = 60;
-    var tiemr = setInterval(function(){
+    var tiemr = setInterval(function () {
       timeNum--;
       that.setData({
         codeTime: timeNum + "后重新获取",
         btnStatues: true
       })
-      if(timeNum == 0){
+      if (timeNum == 0) {
         clearInterval(tiemr);
         that.setData({
-          codeTime:"重新获取",
+          codeTime: "重新获取",
           btnStatues: false
         })
       }
-    },1000);
+    }, 1000);
     wx.request({
       url: getApp().data.host + 'api/Account/GetPhoneCode',
       data: {
@@ -80,7 +87,7 @@ P('index', {
       success: function (res) {
         console.log(JSON.stringify(res.data))
         if (res.data.Msg) {
-          
+
         }
       }
     })
@@ -89,7 +96,7 @@ P('index', {
   /**
    * 获取验证码
    */
-  phoneNumInput:function(e) {
+  phoneNumInput: function (e) {
     this.setData({
       phoneNum: e.detail.value
     })

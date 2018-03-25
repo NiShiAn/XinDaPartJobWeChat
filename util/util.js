@@ -30,7 +30,16 @@ function formatDistance(num) {
 
 }
 
+function ohShitfadeOut(that){
+  setTimeout(function(){
+    that.setData({
+      popErrorMsg: ''
+    }); 
+  },3000);
+}
+
 module.exports = {
   formatTime: formatTime,
-  formatDistance: formatDistance
+  formatDistance: formatDistance,
+  ohShitfadeOut: ohShitfadeOut
 }

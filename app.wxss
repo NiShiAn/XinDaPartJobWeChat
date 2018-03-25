@@ -184,3 +184,16 @@ page {
   color: rgb(217, 217, 217) !important;
 }
 
+
+/*置顶提示框样式  */
+.error-alert {
+  height: 60rpx;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: 28rpx;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+}

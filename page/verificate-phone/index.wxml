@@ -2,6 +2,11 @@
 <!--页面：验证手机号-->
 <!--作者：崔建伟-->
 <view class='contain'>
+  <block wx:if="{{popErrorMsg!=''}}">
+    <view class='error-alert'>
+      <text>{{popErrorMsg}}</text>
+    </view>
+  </block>
   <view class='phone-alert-tile'>请输入手机号</view>
   <view class='phone-box'>
     <view class='phone-area-code'>+86</view>
