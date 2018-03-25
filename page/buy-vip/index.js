@@ -2,9 +2,17 @@
 var P = require('../../lib/wxpage')
 P('index', {
     data: {
+      vipListInfo:[],
+      vipItemInfo:{},
+      clickNum:0,
+      buyPrice:"0",
     },
 
     onLaunch: function () {
+    },
+
+    onShow:function(){
+      this.getVipInfo();
     },
 
     /**
@@ -34,4 +42,64 @@ P('index', {
       //this.getPayCourseList();
       wx.stopPullDownRefresh()
     },
+
+    getVipInfo:function(){
+      var that = this;
+      var token = wx.getStorageSync('wxToken');
+      wx.request({
+        url: getApp().data.host + 'api/Vip/GetVipList',
+        data: {
+          Token: token,
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function (res) {
+          console.log(JSON.stringify(res.data))
+          if (res.data.Msg) {
+            that.setData({
+              vipListInfo: res.data.Info,
+              buyPrice: res.data.Info[0].NewPrice
+            });
+            that.getVipItemInfo(res.data.Info,0)
+          }
+        }
+      })
+    },
+  /**
+   * 获取点击会员的信息
+   */
+    getVipItemInfo:function(e,index){
+      var that = this;
+      var token = wx.getStorageSync('wxToken');
+      wx.request({
+        url: getApp().data.host + 'api/Vip/GetVipInfo',
+        data: {
+          Token: token,
+          VipInfoId: e[index].VipInfoId
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function (res) {
+          console.log(JSON.stringify(res.data))
+          if (res.data.Msg) {
+            that.setData({
+              vipItemInfo: res.data.Info
+            })
+          }
+        }
+      })
+    },
+    /**
+     * 会员点击事件
+     */
+
+    clickVip:function(e){
+      var index = parseInt(e.currentTarget.dataset.id);
+      var buyPrice = this.data.vipListInfo[index].NewPrice;
+      this.setData({
+        clickNum: e.currentTarget.dataset.id,
+        buyPrice: buyPrice
+      })
+      this.getVipItemInfo(this.data.vipListInfo, index);
+    }
 })

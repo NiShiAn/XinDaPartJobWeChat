@@ -91,7 +91,7 @@ P('index', {
               Address:e.address,
               Lng: e.longitude,
               Lat: e.latitude,
-              Type: 0
+              Type: 0,//地址所属类别：0.全部，1.兼职，2.全职
             },
             method: 'POST',
             dataType: 'json',

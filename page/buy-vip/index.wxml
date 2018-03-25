@@ -4,41 +4,19 @@
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class="vips">
-    <view class="vip selected">
+    <block wx:for="{{vipListInfo}}" wx:for-index="idx" wx:for-item="item" wx:key="unique">
+      <view class="vip {{clickNum ==  idx ? 'selected' : ''}}" data-id='{{idx}}' bindtap='clickVip'>
         <span class="v-name">VIP</span>
-        <span class="v-type">月度会员<span>(有效期一年)</span></span>
-        <view class="v-bottom b-selected">
-          <span class="o-price">￥498</span>
-          <span class="n-price">￥198</span>
+        <span class="v-type">{{item.Name}}<span>({{item.Description}})</span></span>
+        <view class="v-bottom {{clickNum ==  idx ? 'b-selected' : ''}}">
+          <span class="o-price">￥{{item.OldPrice}}</span>
+          <span class="n-price">￥{{item.NewPrice}}</span>
         </view>
       </view>
-    <view class="vip">
-      <span class="v-name">VIP</span>
-      <span class="v-type">月度会员<span>(有效期一年)</span></span>
-      <view class="v-bottom">
-        <span class="o-price">￥498</span>
-        <span class="n-price">￥198</span>
-      </view>
-    </view>
-     <view class="vip">
-      <span class="v-name">VIP</span>
-      <span class="v-type">月度会员<span>(有效期一年)</span></span>
-      <view class="v-bottom">
-        <span class="o-price">￥498</span>
-        <span class="n-price">￥198</span>
-      </view>
-    </view>
-    <view class="vip">
-      <span class="v-name">VIP</span>
-      <span class="v-type">月度会员<span>(有效期一年)</span></span>
-      <view class="v-bottom">
-        <span class="o-price">￥498</span>
-        <span class="n-price">￥198</span>
-      </view>
-    </view>
+    </block>
   </view>
   <view class="vip-detail">
-    <view class="title">VIP年度会员特权</view>
+    <view class="title">VIP{{vipItemInfo.Name}}特权</view>
     <view class='block'>
       <view class='left'>
         <span class="value">￥<span>0</span>元/个</span>
@@ -55,36 +33,36 @@
     </view>
     <view class='block'>
       <view class='left'>
-        <span class="value"><span>4</span>个</span>
+        <span class="value"><span>{{vipItemInfo.AccountCount}}</span>个</span>
         <span class="text">子账号</span>
       </view>
       <view class='center'>
-        <span class="value"><span>12</span>次/岗位/天</span>
-        <span class="text">智能/预约刷新</span>
-        </view>
+        <span class="value"><span>{{vipItemInfo.AddressPerJob}}</span>个地点</span>
+        <span class="text">每个岗位可添加</span>
+      </view>
       <view class='right'>
-        <span class="value"><span>3986</span></span>
-        <span class="text">积分</span>
+         <span class="value"><span>{{vipItemInfo.JobRefreshPerDayCount}}</span>次/岗位/天</span>
+        <span class="text">智能/预约刷新</span>
       </view>
     </view>
     <view class='block'>
       <view class='left' style='border-bottom:none'>
+        <span class="value"><span>{{vipItemInfo.Integral}}</span></span>
+        <span class="text">积分</span>
+      </view>
+      <view class='center' style='border-bottom:none'>
         <span class="value"><span>专线</span></span>
         <span class="text">客服帮助</span>
       </view>
-      <view class='center' style='border-bottom:none'>
-        <span class="value"><span>全网</span></span>
-        <span class="text">企业推荐</span>
-        </view>
       <view class='right' style='border-bottom:none'>
-        <span class="value"><span>全网</span></span>
-        <span class="text">岗位推荐</span>
+        <span class="value"><span>全网/市</span></span>
+        <span class="text">企业/岗位推荐</span>
       </view>
     </view>
   </view>
   <view class="vip-pay">
     <span class="p-price">
-      ￥<span>398</span>
+      ￥<span>{{buyPrice}}</span>
     </span>
     <view class="p-btn">
       支付
