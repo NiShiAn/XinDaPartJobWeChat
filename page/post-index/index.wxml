@@ -41,7 +41,7 @@
     </swiper>
   </view>
   <view class='post-container'>
-    <view class='post-item' wx:for="{{PostList}}" wx:for-item="item" bindtap='toDetailTap'>
+    <view class='post-item' wx:for="{{PostList}}" wx:for-item="item" bindtap='toDetailTap' data-id='{{item.JobId}}'>
       <image src='../../image/post/{{i}}-employer.png' class="leveal-img"></image>
       <view class='post-left'>
         <span class="post-name">

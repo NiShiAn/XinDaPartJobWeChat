@@ -4,24 +4,24 @@
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
   <view class='post-container'>
-    <view class='post-item' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
+    <view class='post-item' wx:for="{{ResumeList}}" wx:for-item="item" bindtap='selectResume' data-id='{{item.CVId}}'>
       <view class='post-left'>
         <view class='re-info'>
-          <image src='../../image/post/head-img.png' class='min-icon-img'></image>
+          <image src='{{item.HeadImg}}' class='min-icon-img'></image>
           <span class="info">
             <span class="name">
-              张溪
+              {{item.JobCategoryName}}
             </span>
             <span class="desc">
-              一句话描述兼职技能
+               {{item.SkillSummary}}
             </span>
           </span>
         </view>
       </view>
       <view class='post-right'>
-        <image src='../../image/post/duihao.png' class='select-img'></image>
+        <image src='../../image/post/duihao.png' class='select-img' wx:if="{{selectResumeId==item.CVId}}"></image>
       </view>
     </view>
   </view>
-  <button type="primary" bindtap="primary" class="primary"> 确认 </button>
+  <button type="primary" bindtap="primary" class="primary" bindtap='deliveryPost'> 确认 </button>
 </view>
