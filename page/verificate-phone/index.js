@@ -49,12 +49,6 @@ P('index', {
     console.log(this.data.phoneNum);
     var phone = this.data.phoneNum;
     if (!(/^1[34578]\d{9}$/.test(phone))) {
-      // wx.showToast({
-      //   title: '手机号码有误',
-      // });
-      // wx.setTopBarText({
-      //   text: 'hello, world!'
-      // })
       this.setData({
         popErrorMsg:"手机号码有误"
       });
@@ -94,12 +88,44 @@ P('index', {
   },
 
   /**
-   * 获取验证码
+   * 获取手机号码/获取手机验证码
    */
   phoneNumInput: function (e) {
-    this.setData({
-      phoneNum: e.detail.value
-    })
+    if (e.currentTarget.dataset.id == '1'){
+      this.setData({
+        phoneNum: e.detail.value
+      })
+    } else {
+      this.setData({
+        codeNumber: e.detail.value
+      })
+    }
   },
+
+
+  /**
+   * 验证验证码
+   */
+
+  primary:function(){
+    var that = this;
+    var token = wx.getStorageSync('wxToken');
+    wx.request({
+      url: getApp().data.host + 'api/EP/GetEPContacts',
+      data: {
+        "Phone": that.data.phoneNum,
+        "VerifyCode": that.data.codeNumber,
+        "Token": token
+      },
+      method: 'POST',
+      dataType: 'json',
+      success: function (res) {
+        console.log(JSON.stringify(res.data))
+        if (res.data.Msg) {
+          
+        }
+      }
+    })
+  }
 
 })

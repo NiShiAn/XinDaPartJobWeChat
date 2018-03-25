@@ -196,4 +196,5 @@ page {
   background-color: red;
   color: #fff;
   text-align: center;
+  line-height: 60rpx;
 }
