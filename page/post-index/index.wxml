@@ -41,31 +41,31 @@
     </swiper>
   </view>
   <view class='post-container'>
-    <view class='post-item' wx:for="{{[1, 2, 3, 4, 5]}}" wx:for-item="i" bindtap='toDetailTap'>
+    <view class='post-item' wx:for="{{PostList}}" wx:for-item="item" bindtap='toDetailTap'>
       <image src='../../image/post/{{i}}-employer.png' class="leveal-img"></image>
       <view class='post-left'>
         <span class="post-name">
-          托管老师
+          {{item.JobName}}
         </span>
         <span class="post-price">
-          100-150<span>元/天</span>
+          {{item.JobPay}}<span>{{item.JobPayUnit}}</span>
         </span>
         <span class="post-min">
           <image src='../../image/post/dingwei.png' class='min-icon'></image>
           <span>
-            市南区
+            {{item.JobAddress}}
           </span>
           <image src='../../image/post/shizhong.png' class='min-icon'></image>
           <span>
-            昨天12：24
+            {{item.JobTime}}
           </span>
           <image src='../../image/post/huiyuan.png' class='min-icon'></image>
           <span>
-            季度会员
+             {{item.JobMember}}
           </span>
         </span>
       </view>
-      <view class='post-right'>
+      <view class='post-right' wx:if="{{item.IsSelf}}">
         <view class='up-row'>
           <image src='../../image/post/up-row.png' class='min-icon'></image>
         </view>
@@ -97,10 +97,10 @@
         </span>
       </view>
       <view class='post-right'>
-        <!-- <view class='up-row'>
+         <view class='up-row' wx:if="{{item.IsSelf}}">
           <image src='../../image/post/up-row.png' class='min-icon'></image>
-        </view> -->
-        <view class="post-toDetail">查看</view>
+        </view> 
+        <view class="post-toDetail">查看IsPractice</view>
       </view>
     </view>
     <view class='post-item' bindtap='toDetailTap'>

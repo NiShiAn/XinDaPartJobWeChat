@@ -5,15 +5,15 @@
 <view class="container">
   <view class='contracts-list'>
     <view class='contracts-item'>
-      <image src='../../image/post/head-img.png' class='head-img'>
+      <image src='{{Logo}}' class='head-img'>
       </image>
       <view class='info'>
-        <span class="name"><span>李经理</span><span>18654223124</span></span>
+        <span class="name"><span>{{Name}}</span><span>{{Phone}}</span></span>
         <span class="tip">
           <image src='../../image/company-center/sub-a-list1.png'></image>
-          <span>年度会员</span>
+          <span>年度会员{{VipType}}</span>
            <image src='../../image/company-center/sub-list2.png'></image>
-          <span>可配置4个</span>
+          <span>可配置{{AccountCount}}个</span>
         </span>
       </view>
       <view class="op">
@@ -21,33 +21,17 @@
       </view>
     </view>
     <view class="sub-account-list">
-      <view class="sub-account-item">
-        <span class="index">子账号（一）：</span>
-        <span class="phone">18363974853</span>
+      <view class="sub-account-item" wx:for="{{SubAccountList}}" wx:for-item="item"  wx:for-index="index">
+        <span class="index">子账号（{{index}}）：</span>
+        <span class="phone">{{item.Phone}}</span>
         <view class="imgs">
-          <image src='../../image/post/edit.png' bindtap='toSubAccountEdit'></image>
-          <image src='../../image/post/delete.png' bindtap='toSubAccountSetting'></image>
-        </view>
-      </view>
-      <view class="sub-account-item">
-        <span class="index">子账号（一）：</span>
-        <span class="phone">18363974853</span>
-        <view class="imgs">
-          <image src='../../image/post/edit.png' bindtap='toSubAccountEdit'></image>
-          <image src='../../image/post/delete.png' bindtap='toSubAccountSetting'></image>
-        </view>
-      </view>
-      <view class="sub-account-item">
-        <span class="index">子账号（一）：</span>
-        <span class="phone">18363974853</span>
-        <view class="imgs">
-          <image src='../../image/post/edit.png' bindtap='toSubAccountEdit'></image>
-          <image src='../../image/post/delete.png' bindtap='toSubAccountSetting'></image>
+          <image src='../../image/post/edit.png' bindtap='toSubAccountEdit' data-id='{{item.AccountId}}'></image>
+          <image src='../../image/post/delete.png' bindtap='toSubAccountSetting' data-id='{{item.AccountId}}'></image>
         </view>
       </view>
     </view>
   </view>
-  <view class="add-contracts" bindtap='toSubAccountEdit'>
+  <view class="add-contracts" bindtap='toSubAccountEdit' data-id='0'>
     <span class="icon">+</span>
     <span class="text">新增子账号</span>
   </view>

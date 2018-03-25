@@ -2,6 +2,13 @@
 var P = require('../../lib/wxpage')
 P('index', {
     data: {
+      AccountCount:0,
+      AccountId:0,
+      Logo:'',
+      Name:'',
+      Phone:'', 
+      VipType:0,
+      SubAccountList: [],
     },
 
     onLaunch: function () {
@@ -25,6 +32,7 @@ P('index', {
       wx.showShareMenu({
         withShareTicket: true
       })
+      this.getSubAccountList();
     },
 
     /**
@@ -33,6 +41,33 @@ P('index', {
     onPullDownRefresh: function () {
       //this.getPayCourseList();
       wx.stopPullDownRefresh()
+    },
+
+    /**
+    * 获取招聘联系人列表
+    */
+    getSubAccountList: function () {
+      var token = wx.getStorageSync('wxToken')
+      var that = this;
+      wx.request({
+        url: getApp().data.host + '/api/EP/GetAccountList',
+        data: {
+          'Token': token
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function (res) {
+          that.setData({
+            AccountCount: res.data.Info.AccountCount,
+            AccountId: res.data.Info.AccountId,
+            Logo: res.data.Info.Logo,
+            Name: res.data.Info.Name,
+            Phone: res.data.Info.Phone,
+            VipType: res.data.Info.VipType,
+            SubAccountList: res.data.Info.SubAccountList,
+          });
+        }
+      })
     },
 
     /**
