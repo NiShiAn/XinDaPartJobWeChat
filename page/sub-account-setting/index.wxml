@@ -5,13 +5,13 @@
 <view class="container">
   <view class='contracts-list'>
     <view class='sub-item'>
-      <span>岗位管理</span>
+      <span>{{SunAccountSetting[0].MenuName}}</span>
       <view class="body-view">
-        <switch checked bindchange="switch1Change"/>
+        <switch :checked='{{SunAccountSetting[0].IsUsed}}' bindchange="switch1Change"/>
       </view>
     </view>
     <view class='sub-item'>
-      <span>简历管理</span>
+      <span>{{SunAccountSetting[1].MenuName}}</span>
       <view class="body-view">
         <switch checked bindchange="switch1Change"/>
       </view>
@@ -28,37 +28,37 @@
       </view>
     </view>
     <view class='sub-item'>
-      <span>招聘联系人管理及认证</span>
+      <span>{{SunAccountSetting[2].MenuName}}</span>
       <view class="body-view">
         <switch checked bindchange="switch1Change"/>
       </view>
     </view>
     <view class='sub-item'>
-      <span>升级会员</span>
+      <span>{{SunAccountSetting[3].MenuName}}</span>
       <view class="body-view">
         <switch checked bindchange="switch1Change"/>
       </view>
     </view>
     <view class='sub-item'>
-      <span>工作多地点</span>
+      <span>{{SunAccountSetting[4].MenuName}}</span>
       <view class="body-view">
         <switch checked bindchange="switch1Change"/>
       </view>
     </view>
     <view class='sub-item'>
-      <span>特工任务发布</span>
+      <span>{{SunAccountSetting[5].MenuName}}</span>
       <view class="body-view">
         <switch checked bindchange="switch1Change"/>
       </view>
     </view>
     <view class='sub-item'>
-      <span>平台广告投放</span>
+      <span>{{SunAccountSetting[6].MenuName}}</span>
       <view class="body-view">
         <switch checked bindchange="switch1Change"/>
       </view>
     </view>
     <view class='sub-item'>
-      <span>发票信息</span>
+      <span>{{SunAccountSetting[7].MenuName}}</span>
       <view class="body-view">
         <switch checked bindchange="switch1Change"/>
       </view>

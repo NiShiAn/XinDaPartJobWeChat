@@ -2,6 +2,8 @@
 var P = require('../../lib/wxpage')
 P('index', {
     data: {
+      postId:1,     //岗位Id
+      PostInfo:{}   //岗位详细信息
     },
 
     onLaunch: function () {
@@ -24,6 +26,34 @@ P('index', {
       })
       wx.showShareMenu({
         withShareTicket: true
+      })
+      this.setData({
+        postId: options.postId
+      })  
+      this.getPostDetail();
+    },
+
+    /**
+     * 获取岗位详情
+    * **/
+    getPostDetail:function(){
+      var that = this;
+      var token = wx.getStorageSync('wxToken')
+      wx.request({
+        url: getApp().data.host + '/api/Job/GetPartJob',
+        data: {
+          'Token': token,
+          'JobId': that.data.postId
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function (res) {
+          if (res.data.Msg) {
+            that.setData({
+              PostInfo: res.data.Info,
+            });
+          }
+        }
       })
     },
 

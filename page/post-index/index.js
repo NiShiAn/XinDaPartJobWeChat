@@ -16,11 +16,11 @@ P('index', {
       //2:检索分类
       activeTypeId:1,     //切换兼职or全职
       activeSubTypeId:1,  //切换全部区域or雇主等级or岗位分类
-      RegionId:1,         //选择地区
-      EmployerRankId:1,   //选择雇主等级
-      JobTypeId:1,        //选择岗位分类
-      PageSize: 1,        //分页
-      Page: 10,           //分页
+      RegionId: 320207,         //选择地区
+      EmployerRankId:0,   //选择雇主等级
+      JobTypeId:0,        //选择岗位分类
+      PageSize: 20,        //分页
+      Page: 1,           //分页
 
       //3:接口返回的岗位数据
       PostList:[],
@@ -92,7 +92,7 @@ P('index', {
       var that = this;
       var token = wx.getStorageSync('wxToken')
       wx.request({
-        url: getApp().data.host + '/api/Job/GetJobList',
+        url: getApp().data.host + 'api/Job/GetJobList',
         data: {
           'Token': token,
           'Type': that.data.activeTypeId,
@@ -106,8 +106,10 @@ P('index', {
         dataType: 'json',
         success: function (res) {
           if (res.data.Msg) {
-            that.data.PostList = res.data.Info.List;
-            that.data.IsEnd = res.data.Info.IsEnd;
+            that.setData({
+              PostList: res.data.Info.JobInfoList,
+              IsEnd: res.data.Info.IsEnd,
+            })
           }
         }
       })
@@ -191,13 +193,14 @@ P('index', {
      * 判断是跳转到岗位详情or兼职详情
      * **/
     toDetailTap: function (e) {
+      var id = e.currentTarget.dataset.id;
         if(this.data.activeTypeId==1){
             wx.navigateTo({
-                url: "/page/part-time-detail/index?postId=1"
+                url: "/page/part-time-detail/index?postId="+id
             })
         }else{
             wx.navigateTo({
-                url: "/page/full-time-detail/index?postId=1"
+                url: "/page/full-time-detail/index?postId="+id
             })
         }
     },

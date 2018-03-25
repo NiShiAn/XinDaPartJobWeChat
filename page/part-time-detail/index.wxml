@@ -6,24 +6,24 @@
   <view class='top-contenter'>
     <view class='name-line'>
       <span class="post-name">
-        托管老师
+        {{PostInfo.JobName}}
       </span>
       <span class="post-price">
-        100-150<span>元/天</span>
+        {{PostInfo.Salary}}<span> {{PostInfo.PayUnit}}</span>
       </span>
     </view>
     <view class='type-line'>
       <view class="type-item">
-        教育培训
+        {{PostInfo.JobCategoryName}}
       </view>
       <view class="type-item">
-        工资日结
+        {{PostInfo.PayWay}}
       </view>
       <view class="type-item">
-        256浏览
+        {{PostInfo.ViewCount}}浏览
       </view>
       <view class="type-item">
-        56申请
+        {{PostInfo.ApplyCount}}申请
       </view>
       <view class="type-pingbi">
         <image src='../../image/post/pingbi.png'></image>
@@ -31,18 +31,18 @@
     </view>
   </view>
   <view class='company-contenter'>
-    <image src='../../image/post/company.png' class='company-img'></image>
+    <image src='{{PostInfo.EPLogo}}' class='company-img'></image>
     <view class='company-info'>
       <span class="company-name">
-        北京天之遥网络科技
+        {{PostInfo.EPName}}
       </span>
       <span class="company-leveal">
         <image src='../../image/post/leveal-icon.png' class='leveal-icon'></image>
         <span>
-          一级雇主
+          {{PostInfo.EPLevelName}}
         </span>
       </span>
-      <span class="com-detail-btn" bindtap="goCompanyDetail">
+      <span class="com-detail-btn" bindtap="goCompanyDetail" data-id='{{PostInfo.EnterpriseId}}'>
       </span>
     </view>
   </view>
@@ -63,7 +63,7 @@
       </span>
     </view>
     <view class='info-con'>
-      周一到周五
+      {{PostInfo.WorkTime}}
     </view>
     <view class='info-title'>
       <view class="info-line">
@@ -73,9 +73,7 @@
       </span>
     </view>
     <view class='info-con'>
-      <span>1、周内小学生课业辅导；</span> 
-      <span>2、周末参与班级教学管理和家长咨询接待； </span>  
-      <span>3、定期进行学员情况报告按要求完成教学服务工作。</span> 
+      <span>{{PostInfo.WorkContent}}</span>
     </view>
     <view class='info-title'>
       <view class="info-line">
@@ -85,9 +83,7 @@
       </span>
     </view>
     <view class='info-con'>
-      <span>1、专科及以上学历，形象气质佳，性格活泼开朗，男女不限；</span> 
-      <span>2、热爱教育事业，富有亲和力、爱心、责任心； </span> 
-      <span>3、学习能力强，乐于接</span> 
+      <span>{{PostInfo.OfficeRequire}}</span> 
     </view>
   </view>
   <view class='info-contenter' style='margin-top:15rpx;min-height:100rpx;'>
@@ -98,21 +94,18 @@
         工作地点 6.6km
       </span>
     </view>
-    <span class="add-name">
-      北京市朝阳区小关北里渔阳大厦A座
-    </span>
-    <span class="add-name">
-      不限地点
+    <span class="add-name" wx:for="{{PostInfo.JobAddressList}}" wx:for-item="itemAddr"  data-id='{{itemAddr.AddressId}}'>
+      {{itemAddr.Address}}{{itemAddr.Distance}}{{itemAddr.Lat}}{{itemAddr.Lat}}
     </span>
     </view>
     <view class="add-map">
     <map id="map" longitude="113.324520" latitude="23.099994" scale="14"  show-location style="width: 100%; height: 316rpx;"></map>
     </view>
     <view class='contact-container'>
-      <image src='../../image/post/contacts.png' class='contact-img'></image>
+      <image src='{{PostInfo.EPHiringHeadImg}}' class='contact-img'></image>
       <view class='contact-info'>
         <span class="name">
-          李经理
+          {{PostInfo.EPHiringManagerName}}
         </span>
         <span class="tips">
           招聘联系人已实名认证
@@ -120,7 +113,7 @@
       </view>
       <view class="con-btns">
         <image src='../../image/post/call.png' class='con-btn' bindtap='toDeliveryResume'></image>
-        <image src='../../image/post/phone.png' class='con-btn'></image>
+        <image src='../../image/post/phone.png' class='con-btn' data-id='{{PostInfo.EPHiringPhone}}'></image>
         <view>
         </view>
       </view>

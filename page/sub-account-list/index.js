@@ -83,8 +83,9 @@ P('index', {
     * 设置子账号权限
     */
     toSubAccountSetting:function(){
+      var id = e.currentTarget.dataset.id;
       wx.navigateTo({
-        url: '/page/sub-account-setting/index?subAccountId=1',
+        url: '/page/sub-account-setting/index?subAccountId='+id,
       })
     }
 
