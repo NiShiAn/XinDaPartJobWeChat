@@ -40,14 +40,10 @@ P('index', {
     wx.request({
       url: getApp().data.host + 'api/Region/GetCityList',
       data: {
-        // "Phone": that.data.phoneNum,
-        // "VerifyCode": that.data.codeNumber,
-        // "Token": token
       },
       method: 'POST',
       dataType: 'json',
       success: function (res) {
-        console.log(JSON.stringify(res.data))
         if (res.data.Msg) {
           that.setData({
             cityInfoList: res.data.Info

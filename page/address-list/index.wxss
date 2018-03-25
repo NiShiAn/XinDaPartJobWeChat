@@ -95,3 +95,34 @@
   margin-left: 2%;
   margin-top: 29rpx;
 }
+
+
+/*无数据新增样式  */
+
+.v-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  margin-top: 524rpx;
+}
+
+.add-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 15rpx;
+  position: relative;
+  top: 5rpx;
+}
+
+.add-party-resume-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 15rpx;
+  position: relative;
+  top: 25rpx;
+}
+
+.add-describe {
+  font-size: 30rpx;
+  color: rgb(53, 53, 53);
+}

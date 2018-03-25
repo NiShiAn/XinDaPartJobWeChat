@@ -3,19 +3,27 @@
 <!--作者：liulingling-->
 <!--1px = 750/320 = 2.34rpx;-->
 <view class="container">
-  <view class='contracts-list'>
-    <view class='contracts-item' wx:for="{{[1, 2, 3]}}" wx:for-item="i">
-      <view class='info'>
-        <span class="name"><span>山东省</span><span>青岛市</span><span>李沧区</span></span>
-        <span class="tip">书院路1号苏宁大厦</span>
-      </view>
-      <view class="op">
-        <image src='../../image/post/delete.png'></image>
+  <block wx:if="{{addressList.length == 0}}">
+    <view class='v-center'>
+      <image src='../../image/person/jia.png' class='add-icon'></image>
+      <view class='add-describe' bindtap='toAddressAdd'>新增工作地点</view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='contracts-list'>
+      <view class='contracts-item' wx:for="{{addressList}}" wx:for-item="i">
+        <view class='info'>
+          <span class="name"><span>{{i.Province}}</span><span>{{i.City}}</span><span>{{i.Area}}</span></span>
+          <span class="tip">{{i.Address}}</span>
+        </view>
+        <view class="op">
+          <image src='../../image/post/delete.png' data-id='{{i.AddressId}}' bindtap='deleteAddress'></image>
+        </view>
       </view>
     </view>
-  </view>
-  <view class="add-contracts" bindtap='toAddressAdd'>
-    <span class="icon">+</span>
-    <span class="text">新增工作地点</span>
-  </view>
+    <view class="add-contracts" bindtap='toAddressAdd'>
+      <span class="icon">+</span>
+      <span class="text">新增工作地点</span>
+    </view>
+  </block>
 </view>
