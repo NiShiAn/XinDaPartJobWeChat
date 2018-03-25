@@ -2,8 +2,7 @@
 var P = require('../../lib/wxpage')
 P('index', {
   data: {
-    headImg: '',
-    isShowInput:2,
+    cityInfoList:[],
   },
 
   onLaunch: function () {
@@ -23,23 +22,38 @@ P('index', {
       }
     }),
     wx.setNavigationBarTitle({
-      title: '个人中心'
+      title: '切换城市'
     }),
     wx.showShareMenu({
       withShareTicket: true
-    })   
+    }),
+    this.getCityList();  
   },
 
-  searchClick:function(){
-    this.setData({
-      isShowInput:0
-    });
-  },
+  /**
+   * 获取城市列表
+   */
 
-  disappearBlur:function(){
-    this.setData({
-      isShowInput: 2
-    });
+  getCityList:function(){
+    var that = this;
+    var token = wx.getStorageSync('wxToken');
+    wx.request({
+      url: getApp().data.host + 'api/Region/GetCityList',
+      data: {
+        // "Phone": that.data.phoneNum,
+        // "VerifyCode": that.data.codeNumber,
+        // "Token": token
+      },
+      method: 'POST',
+      dataType: 'json',
+      success: function (res) {
+        console.log(JSON.stringify(res.data))
+        if (res.data.Msg) {
+          that.setData({
+            cityInfoList: res.data.Info
+          });
+        }
+      }
+    })
   }
-
 })

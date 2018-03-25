@@ -19,17 +19,17 @@
     <view class='city-name'>青岛</view>
   </view>
   <view class='city-list-box'>
-    <view class='city-list-nav'>
-      <text class='char-number'>A</text>
-      <text class='char-number'>B</text>
-    </view>  
-  </view>
-  <view class='city-item-list'>
-    <view class='city-item'>
-      <view class='city-item-name'>阿尔山</view>
-    </view>
-    <view class='city-item'>
-      <view class='city-item-name'>阿尔山</view>
-    </view>
+    <block wx:for="{{cityInfoList}}" wx:for-index="idx" wx:for-item="item" wx:key="unique">
+      <view class='city-list-nav'>
+        <text class='char-number'>{{item.FirstLetter}}</text>
+      </view> 
+      <block wx:for="{{item.CityList}}" wx:for-index="idx" wx:for-item="itemName" wx:key="unique">
+        <view class='city-item-list'>
+          <view class='city-item'>
+            <view class='city-item-name' data-id="{{itemName.CityId}}">{{itemName.CityName}}</view>
+          </view>
+        </view> 
+      </block>
+    </block>
   </view>
 </view>

@@ -63,6 +63,8 @@
   justify-content: flex-start;
   padding-left: 35rpx;
   background-color: #fcf9fd;
+  border-bottom:0.5px solid #ddd;
+
 }
 
 .char-number {
@@ -72,7 +74,6 @@
 }
 
 .city-item-list {
-  border: 1rpx solid #ddd;
   background-color: #fff;
   padding-left: 35rpx;
 }
