@@ -1,6 +1,5 @@
 {
   "pages": [
-    "page/verificate-phone/index",
     "page/post-index/index",    
     "page/change-city/index",
     "page/post-change-region/index",
@@ -22,13 +21,11 @@
     "page/my-report-list/index",
     "page/company-report-list/index",
     "page/add-work-info/index",
-    
+    "page/verificate-phone/index",
     "page/my-party-resume-edite/index",
     "page/add-resume-report/index",
     "page/company-center-info/index",
-
     "page/person-info/index",
-
     "page/special-agent-list/index",
     "page/special-agent-detail/index",
     "page/address-add/index",
@@ -37,22 +34,18 @@
     "page/delivery-post-list/index",
     "page/sub-account-setting/index",
     "page/sub-account-add/index",
-   
     "page/sub-account-list/index",
     "page/integral-detail/index",
     "page/integral-employer-grade/index",
     "page/company-audit-statues/index",
     "page/company-audit-edite/index",
-    
     "page/resume-search-result/index",
     "page/resume-search/index",
     "page/company-search-result/index",
     "page/full-time-detail/index",
     "page/post-search-result/index",
     "page/post-company-search/index",  
-    
     "page/delivery-resume-list/index",
-    
     "page/full-resume-detail/index",
     "page/part-resume-detail/index",
     "page/report-detail/index",
@@ -60,7 +53,6 @@
     "page/post-job-category/index",
     "page/post-employer-grade/index",
     "page/company-detail/index",
-    
     "page/contacts-edit/index",
     "page/company-login/index",
     "page/tip-off-add/index",      
