@@ -6,15 +6,16 @@
   <view class='phone-box'>
     <view class='phone-area-code'>+86</view>
     <view class='phone-input-view'>
-      <input class='phone-input' placeholder='请填写手机号'></input>
+      <input class='phone-input' placeholder='请填写手机号' bindinput="phoneInput"></input>
     </view>
   </view>
   <view class='verification-code-box'>
     <view class='verification-title'>验证码</view>
     <view class='verification-input-box'>
-      <input class='verification-number-input' placeholder='请输入验证码'></input>
+      <input class='verification-number-input' placeholder='请输入验证码' bindinput="verifyInput"></input>
     </view>
-    <button type="primary" bindtap="primary" class="verification-btn"> 获取验证码</button>
+    <button type="primary" bindtap="primary" class="verification-btn" bindtap='GetVerify' style="display: {{ is_show ? 'block' : 'none' }};">  获取验证码</button>
+    <button type="primary"   style="display: {{ is_show ? 'none' : 'block' }};">  {{last_time}}</button>
   </view>
-  <button type="primary" bindtap="primary" class="primary"> 保存</button>
+  <button type="primary" bindtap="primary" class="primary" bindtap='SaveAccount'> 保存</button>
 </view>

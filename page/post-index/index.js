@@ -16,6 +16,16 @@ P('index', {
       //2:检索分类
       activeTypeId:1,     //切换兼职or全职
       activeSubTypeId:1,  //切换全部区域or雇主等级or岗位分类
+      RegionId:1,         //选择地区
+      EmployerRankId:1,   //选择雇主等级
+      JobTypeId:1,        //选择岗位分类
+      PageSize: 1,        //分页
+      Page: 10,           //分页
+
+      //3:接口返回的岗位数据
+      PostList:[],
+      IsEnd:false,
+
       //签到弹窗参数
       showSignModal:false,
       //获取签到信息返回的列表
@@ -52,6 +62,7 @@ P('index', {
         city: options.city
       })  
       this.GetSignInInfo()
+      this.getPostList()
     },
 
     /**
@@ -63,14 +74,52 @@ P('index', {
     },
 
     /**
+   * 上拉加载
+   * **/
+    onReachBottom: function () {
+      var that = this;
+      if (!that.data.IsEnd) {
+        that.getPostList();
+      } else {
+        return
+      }
+    },
+
+     /**
+      * 获取岗位列表
+     * **/
+    getPostList:function(){
+      var that = this;
+      var token = wx.getStorageSync('wxToken')
+      wx.request({
+        url: getApp().data.host + '/api/Job/GetJobList',
+        data: {
+          'Token': token,
+          'Type': that.data.activeTypeId,
+          'RegionId': that.data.RegionId,
+          'EmployerRankId': that.data.EmployerRankId,
+          'JobTypeId': that.data.JobTypeId,
+          'PageSize': that.data.PageSize,
+          'Page': that.data.Page,
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function (res) {
+          if (res.data.Msg) {
+            that.data.PostList = res.data.Info.List;
+            that.data.IsEnd = res.data.Info.IsEnd;
+          }
+        }
+      })
+    },
+    /**
       * 获取签到信息接口
     * **/
     GetSignInInfo:function(){
-      console.log("^^^^^")
       var that=this;
       var token = wx.getStorageSync('wxToken')
       wx.request({
-        url: getApp().data.host + 'api/SignIn/GetSignInInfo',
+        url: getApp().data.host + '/api/SignIn/GetSignInInfo',
         data: {
           'Token': token,
         },
@@ -88,7 +137,6 @@ P('index', {
                 showSignModal:true,
               });
             }
-           console.log("^^^^^"+JSON.stringify(res.data))
           }
         }
       })
