@@ -33,6 +33,8 @@
   font-size: 30rpx;
   color: rgb(217, 217, 217);
   float: left;
+  height: 88rpx;
+  line-height: 88rpx;
 }
 
 .position-box image {

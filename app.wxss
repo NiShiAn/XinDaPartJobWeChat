@@ -199,3 +199,10 @@ page {
 .picker{
   color: rgb(53, 53, 53) !important;
 }
+
+textarea {
+  width:100%;
+  height:150px;
+  display:block;
+  position:relative;
+}

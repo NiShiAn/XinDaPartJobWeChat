@@ -5,6 +5,7 @@ P('index', {
     headImg: '',
   },
 
+
   onLaunch: function () {
   },
 
@@ -28,6 +29,9 @@ P('index', {
       withShareTicket: true
     })
   },
+
+
+
   //发布兼职按钮
   goPartJob: function () {
     wx.navigateTo({

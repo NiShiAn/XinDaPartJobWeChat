@@ -34,6 +34,11 @@ P('index', {
       isEPLogin:false
     },
 
+
+    onShow: function () {
+    
+    },
+
     onLaunch: function () {
       
     },
@@ -50,8 +55,9 @@ P('index', {
           timingFunc: 'easeIn'
         }
       })
-      var EPLogin = wx.getStorageSync('EPLogin')
-      if (EPLogin){
+      var EPLogin = wx.getStorageSync('EPLogin');
+      var EPPhone = wx.setStorageSync('EPPhone') ? wx.setStorageSync('EPPhone'):'13658669173';
+      if (EPLogin && EPPhone != ''){
         wx.setNavigationBarTitle({
           title: '企业中心'
         })
@@ -62,7 +68,7 @@ P('index', {
         wx.request({
           url: getApp().data.host + 'api/Account/EPDefaultLogin',
           data: {
-            "Phone": that.data.phone,
+            "Phone": EPPhone,
             "OpenId": wx.getStorageSync('wxOpenId'),
             "City": '0532',
           },
@@ -77,7 +83,8 @@ P('index', {
               wx.setStorageSync('EPPhone', that.data.phone);
               that.setData({
                 isEPLogin: true //false
-              })
+              });
+              that.getCompanyInfo();
             }
           }
         })
@@ -103,6 +110,28 @@ P('index', {
       wx.stopPullDownRefresh()
     },
     
+
+    /**
+     * 获取企业详情
+     */
+
+    getCompanyInfo: function () {
+      var token = wx.getStorageSync("wxToken");
+      wx.request({
+        url: getApp().data.host + 'api/EP/GetEPDetailInfo',
+        data: {
+          "Token": token,
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function (res) {
+          if (res.data.Msg) {
+            wx.setStorageSync("", res.data.Info.CompanyId)
+            // { "Msg":true, "Message":"操作成功", "ResultCode":10000, "Info":{ "CompanyId":7, "CompanyEmployerId":0, "CompanyEmployerName":"0", "CompanyName":"", "CompanyAddress":"", "CompanyFullName":"", "CompanyDesc":"", "CompanyImgList":[], "JobList":[] } }
+          }
+        }
+      });
+    },
     
     
     /**
@@ -200,7 +229,8 @@ P('index', {
             wx.setStorageSync('EPPhone', that.data.phone);
             that.setData({
               isEPLogin: true //false
-            })
+            });
+            this.getCompanyInfo();
           } 
         }
       })
