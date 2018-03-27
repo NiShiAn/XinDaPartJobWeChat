@@ -37,32 +37,8 @@
       </view>
       <view class='info-con' style='height:900rpx'>
         <checkbox-group bindchange="checkboxChange" class="checkbox-group">
-          <label class="checkbox">
-            <checkbox value="电话虚假（空号、无人接听）" checked="1"/>电话虚假（空号、无人接听）
-          </label>
-           <label class="checkbox">
-            <checkbox value=" 非法收费（培训费、介绍费等）" checked="2"/>非法收费（培训费、介绍费等）
-          </label>
-           <label class="checkbox">
-            <checkbox value="职位虚假（薪资、工作地点等）" checked="3"/>职位虚假（薪资、工作地点等）
-          </label>
-          <label class="checkbox">
-            <checkbox value="职位虚假（薪资、工作地点等）" checked="3"/>职位虚假（薪资、工作地点等）
-          </label>
-          <label class="checkbox">
-            <checkbox value="涉黄违法" checked="3"/>涉黄违法
-          </label>
-          <label class="checkbox">
-            <checkbox value="招聘刷单刷钻人员 " checked="3"/>招聘刷单刷钻人员 
-          </label>
-          <label class="checkbox">
-            <checkbox value="职业冒充直招" checked="3"/>职业冒充直招 
-          </label>
-          <label class="checkbox">
-            <checkbox value="招聘培训信息（非直招）" checked="3"/>招聘培训信息（非直招） 
-          </label>
-          <label class="checkbox">
-            <checkbox value="其他" checked="3"/>其他 
+          <label class="checkbox" wx:for="{{ReportReasonList}}" wx:for-item="itemReason">
+            <checkbox value="{{itemReason.Name}}" checked="{{itemReason.ReasonId}}"/>{{itemReason.Name}}
           </label>
         </checkbox-group>
       </view>
@@ -85,6 +61,6 @@
           </view>
         </view>
       </view>
-      <button type="primary" bindtap="primary" class="primary"> 提交 </button>
+      <button type="primary" bindtap="primary" class="primary" bindtap='ReportPost'> 提交 </button>
   </view>
 </view>

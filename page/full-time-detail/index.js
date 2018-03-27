@@ -42,13 +42,13 @@ P('index', {
     },
 
     /**
-         * 获取岗位详情
-        * **/
+      * 获取岗位详情
+    * **/
     getPostDetail: function () {
       var that = this;
       var token = wx.getStorageSync('wxToken')
       wx.request({
-        url: getApp().data.host + '/api/Job/GetPartJob',
+        url: getApp().data.host + '/api/Job/GetFullJob',
         data: {
           'Token': token,
           'JobId': that.data.postId
